@@ -1,0 +1,1190 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.3.1",
+  "deps": {
+    "nx": "^18.3.1"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".env",
+        "hash": "17571490830453680769"
+      },
+      {
+        "file": "USD.json",
+        "hash": "16457337456221900078"
+      },
+      {
+        "file": "both.js",
+        "hash": "12456116841422394683"
+      },
+      {
+        "file": "css/all.css",
+        "hash": "9083228470194123154"
+      },
+      {
+        "file": "css/all.min.css",
+        "hash": "5411199678461660617"
+      },
+      {
+        "file": "css/build.css",
+        "hash": "590239042220904324"
+      },
+      {
+        "file": "css/builder-global.css",
+        "hash": "7926313744529662520"
+      },
+      {
+        "file": "css/flip.min.css",
+        "hash": "4630336483587293291"
+      },
+      {
+        "file": "css/keyframe.css",
+        "hash": "3737688967898640855"
+      },
+      {
+        "file": "css/mix.css",
+        "hash": "4141430037904593091"
+      },
+      {
+        "file": "css/normalize.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "css/page.css",
+        "hash": "15288562752772925705"
+      },
+      {
+        "file": "css/reset.css",
+        "hash": "18063198987027486464"
+      },
+      {
+        "file": "css/script.js",
+        "hash": "944514996664845838"
+      },
+      {
+        "file": "css/selar.css",
+        "hash": "13086993996525061785"
+      },
+      {
+        "file": "css/styles.css",
+        "hash": "13531883592665236644"
+      },
+      {
+        "file": "css/tailwind.css",
+        "hash": "17583879619733599250"
+      },
+      {
+        "file": "css/tailwind.min.css",
+        "hash": "6903642204604312203"
+      },
+      {
+        "file": "css/test.css",
+        "hash": "16280851462455524671"
+      },
+      {
+        "file": "css/utils.css",
+        "hash": "10525179048116298431"
+      },
+      {
+        "file": "dash.js",
+        "hash": "5613340883957335298"
+      },
+      {
+        "file": "db.js",
+        "hash": "9691585264002383333"
+      },
+      {
+        "file": "env.json",
+        "hash": "10568884419607710371"
+      },
+      {
+        "file": "fallback.ico",
+        "hash": "16632943736824699786"
+      },
+      {
+        "file": "favicon.ico",
+        "hash": "45776026964412355"
+      },
+      {
+        "file": "font.woff2",
+        "hash": "8501020343763958146"
+      },
+      {
+        "file": "get.js",
+        "hash": "144964916522909600"
+      },
+      {
+        "file": "images/background-item-1.svg",
+        "hash": "10310061131955531637"
+      },
+      {
+        "file": "images/background-item-10.svg",
+        "hash": "5452692083191837359"
+      },
+      {
+        "file": "images/background-item-11.svg",
+        "hash": "4744897215364305044"
+      },
+      {
+        "file": "images/background-item-2.svg",
+        "hash": "2931205878709636140"
+      },
+      {
+        "file": "images/background-item-3.svg",
+        "hash": "11254963844840383699"
+      },
+      {
+        "file": "images/background-item-4.svg",
+        "hash": "3537421786618976936"
+      },
+      {
+        "file": "images/background-item-5.svg",
+        "hash": "12010506420496655581"
+      },
+      {
+        "file": "images/background-item-6.svg",
+        "hash": "1873046971178154252"
+      },
+      {
+        "file": "images/background-item-7.svg",
+        "hash": "11761124891482146258"
+      },
+      {
+        "file": "images/background-item-8.svg",
+        "hash": "13164109249788877305"
+      },
+      {
+        "file": "images/background-item-9.svg",
+        "hash": "4619542297877174542"
+      },
+      {
+        "file": "images/bitcoin-graph.svg",
+        "hash": "3558119246452566138"
+      },
+      {
+        "file": "images/bitcoin.svg",
+        "hash": "1407012057842536252"
+      },
+      {
+        "file": "images/broad.jfif",
+        "hash": "2907312605674620568"
+      },
+      {
+        "file": "images/btc-illustration.svg",
+        "hash": "14575610169681874013"
+      },
+      {
+        "file": "images/chevron-right.svg",
+        "hash": "17630976869783856979"
+      },
+      {
+        "file": "images/coin-table.svg",
+        "hash": "4779070062509230642"
+      },
+      {
+        "file": "images/currencies-sprite.svg",
+        "hash": "12359433925196063145"
+      },
+      {
+        "file": "images/dylan-chart.jpg",
+        "hash": "10279205621097798540"
+      },
+      {
+        "file": "images/fintech-concepts-3d-dollar-sign-with-connections.webp",
+        "hash": "16679811677519433436"
+      },
+      {
+        "file": "images/gpu-illustration.svg",
+        "hash": "17747569953349303116"
+      },
+      {
+        "file": "images/img1.fw.png",
+        "hash": "17428180772096044934"
+      },
+      {
+        "file": "images/img2.fw.png",
+        "hash": "9991600661580967811"
+      },
+      {
+        "file": "images/istockphoto-1317587887-170667a.webp",
+        "hash": "11787981794392213240"
+      },
+      {
+        "file": "images/istockphoto-1367449613-170667a.webp",
+        "hash": "2503722850363262622"
+      },
+      {
+        "file": "images/logo.svg",
+        "hash": "16454663872936981029"
+      },
+      {
+        "file": "images/mastercard.svg",
+        "hash": "5257036869348346845"
+      },
+      {
+        "file": "images/media-icons-sprite.svg",
+        "hash": "17362227335039691283"
+      },
+      {
+        "file": "images/mission.fw.png",
+        "hash": "13410439768638173124"
+      },
+      {
+        "file": "images/narrow.jfif",
+        "hash": "8163857714082876495"
+      },
+      {
+        "file": "images/pics1.jpg",
+        "hash": "9293908009946445850"
+      },
+      {
+        "file": "images/pics2.jpg",
+        "hash": "2087273862898623462"
+      },
+      {
+        "file": "images/pics3.jpg",
+        "hash": "6004914731869685267"
+      },
+      {
+        "file": "images/saltalogo.fw (1).png",
+        "hash": "11971333971739810491"
+      },
+      {
+        "file": "images/saltalogo.fw.png",
+        "hash": "11971333971739810491"
+      },
+      {
+        "file": "images/social-media-sprite.svg",
+        "hash": "13796150485212309335"
+      },
+      {
+        "file": "images/statistics.svg",
+        "hash": "15279515451138386239"
+      },
+      {
+        "file": "images/visa.svg",
+        "hash": "4882766198696779566"
+      },
+      {
+        "file": "images/vision.fw.png",
+        "hash": "3125787375325305062"
+      },
+      {
+        "file": "index.html",
+        "hash": "2255309061393095949"
+      },
+      {
+        "file": "index.js",
+        "hash": "7069496779184544524"
+      },
+      {
+        "file": "index.ts",
+        "hash": "13711671630753679968"
+      },
+      {
+        "file": "js/anime.min.js",
+        "hash": "3026659985507930059"
+      },
+      {
+        "file": "js/bash.exe.stackdump",
+        "hash": "6090611101050750151"
+      },
+      {
+        "file": "js/build.js",
+        "hash": "3825668577160628529"
+      },
+      {
+        "file": "js/chart.js",
+        "hash": "4951095917769618820"
+      },
+      {
+        "file": "js/draggabilly.pkgd.js",
+        "hash": "11733134623930265694"
+      },
+      {
+        "file": "js/email.min.js",
+        "hash": "1465279128858653525"
+      },
+      {
+        "file": "js/flip.min.js",
+        "hash": "7041176680805479246"
+      },
+      {
+        "file": "js/fn.js",
+        "hash": "5108515678494262260"
+      },
+      {
+        "file": "js/from_chrome_dev_tools!!!.js",
+        "hash": "381818041205421589"
+      },
+      {
+        "file": "js/googleLabs/scrollbar.js",
+        "hash": "15266093016361847520"
+      },
+      {
+        "file": "js/hexStringToArrayBuffer.js",
+        "hash": "8705807827378078292"
+      },
+      {
+        "file": "js/highlight.pack.js",
+        "hash": "1362214379098904603"
+      },
+      {
+        "file": "js/js.js",
+        "hash": "17352545119454108346"
+      },
+      {
+        "file": "js/page.js",
+        "hash": "8037762394441780462"
+      },
+      {
+        "file": "js/rainbow-custom.min.js",
+        "hash": "14265652293506689373"
+      },
+      {
+        "file": "js/rellax.min.js",
+        "hash": "4121350940600405275"
+      },
+      {
+        "file": "js/ripples.js",
+        "hash": "14077510586729740919"
+      },
+      {
+        "file": "js/utils.js",
+        "hash": "9082391314334856956"
+      },
+      {
+        "file": "js/worker.js",
+        "hash": "2681984126908679225"
+      },
+      {
+        "file": "nestjs-createUser.dto.ts",
+        "hash": "5595646316638912254"
+      },
+      {
+        "file": "nestjs-database-module_withIndex.ts",
+        "hash": "6366023893208396444"
+      },
+      {
+        "file": "nestjs-database.module.ts",
+        "hash": "11766258063202242582"
+      },
+      {
+        "file": "nestjs-users.module.ts",
+        "hash": "1532786682485815886"
+      },
+      {
+        "file": "nestjs-users.service.ts",
+        "hash": "10749860305498071792"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "15283858824255963834"
+      },
+      {
+        "file": "package.json",
+        "hash": "6118314665251837294"
+      },
+      {
+        "file": "password.js",
+        "hash": "3408695612056351221"
+      },
+      {
+        "file": "regular-bookweb.woff",
+        "hash": "1091250174871729923"
+      },
+      {
+        "file": "server.js",
+        "hash": "14413734696153941900"
+      },
+      {
+        "file": "session.js",
+        "hash": "2260354690991187296"
+      },
+      {
+        "file": "sign-page.js",
+        "hash": "1111535649215945135"
+      },
+      {
+        "file": "sign.html",
+        "hash": "14069659717955096374"
+      },
+      {
+        "file": "sign.js",
+        "hash": "14745375064409393567"
+      },
+      {
+        "file": "svgs/black/ada.svg",
+        "hash": "4531576169030514926"
+      },
+      {
+        "file": "svgs/black/algo.svg",
+        "hash": "14177426602638197542"
+      },
+      {
+        "file": "svgs/black/bnb.svg",
+        "hash": "4101365635620587373"
+      },
+      {
+        "file": "svgs/black/btc.svg",
+        "hash": "16425563369157591551"
+      },
+      {
+        "file": "svgs/black/doge.svg",
+        "hash": "11449959254224527293"
+      },
+      {
+        "file": "svgs/black/eth.svg",
+        "hash": "11787717259443480654"
+      },
+      {
+        "file": "svgs/black/fil.svg",
+        "hash": "15782455471461219969"
+      },
+      {
+        "file": "svgs/black/ltc.svg",
+        "hash": "11576756309210461199"
+      },
+      {
+        "file": "svgs/black/matic.svg",
+        "hash": "13752533382192402014"
+      },
+      {
+        "file": "svgs/black/sol.svg",
+        "hash": "18427060501386162630"
+      },
+      {
+        "file": "svgs/black/theta.svg",
+        "hash": "8012760725249226582"
+      },
+      {
+        "file": "svgs/black/trx.svg",
+        "hash": "2353453959772727316"
+      },
+      {
+        "file": "svgs/black/usdc.svg",
+        "hash": "13461115683957149394"
+      },
+      {
+        "file": "svgs/black/usdt.svg",
+        "hash": "3579580645698586462"
+      },
+      {
+        "file": "svgs/black/xrp.svg",
+        "hash": "16540671373537073004"
+      },
+      {
+        "file": "svgs/black/xtz.svg",
+        "hash": "13696938830402037643"
+      },
+      {
+        "file": "svgs/black/yfi.svg",
+        "hash": "4044412203285744390"
+      },
+      {
+        "file": "svgs/exchanges/1broker.svg",
+        "hash": "6472216318916613392"
+      },
+      {
+        "file": "svgs/exchanges/abcc.svg",
+        "hash": "9198478252303357863"
+      },
+      {
+        "file": "svgs/exchanges/abucoins.svg",
+        "hash": "7309213303032606147"
+      },
+      {
+        "file": "svgs/exchanges/aidosmarket.svg",
+        "hash": "15956993561344803782"
+      },
+      {
+        "file": "svgs/exchanges/b2bx.svg",
+        "hash": "9563540043050976357"
+      },
+      {
+        "file": "svgs/exchanges/bancor.svg",
+        "hash": "13887056270763641731"
+      },
+      {
+        "file": "svgs/exchanges/barterdex.svg",
+        "hash": "12306297093397674471"
+      },
+      {
+        "file": "svgs/exchanges/bibox.svg",
+        "hash": "3813866857326470361"
+      },
+      {
+        "file": "svgs/exchanges/bigone.svg",
+        "hash": "9679684588686740284"
+      },
+      {
+        "file": "svgs/exchanges/binance.svg",
+        "hash": "8403675625436183012"
+      },
+      {
+        "file": "svgs/exchanges/bisq.svg",
+        "hash": "9917379294926738333"
+      },
+      {
+        "file": "svgs/exchanges/bit-z.svg",
+        "hash": "9007643319718467872"
+      },
+      {
+        "file": "svgs/exchanges/bit2c.svg",
+        "hash": "6133556589713488074"
+      },
+      {
+        "file": "svgs/exchanges/bitbank.svg",
+        "hash": "3097494669728110196"
+      },
+      {
+        "file": "svgs/exchanges/bitbay.svg",
+        "hash": "8355164117824431762"
+      },
+      {
+        "file": "svgs/exchanges/bitbns.svg",
+        "hash": "17068111535231443730"
+      },
+      {
+        "file": "svgs/exchanges/bitcointoyou.svg",
+        "hash": "13584912769306401104"
+      },
+      {
+        "file": "svgs/exchanges/bitcointrade.svg",
+        "hash": "11473834878250115964"
+      },
+      {
+        "file": "svgs/exchanges/bitfinex.svg",
+        "hash": "14793010646530609443"
+      },
+      {
+        "file": "svgs/exchanges/bitflip.svg",
+        "hash": "3492244946132267020"
+      },
+      {
+        "file": "svgs/exchanges/bitflyer.svg",
+        "hash": "16888257983457411435"
+      },
+      {
+        "file": "svgs/exchanges/bitforex.svg",
+        "hash": "1108130708260477907"
+      },
+      {
+        "file": "svgs/exchanges/bitgrail.svg",
+        "hash": "7644544222467632278"
+      },
+      {
+        "file": "svgs/exchanges/bithumb.svg",
+        "hash": "15006937354712544541"
+      },
+      {
+        "file": "svgs/exchanges/bitlish.svg",
+        "hash": "4101363407762832903"
+      },
+      {
+        "file": "svgs/exchanges/bitmarket.svg",
+        "hash": "407574380235127809"
+      },
+      {
+        "file": "svgs/exchanges/bitmex.svg",
+        "hash": "897912029431394836"
+      },
+      {
+        "file": "svgs/exchanges/bitonic.svg",
+        "hash": "12010853120671975303"
+      },
+      {
+        "file": "svgs/exchanges/bitso.svg",
+        "hash": "17538537221937309348"
+      },
+      {
+        "file": "svgs/exchanges/bitsquare.svg",
+        "hash": "5632952828733507332"
+      },
+      {
+        "file": "svgs/exchanges/bitstamp.svg",
+        "hash": "7399117180191868335"
+      },
+      {
+        "file": "svgs/exchanges/bittrex.svg",
+        "hash": "13301353672508928287"
+      },
+      {
+        "file": "svgs/exchanges/bitz.svg",
+        "hash": "13155207125004384143"
+      },
+      {
+        "file": "svgs/exchanges/bl3p.svg",
+        "hash": "8832346498090298707"
+      },
+      {
+        "file": "svgs/exchanges/bleutrade.svg",
+        "hash": "4377226929908764507"
+      },
+      {
+        "file": "svgs/exchanges/bluebelt.svg",
+        "hash": "2525171612845390024"
+      },
+      {
+        "file": "svgs/exchanges/boxex.svg",
+        "hash": "9864017305020889307"
+      },
+      {
+        "file": "svgs/exchanges/braziliex.svg",
+        "hash": "5949907131983823945"
+      },
+      {
+        "file": "svgs/exchanges/btc-alpha.svg",
+        "hash": "9657021807402462908"
+      },
+      {
+        "file": "svgs/exchanges/btcalpha.svg",
+        "hash": "15235045387678038689"
+      },
+      {
+        "file": "svgs/exchanges/btcboxcom.svg",
+        "hash": "14315327037567714250"
+      },
+      {
+        "file": "svgs/exchanges/btcc.svg",
+        "hash": "4349126243352027538"
+      },
+      {
+        "file": "svgs/exchanges/btctradeua.svg",
+        "hash": "17126892791134806330"
+      },
+      {
+        "file": "svgs/exchanges/btcturk.svg",
+        "hash": "11300655981578496155"
+      },
+      {
+        "file": "svgs/exchanges/buda.svg",
+        "hash": "1979907890958245977"
+      },
+      {
+        "file": "svgs/exchanges/bxinth.svg",
+        "hash": "8946998634138598875"
+      },
+      {
+        "file": "svgs/exchanges/ccex.svg",
+        "hash": "13970674658176565716"
+      },
+      {
+        "file": "svgs/exchanges/ccrb.svg",
+        "hash": "16673841467638793302"
+      },
+      {
+        "file": "svgs/exchanges/cexio.svg",
+        "hash": "11534268748542305605"
+      },
+      {
+        "file": "svgs/exchanges/cobinhood.svg",
+        "hash": "9430372605468600732"
+      },
+      {
+        "file": "svgs/exchanges/coinbase.svg",
+        "hash": "6152641594808691334"
+      },
+      {
+        "file": "svgs/exchanges/coinbasepro.svg",
+        "hash": "4768338951894016147"
+      },
+      {
+        "file": "svgs/exchanges/coincap.svg",
+        "hash": "11790358223399604649"
+      },
+      {
+        "file": "svgs/exchanges/coincheck.svg",
+        "hash": "4704034040642881203"
+      },
+      {
+        "file": "svgs/exchanges/coindeal.svg",
+        "hash": "8792048302708761359"
+      },
+      {
+        "file": "svgs/exchanges/coinegg.svg",
+        "hash": "2349719958064802646"
+      },
+      {
+        "file": "svgs/exchanges/coinex.svg",
+        "hash": "11227223560820529616"
+      },
+      {
+        "file": "svgs/exchanges/coinfalcon.svg",
+        "hash": "10168921590997801061"
+      },
+      {
+        "file": "svgs/exchanges/coinfloor.svg",
+        "hash": "3146470526092467136"
+      },
+      {
+        "file": "svgs/exchanges/coinone.svg",
+        "hash": "8102358921505884478"
+      },
+      {
+        "file": "svgs/exchanges/coinroom.svg",
+        "hash": "14335399832231109116"
+      },
+      {
+        "file": "svgs/exchanges/coinsbank.svg",
+        "hash": "12550899734896913991"
+      },
+      {
+        "file": "svgs/exchanges/coinsquare.svg",
+        "hash": "6640745078247618870"
+      },
+      {
+        "file": "svgs/exchanges/coinswitch.svg",
+        "hash": "15596461539892435802"
+      },
+      {
+        "file": "svgs/exchanges/coinut.svg",
+        "hash": "6046900294860732372"
+      },
+      {
+        "file": "svgs/exchanges/crex24.svg",
+        "hash": "2923953137024709454"
+      },
+      {
+        "file": "svgs/exchanges/cryptobridge.svg",
+        "hash": "4408406695970802633"
+      },
+      {
+        "file": "svgs/exchanges/cryptocarbon.svg",
+        "hash": "16295933155072001178"
+      },
+      {
+        "file": "svgs/exchanges/cryptonit.svg",
+        "hash": "3450589981075998900"
+      },
+      {
+        "file": "svgs/exchanges/cryptopia.svg",
+        "hash": "10492300022441579041"
+      },
+      {
+        "file": "svgs/exchanges/digifinex.svg",
+        "hash": "1956336233465446620"
+      },
+      {
+        "file": "svgs/exchanges/dobitrade.svg",
+        "hash": "2193778172384483652"
+      },
+      {
+        "file": "svgs/exchanges/dsx.svg",
+        "hash": "3218942195300639219"
+      },
+      {
+        "file": "svgs/exchanges/etherdelta.svg",
+        "hash": "13365057460965153745"
+      },
+      {
+        "file": "svgs/exchanges/ethexindia.svg",
+        "hash": "4068845443970635720"
+      },
+      {
+        "file": "svgs/exchanges/ethfinex.svg",
+        "hash": "443141867537319651"
+      },
+      {
+        "file": "svgs/exchanges/exmo.svg",
+        "hash": "4970961274845636106"
+      },
+      {
+        "file": "svgs/exchanges/exscudo.svg",
+        "hash": "8024155570932523215"
+      },
+      {
+        "file": "svgs/exchanges/exx.svg",
+        "hash": "10739179329276094354"
+      },
+      {
+        "file": "svgs/exchanges/fcoin.svg",
+        "hash": "6736873523737881537"
+      },
+      {
+        "file": "svgs/exchanges/flowbtc.svg",
+        "hash": "7327667824315534982"
+      },
+      {
+        "file": "svgs/exchanges/foxbit.svg",
+        "hash": "18051106657309706768"
+      },
+      {
+        "file": "svgs/exchanges/gatecoin.svg",
+        "hash": "7209848945280532995"
+      },
+      {
+        "file": "svgs/exchanges/gateio.svg",
+        "hash": "6615059506083418948"
+      },
+      {
+        "file": "svgs/exchanges/gemini.svg",
+        "hash": "205429029967254401"
+      },
+      {
+        "file": "svgs/exchanges/globitex.svg",
+        "hash": "15646606067735024066"
+      },
+      {
+        "file": "svgs/exchanges/gopax.svg",
+        "hash": "10880277531899020345"
+      },
+      {
+        "file": "svgs/exchanges/hadax.svg",
+        "hash": "7596704334495895710"
+      },
+      {
+        "file": "svgs/exchanges/hitbtc.svg",
+        "hash": "8507876499055085902"
+      },
+      {
+        "file": "svgs/exchanges/huobipro.svg",
+        "hash": "4719633702961199485"
+      },
+      {
+        "file": "svgs/exchanges/idex.svg",
+        "hash": "3121432054516191191"
+      },
+      {
+        "file": "svgs/exchanges/indacoin.svg",
+        "hash": "14877096824777796950"
+      },
+      {
+        "file": "svgs/exchanges/itbit.svg",
+        "hash": "17408471188722281884"
+      },
+      {
+        "file": "svgs/exchanges/korbit.svg",
+        "hash": "12107734899338158036"
+      },
+      {
+        "file": "svgs/exchanges/kraken.svg",
+        "hash": "11017412417592167344"
+      },
+      {
+        "file": "svgs/exchanges/kucoin.svg",
+        "hash": "7226488094904422159"
+      },
+      {
+        "file": "svgs/exchanges/kyber.svg",
+        "hash": "15029210156618807679"
+      },
+      {
+        "file": "svgs/exchanges/kybernetwork.svg",
+        "hash": "9671518426914836464"
+      },
+      {
+        "file": "svgs/exchanges/lakebtc.svg",
+        "hash": "193244916544790000"
+      },
+      {
+        "file": "svgs/exchanges/latoken.svg",
+        "hash": "1132811794199429133"
+      },
+      {
+        "file": "svgs/exchanges/lbank.svg",
+        "hash": "13307832314941285324"
+      },
+      {
+        "file": "svgs/exchanges/liqui.svg",
+        "hash": "10762227851502853717"
+      },
+      {
+        "file": "svgs/exchanges/livecoin.svg",
+        "hash": "11202026332793962707"
+      },
+      {
+        "file": "svgs/exchanges/localbitcoins.svg",
+        "hash": "760117959056414066"
+      },
+      {
+        "file": "svgs/exchanges/luno.svg",
+        "hash": "16183233721380221282"
+      },
+      {
+        "file": "svgs/exchanges/lykke.svg",
+        "hash": "7956870873352919789"
+      },
+      {
+        "file": "svgs/exchanges/mixcoins.svg",
+        "hash": "1723447895315592219"
+      },
+      {
+        "file": "svgs/exchanges/nanex.svg",
+        "hash": "7881786123712525656"
+      },
+      {
+        "file": "svgs/exchanges/okcoin.svg",
+        "hash": "15719874801479408777"
+      },
+      {
+        "file": "svgs/exchanges/okex.svg",
+        "hash": "11164336731577352546"
+      },
+      {
+        "file": "svgs/exchanges/omicrex.svg",
+        "hash": "13563331992564718291"
+      },
+      {
+        "file": "svgs/exchanges/omnitrade.svg",
+        "hash": "1665872198894978689"
+      },
+      {
+        "file": "svgs/exchanges/otcbtc.svg",
+        "hash": "11901272510648418987"
+      },
+      {
+        "file": "svgs/exchanges/ovis.svg",
+        "hash": "14832072726897513204"
+      },
+      {
+        "file": "svgs/exchanges/paymium.svg",
+        "hash": "8495559280369214640"
+      },
+      {
+        "file": "svgs/exchanges/poloniex.svg",
+        "hash": "15538710598054932843"
+      },
+      {
+        "file": "svgs/exchanges/qryptos.svg",
+        "hash": "8649354343833169810"
+      },
+      {
+        "file": "svgs/exchanges/quoine.svg",
+        "hash": "5030591631131428669"
+      },
+      {
+        "file": "svgs/exchanges/radarrelay.svg",
+        "hash": "10318041999108975597"
+      },
+      {
+        "file": "svgs/exchanges/remitano.svg",
+        "hash": "13806839966940268538"
+      },
+      {
+        "file": "svgs/exchanges/simex.svg",
+        "hash": "16053261684992181412"
+      },
+      {
+        "file": "svgs/exchanges/stakenet.svg",
+        "hash": "10461662855241611334"
+      },
+      {
+        "file": "svgs/exchanges/stocksexchange.svg",
+        "hash": "9345220413812132670"
+      },
+      {
+        "file": "svgs/exchanges/stronghold.svg",
+        "hash": "14793072115851852500"
+      },
+      {
+        "file": "svgs/exchanges/surbitcoin.svg",
+        "hash": "11593478262372640102"
+      },
+      {
+        "file": "svgs/exchanges/switcheonetwork.svg",
+        "hash": "13848834128775822447"
+      },
+      {
+        "file": "svgs/exchanges/therocktrading.svg",
+        "hash": "16781533958180792544"
+      },
+      {
+        "file": "svgs/exchanges/tidex.svg",
+        "hash": "1643379265564675019"
+      },
+      {
+        "file": "svgs/exchanges/tokenstore.svg",
+        "hash": "11205447952761881945"
+      },
+      {
+        "file": "svgs/exchanges/tuxexchange.svg",
+        "hash": "5650184408103286973"
+      },
+      {
+        "file": "svgs/exchanges/upbit.svg",
+        "hash": "12637310239521532672"
+      },
+      {
+        "file": "svgs/exchanges/vaultoro.svg",
+        "hash": "4847372697823616501"
+      },
+      {
+        "file": "svgs/exchanges/vbtc.svg",
+        "hash": "13707486905051536511"
+      },
+      {
+        "file": "svgs/exchanges/walltime.svg",
+        "hash": "18150579173413623274"
+      },
+      {
+        "file": "svgs/exchanges/wanchain.svg",
+        "hash": "14936812305023486176"
+      },
+      {
+        "file": "svgs/exchanges/wavesdex.svg",
+        "hash": "9983370106841707871"
+      },
+      {
+        "file": "svgs/exchanges/wex.svg",
+        "hash": "10475518919267568066"
+      },
+      {
+        "file": "svgs/exchanges/yobit.svg",
+        "hash": "16918760431426956743"
+      },
+      {
+        "file": "svgs/exchanges/yunbi.svg",
+        "hash": "11292226434510349922"
+      },
+      {
+        "file": "svgs/exchanges/zeniex.svg",
+        "hash": "6140098334178048945"
+      },
+      {
+        "file": "svgs/urls.txt",
+        "hash": "15944880848846826230"
+      },
+      {
+        "file": "svgs/white/ada.svg",
+        "hash": "14606876845863665829"
+      },
+      {
+        "file": "svgs/white/algo.svg",
+        "hash": "16188457199381369141"
+      },
+      {
+        "file": "svgs/white/bnb.svg",
+        "hash": "2856365843310874575"
+      },
+      {
+        "file": "svgs/white/btc.svg",
+        "hash": "3062938551824268394"
+      },
+      {
+        "file": "svgs/white/doge.svg",
+        "hash": "17123050327602397143"
+      },
+      {
+        "file": "svgs/white/eth.svg",
+        "hash": "3945177924250558836"
+      },
+      {
+        "file": "svgs/white/fil.svg",
+        "hash": "8644434817129527096"
+      },
+      {
+        "file": "svgs/white/ltc.svg",
+        "hash": "6584155429313451149"
+      },
+      {
+        "file": "svgs/white/matic.svg",
+        "hash": "301600670146416019"
+      },
+      {
+        "file": "svgs/white/sol.svg",
+        "hash": "15809043446683070347"
+      },
+      {
+        "file": "svgs/white/theta.svg",
+        "hash": "5977951594596852128"
+      },
+      {
+        "file": "svgs/white/trx.svg",
+        "hash": "10727891500093686083"
+      },
+      {
+        "file": "svgs/white/usdc.svg",
+        "hash": "18316337746035871797"
+      },
+      {
+        "file": "svgs/white/usdt.svg",
+        "hash": "8903931321156902064"
+      },
+      {
+        "file": "svgs/white/xrp.svg",
+        "hash": "7540844129254012678"
+      },
+      {
+        "file": "svgs/white/xtz.svg",
+        "hash": "13301955741935748981"
+      },
+      {
+        "file": "svgs/white/yfi.svg",
+        "hash": "6393960184879681374"
+      },
+      {
+        "file": "task.txt",
+        "hash": "4977353633818979575"
+      },
+      {
+        "file": "views.js",
+        "hash": "510156432029412960"
+      },
+      {
+        "file": "webfonts/fa-brands-400.eot",
+        "hash": "7523248067328848773"
+      },
+      {
+        "file": "webfonts/fa-brands-400.svg",
+        "hash": "548032968181893610"
+      },
+      {
+        "file": "webfonts/fa-brands-400.ttf",
+        "hash": "16659823065203044903"
+      },
+      {
+        "file": "webfonts/fa-brands-400.woff",
+        "hash": "17634619023338645354"
+      },
+      {
+        "file": "webfonts/fa-brands-400.woff2",
+        "hash": "17559448503219696080"
+      },
+      {
+        "file": "webfonts/fa-regular-400.eot",
+        "hash": "16718541221936657131"
+      },
+      {
+        "file": "webfonts/fa-regular-400.svg",
+        "hash": "149639214782733431"
+      },
+      {
+        "file": "webfonts/fa-regular-400.ttf",
+        "hash": "6077483503601027887"
+      },
+      {
+        "file": "webfonts/fa-regular-400.woff",
+        "hash": "11500083993842849872"
+      },
+      {
+        "file": "webfonts/fa-regular-400.woff2",
+        "hash": "7113351002487767792"
+      },
+      {
+        "file": "webfonts/fa-solid-900.eot",
+        "hash": "11004706381600329189"
+      },
+      {
+        "file": "webfonts/fa-solid-900.svg",
+        "hash": "4574125746859564046"
+      },
+      {
+        "file": "webfonts/fa-solid-900.ttf",
+        "hash": "15062994620227187685"
+      },
+      {
+        "file": "webfonts/fa-solid-900.woff",
+        "hash": "2813792343529768575"
+      },
+      {
+        "file": "webfonts/fa-solid-900.woff2",
+        "hash": "2248609008971334415"
+      }
+    ]
+  }
+}

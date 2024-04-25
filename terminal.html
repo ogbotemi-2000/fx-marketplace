@@ -1,0 +1,2323 @@
+<!DOCTYPE HTML><html class="chrome" lang="en"><head><title>Crypto trading Platform | By Leon Chau</title><meta charset="utf-8"><meta name="theme-color" content="#ff056"><meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="../favicon.ico"><!--using tympanus favicon for now--><link rel="stylesheet" preload="true" href="../css/build.css"><link rel="stylesheet" href="../css/tailwind.min.css"><link rel="stylesheet" href="../css/all.min.css"><script src="../js/ripples.js"></script><script src="../js/rellax.min.js"></script><script defer="" src="../js/build.js"></script><script defer="" src="../js/draggabilly.pkgd.js"></script><script class="" src="../js/js.js"></script><script class="" src="../js/utils.js"></script><script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script><script src="../js/rainbow-custom.min.js"></script><style>@font-face {
+                font-family: 'Fredoka';
+                src: url('../font.woff2') format('woff2');
+            }
+
+            .font-fredoka {
+                font-family: 'Fredoka'
+            }
+
+            @font-face {
+                font-family: 'regular-bookweb';
+                src: url('../regular-bookweb.woff') format('woff');
+            }
+
+            .font-bookweb {
+                font-family: 'regular-bookweb'
+            }
+
+            .vh-full {
+                height: 100vh;
+            }
+
+            html.chrome *:focus-within > .decorate > div, html.chrome .decorate-parent:focus-within > .decorate > div, html.chrome *:hover > .decorate > div, html.chrome .decorate-parent:hover > .decorate > div {
+                --tw-scale-x: 8;
+                --tw-scale-y: 8;
+                transform: scale3d(var(--tw-scale-x),var(--tw-scale-y),1);
+                --tw-bg-opacity: 0.15;
+            }
+
+            html.chrome * > .decorate.out > div, html.chrome .decorate-parent > .decorate.out > div {
+                --tw-scale-x: 8;
+                --tw-scale-y: 8;
+            }
+
+            *:hover > .decorate.out > div, .decorate-parent:hover > .decorate.out > div {
+                --tw-scale-x: 1;
+                --tw-scale-y: 1
+            }
+
+            .rounded-inherit {
+                border-radius: inherit;
+            }
+
+            .hover\:overflow-scroll:hover {
+                overflow-y: scroll;
+            }
+
+            .not-here:hover, .not-here:hover * {
+                cursor: not-allowed;
+                touch-action: none;
+            }
+
+            .not-here button {
+                pointer-events: none;
+                cursor: not-allowed !important;
+            }
+
+            .not-here {
+                opacity: 0.5 !important;
+            }
+
+            .custom-cursor, .custom-cursor * {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewport="0 0 28 28" style="font-size:16px"><text y="50%">🔑</text></svg>') 16 0, auto;
+            }
+
+            * {
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .notify:hover, .notify *:not(.not-here):not(.not-here *):hover, *.highlight, *.highlight-ol li/*:not(.ignore)*/
+            :hover {
+                transition: 0s;
+                border: 2px dashed rgb(167 50 20 / 60%);
+                background: rgb(167 50 20 / 6%);
+            }
+
+            /*
+      Moved here for it to be replaced by style.innerText.replace
+      */
+            .editor .dom-content li .wrap-on-line *:not(.decorate):not(.decorate > *):not(.tooltip), .editor .dom-content li:focus-within .wrap-on-line *:not(.decorate):not(.tooltip) {
+                position: relative;
+                width: auto;
+            }
+
+            .editor .dom-content li .wrap-on-line div:last-child > div:focus-within {
+                display: inline-block;
+            }
+
+            .top-unset {
+                top: unset;
+            }
+
+            .left-unset {
+                left: unset;
+            }
+
+            .bottom-unset {
+                bottom: unset;
+            }
+
+            .right-unset {
+                right: unset;
+            }</style><style class="be88bf2f-65dc-4be1-a04c-5bb025e8266b">
+ /* START of specific on-page styling */ .textarea[contenteditable]:empty:before { font-size: 14px; line-height: 20px; } html { scroll-behavior: smooth; } footer form.tooltip.slide, aside.tooltip.slide { --x: -20%; --focus-within-no-focus-transition: opacity 0.5s ease, transform 0.3s 0.05s ease-out, visibility 0s 0.12s !important; } footer form.tooltip.slide.show { --x: 0%; } /* END of specific on-page styling */ .\[\&\>\*\]\:pointer-events-none > * { pointer-events: none; } button > i:not(.tooltip) { pointer-events: none; } .bg-noisy { background: url(../noise.svg); } .custom-cursro { cursor: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" height="28" viewport="0 0 28 28" style="font-size:16px"><text y="50%">◁▪▷</text></svg>') 16 0, auto; } .transition-hr { transition: transform .2s cubic-bezier(0.215, 0.61, 0.355, 1); } [contenteditable=true]:empty:before { font: normal 12px/16px Consolas, sans-serif; color: #a4acb4; } /* START | styling for dying light animation */ .loader .lines span:nth-child(3), .loader .lines span:nth-child(4), .loader .lines span:nth-child(3)::before, .loader .lines span:nth-child(4)::before { bottom: 0px; } .loader .lines span:nth-child(5), .loader .lines span:nth-child(3), .loader .lines span:nth-child(5)::after, .loader .lines span:nth-child(3)::after { left: 0px; } .loader .lines span:nth-child(5), .lines span:nth-child(2), .loader .lines span:nth-child(5)::before, .lines span:nth-child(2)::before { top: 0px; } .lines span:nth-child(2), .loader .lines span:nth-child(4), .lines span:nth-child(2)::after, .loader .lines span:nth-child(4)::after { right: 0px; } .loader .lines span { height: 15px; position: absolute; width: 15px; z-index: 1; } .loader .lines span::before { left: 0px; height: 6px; width: 100%; } .loader .lines span::before, .loader .lines span::after { content: ""; position: absolute; } .loader .lines span::after { height: 100%; top: 0px; width: 6px; } .loader .lines span::before, .loader .lines span::after { background: #0000002f; content: ""; position: absolute; } .loader .lines { animation: loader 0.9s ease 0s infinite normal none running; height: 115%; position: absolute; width: 115%; left: -7.5%; top: -7.5%; } .loader .square { top: 0px; right: 0px; bottom: 0px; left: 0px; position: absolute; } /*ending for avatar loader in article_1 */ .\[\&\>\*\]\:relative > * { position: relative; } /*end of styles for blurred gradient ball */ .font-fantasy { font-family: fantasy; } .\[\&\>\*\]\:animate-y-full > * { animation: translate-y-full 0.5s var(--delay) cubic-bezier(0.37, 0, 0.63, 1) forwards; display: inline-block; } /*END: of styles for intro text */ .\[\&\>\*\]\:p-1 > * { padding: var(--base-whole-number-unit); } button:disabled { cursor: not-allowed; color: initial; } .skeleton { color: transparent; animation: skeleton-loading 0.8s ease-in-out infinite alternate; } @keyframes skeleton-loading { 0% { background-color: hsl(200, 20%, 80%); } 100% { background-color: hsl(200, 20%, 95%); } } .ripple { overflow: hidden; }.dots-bars-5 { width: 40px; height: 30px; --c: linear-gradient(currentColor 0 0); background: var(--c) 0 100%/8px 30px, var(--c) 50% 100%/8px 20px, var(--c) 100% 100%/8px 10px; background-repeat: no-repeat; position: relative; clip-path: inset(-100% 0); }.dots-bars-5::before { content: ""; position: absolute; width: 8px; height: 8px; border-radius: 50%; background: currentColor; left: -16px; top: 0; animation: db5-1 2s linear infinite, db5-2 0.5s cubic-bezier(0,200,.8,200) infinite; }@keyframes db5-1 {0% { left: -16px; transform: translateY(-8px); } 100% { left: calc(100% + 8px); transform: translateY(22px); } 100% { top: -0.1px; }} .dots-6 { width: 30px; aspect-ratio: 1.154; --_g: no-repeat radial-gradient(farthest-side,currentColor 90%,#0000); background: var(--_g) 50% 0, var(--_g) 0 100%, var(--_g) 100% 100%; background-size: 35% calc(35%*1.154); animation: d6 0.58s infinite; } @keyframes d6 { 50%, 100% { background-position: 100% 100%,50% 0,0 100%; } } .\[\&\>\*\]\:whitespace-pre > * { white-space: pre; } article.inset-0 > .cr-centered-card-container { --centered-card-width-percentage: 10; --centered-card-max-width: 40rem; } .cr-centered-card-container { display: block; height: inherit; margin: 0 auto; max-width: var(--centered-card-max-width); /*min-width: 550px; arbitrary, can be ignored to prevent overflow on small screens */ position: relative; width: calc(100% * var(--centered-card-width-percentage)); flex-basis: calc(var(--centered-card-max-width)/ var(--centered-card-width-percentage)) flex: 1 1 0; } /*styles to make tooltip more functional */ @media (min-width: 500px) { .tooltip.base\:show { visibility: visible; opacity: 1; z-index: 3; --x: 0%; } .base\:relative { position: relative } } @media (min-width: 640px) { main label.switch:first-of-type .tooltip { /*tooltip.to-right styles */ left: calc(100% + 10px) !important; top: 50%; transform: translate(0px, -50%) !important; bottom: unset; } main label.switch:first-of-type .tooltip:after { content: unset; } section.prots article > main > section { background-color: transparent; } .sm\:left-1\/6 { left: calc(100%/6); } .sm\:right-1\/6 { right: calc(100%/6) } .tooltip.sm\:show { visibility: visible; opacity: 1; z-index: 3; --x: 0%; } .tooltip.sm\:show.no-hover, .tooltip.sm\:show.no-focus { pointer-events: auto; } } @media (min-width: 768px) { .md\:left-unset { left: unset; } .tooltip.md\:show { visibility: visible; opacity: 1; z-index: 3; --x: 0% !important; /*needed in some cases */ } .tooltip.md\:show.no-hover, .tooltip.md\:show.no-focus { pointer-events: auto; } } @media (min-width: 1024px) { section.prots article > main > section iframe { height: 85%; } .tooltip.lg\:show { visibility: visible; opacity: 1; z-index: 3; --x: 0%; } .tooltip.lg\:show.no-hover, .tooltip.lg\:show.no-focus, .tooltip.lg\:show.no-hover .tooltip.show,.tooltip.lg\:show.no-focus .tooltip.show { pointer-events: auto; } } @media (min-width: 1280px) { .tooltip.xl\:show { visibility: visible; opacity: 1; z-index: 3; --x: 0%; } .tooltip.xl\:show.no-hover, .tooltip.xl\:show.no-focus { pointer-events: auto; } } .\[\&\>\*\]\:inline-block > * { display: inline-block; } </style><style class="dc1f98df-28d1-4c1f-983a-3b09a8cb137d">
+.\[\&\>\*\]\:align-middle>* { vertical-align: middle}.\[\&\>\*\]\:bg-current\:border-8\:border-current > * { border-color: currentColor; border-width: 8px; background: currentColor; } .\[\&\>\*\]\:block > * { display: block; width: 100%; } .z-3 { z-index: 3; } .switch { --switch_width: 2em; --switch_height: 1em; --switch-size: 14px; --thumb_color: #e8e8e8; --track_color: #e8e8e8; --track_active_color: #888; --outline_color: #000; font-size: var(--switch-size); line-height: var(--switch-size); position: relative; display: inline-block; width: var(--switch_width); height: var(--switch_height); } .switch input { opacity: 0; width: 0; height: 0; } .switch .slider { box-sizing: border-box; border: 2px solid var(--outline_color); position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--track_color); transition: .15s; border-radius: var(--switch_height); } .switch .slider:before { box-sizing: border-box; position: absolute; content: ""; height: var(--switch_height); width: var(--switch_height); border: 2px solid var(--outline_color); border-radius: 100%; left: -2px; bottom: -2px; background-color: var(--thumb_color); transform: translateY(-0.2em); box-shadow: 0 0.2em 0 var(--outline_color); transition: .15s; } /*start of hover, focus section of switch */ .switch input:checked ~ .slider { background-color: var(--track_active_color); } .switch input:focus-visible ~ .slider { box-shadow: 0 0 0 4px var(--track_active_color); } /* Raise thumb when hovered */ .switch input:hover ~ .slider:before { transform: translateY(-0.3em); box-shadow: 0 0.3em 0 var(--outline_color); } .switch input:checked ~ .slider:before { transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.2em); } /* Raise thumb when hovered & checked */ .switch input:hover:checked ~ .slider:before { transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.3em); box-shadow: 0 0.3em 0 var(--outline_color); } /*end of styles for standalone switch component. From uiverse.io by @Voxybuns */ .z-1 { z-index: 1; } .stroked { -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px black; } .precise-typo-1 { /*min: 70px, max: 190px */ font-size: calc(110px + (240 - 100) * ((100vw - 400px) / (1200 - 400))) } .fluid-fontsize { font-size:clamp(1rem, 0.095rem + 3.45vw, 1.75rem); } .font-harrington { font-family: Harrington; } .font-poor-richard { font-family: 'Poor Richard' } .perspective { perspective: 4rem; perspective-origin: bottom right; } html.preloaded .locked-in { opacity: .999; transform: rotateX(0deg); } .locked-in { opacity: 0.01; --scaffold-delay: 630ms; transform-style: preserve-3d; will-change: transform; transform: rotateX(90deg) translate3d(-100px, 100%, 0px); text-rendering: optimizelegibility; -webkit-font-smoothing: antialiased; transform-origin: center bottom; transition: transform 1s cubic-bezier(.215,.61,.355,1), opacity .35s linear; transition-delay: calc(var(--index)*.5s + .2s + var(--scaffold-delay)); transform-style: preserve-3d; } /* end of styles for preloaded swiping in hero text */ .section:before { content: ""; border: 2px solid lightgrey; width: clamp(0px,(var(--w) - 100%)*999,100%); /* this will do the magic */ } .section__item { flex: 1; min-width: 0; align-self: center; } .section__item:first-child { order: -1; } .section { max-width: 700px; margin: 2rem auto; padding: 1rem; gap: 1rem; overflow: hidden; resize: horizontal; border: 1px solid; } .section p { color: #222; } /*ending of section demo from code pen */ .precise-typo { /*min: 14px, max: 24px */ font-size: max(1.6em, calc(16px + (22 - 16) * ((100vw - 500px) / (790 - 500)))); } .files-list .hide { position: absolute; display: none; } .files-list figure { content-visibility: visible; contain-intrinsic-size: 60px; } .files-list .hide { position: absolute; display: none; } .\[\&\>\*\]\:whitespace-pre > * { white-space: pre; } .files-list figure { content-visibility: visible; contain-intrinsic-size: 60px; } /*compact reusable form styles */ .compact input:focus ~ span { animation: inputHighlighter 0.3s ease; } .compact label { transition: 0.2s ease all; -moz-transition: 0.2s ease all; -webkit-transition: 0.2s ease all; } .compact > div:focus-within { background-color: rgb(82 100 175/10%); } .compact input:focus ~ label, .compact input:valid ~ label { top: -20px; font-size: 14px; color: #5264AE; } .compact > div > div:before, .compact > div > div:after { content: ''; height: 2px; width: 0; bottom: 1px; position: absolute; background: #5264AE; transition: 0.2s ease all; -moz-transition: 0.2s ease all; -webkit-transition: 0.2s ease all; } .compact > div > div:before { left: 50%; } .compact > div > div:after { right: 50%; } .compact input:focus ~ div:before, .compact input:focus ~ div:after { width: 50%; } /* micro scroll animation */ @import url(https://fonts.googleapis.com/css?family=Cabin); .mouse p { font-family: "Cabin", sans-serif; letter-spacing: 12px; -webkit-animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite; animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite; } .mouse { background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%); --limit: 88; --thumb-limit: 10; --reduce: 0px; --size: calc(1px * var(--limit) - var(--reduce)); width: calc(var(--size) - 36px); height: var(--size); border-radius: 100px; background-size: 100% 200%; -webkit-animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite; animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite; } .mouse:before, .mouse:after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; } .mouse:before { width: calc(var(--size) - 42px); height: calc(var(--size) - 6px); background-color: #222a30; border-radius: 100px; } .mouse:after { background-color: #ffffff; --thumb: calc(var(--size) * var(--thumb-limit)/ var(--limit)); width: var(--thumb); height: var(--thumb); border-radius: 100%; -webkit-animation: trackBallSlide 5s linear infinite; animation: trackBallSlide 5s linear infinite; } @-webkit-keyframes colorSlide { 0% { background-position: 0% 100%; } 20% { background-position: 0% 0%; } 21% { background-color: #4e5559; } 29.99% { background-color: #ffffff; background-position: 0% 0%; } 30% { background-color: #4e5559; background-position: 0% 100%; } 50% { background-position: 0% 0%; } 51% { background-color: #4e5559; } 59% { background-color: #ffffff; background-position: 0% 0%; } 60% { background-color: #4e5559; background-position: 0% 100%; } 80% { background-position: 0% 0%; } 81% { background-color: #4e5559; } 90%, 100% { background-color: #ffffff; } }@keyframes colorSlide { 0% { background-position: 0% 100%; } 20% { background-position: 0% 0%; } 21% { background-color: #4e5559; } 29.99% { background-color: #ffffff; background-position: 0% 0%; } 30% { background-color: #4e5559; background-position: 0% 100%; } 50% { background-position: 0% 0%; } 51% { background-color: #4e5559; } 59% { background-color: #ffffff; background-position: 0% 0%; } 60% { background-color: #4e5559; background-position: 0% 100%; } 80% { background-position: 0% 0%; } 81% { background-color: #4e5559; } 90%, 100% { background-color: #ffffff; } }@-webkit-keyframes trackBallSlide { 0% { opacity: 1; transform: scale(1) translateY(-20px); } 6% { opacity: 1; transform: scale(0.9) translateY(5px); } 14% { opacity: 0; transform: scale(0.4) translateY(40px); } 15%, 19% { opacity: 0; transform: scale(0.4) translateY(-20px); } 28%, 29.99% { opacity: 1; transform: scale(1) translateY(-20px); } 30% { opacity: 1; transform: scale(1) translateY(-20px); } 36% { opacity: 1; transform: scale(0.9) translateY(5px); } 44% { opacity: 0; transform: scale(0.4) translateY(40px); } 45%, 49% { opacity: 0; transform: scale(0.4) translateY(-20px); } 58%, 59.99% { opacity: 1; transform: scale(1) translateY(-20px); } 60% { opacity: 1; transform: scale(1) translateY(-20px); } 66% { opacity: 1; transform: scale(0.9) translateY(5px); } 74% { opacity: 0; transform: scale(0.4) translateY(40px); } 75%, 79% { opacity: 0; transform: scale(0.4) translateY(-20px); } 88%, 100% { opacity: 1; transform: scale(1) translateY(-20px); } }@keyframes trackBallSlide { 0% { opacity: 1; transform: scale(1) translateY(-20px); } 6% { opacity: 1; transform: scale(0.9) translateY(5px); } 14% { opacity: 0; transform: scale(0.4) translateY(40px); } 15%, 19% { opacity: 0; transform: scale(0.4) translateY(-20px); } 28%, 29.99% { opacity: 1; transform: scale(1) translateY(-20px); } 30% { opacity: 1; transform: scale(1) translateY(-20px); } 36% { opacity: 1; transform: scale(0.9) translateY(5px); } 44% { opacity: 0; transform: scale(0.4) translateY(40px); } 45%, 49% { opacity: 0; transform: scale(0.4) translateY(-20px); } 58%, 59.99% { opacity: 1; transform: scale(1) translateY(-20px); } 60% { opacity: 1; transform: scale(1) translateY(-20px); } 66% { opacity: 1; transform: scale(0.9) translateY(5px); } 74% { opacity: 0; transform: scale(0.4) translateY(40px); } 75%, 79% { opacity: 0; transform: scale(0.4) translateY(-20px); } 88%, 100% { opacity: 1; transform: scale(1) translateY(-20px); } }@-webkit-keyframes nudgeMouse { 0% { transform: translateY(0); } 20% { transform: translateY(8px); } 30% { transform: translateY(0); } 50% { transform: translateY(8px); } 60% { transform: translateY(0); } 80% { transform: translateY(8px); } 90% { transform: translateY(0); } }@keyframes nudgeMouse { 0% { transform: translateY(0); } 20% { transform: translateY(8px); } 30% { transform: translateY(0); } 50% { transform: translateY(8px); } 60% { transform: translateY(0); } 80% { transform: translateY(8px); } 90% { transform: translateY(0); } }@-webkit-keyframes nudgeText { 0% { transform: translateY(0); } 20% { transform: translateY(2px); } 30% { transform: translateY(0); } 50% { transform: translateY(2px); } 60% { transform: translateY(0); } 80% { transform: translateY(2px); } 90% { transform: translateY(0); } }@keyframes nudgeText { 0% { transform: translateY(0); } 20% { transform: translateY(2px); } 30% { transform: translateY(0); } 50% { transform: translateY(2px); } 60% { transform: translateY(0); } 80% { transform: translateY(2px); } 90% { transform: translateY(0); } }@-webkit-keyframes colorText { 21% { color: #4e5559; } 30% { color: #ffffff; } 51% { color: #4e5559; } 60% { color: #ffffff; } 81% { color: #4e5559; } 90% { color: #ffffff; } }@keyframes colorText { 21% { color: #4e5559; } 30% { color: #ffffff; } 51% { color: #4e5559; } 60% { color: #ffffff; } 81% { color: #4e5559; } 90% { color: #ffffff; } }</style><style class="ce77170-0f0a-456b-8792-cbe8bb2cfff8">@keyframes inputHighlighter {
+                0% {
+                    background: #5264AE;
+                }
+
+                100% {
+                    width: 0;
+                    background: transparent;
+                }
+            }
+
+            @keyframes translate-y-full {
+                0% {
+                    transform: translateY(0%);
+                }
+
+                100% {
+                    transform: translateY(200%);
+                }
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: translateX(0);
+                }
+
+                to {
+                    transform: translateX(-50%);
+                }
+            }
+
+            @keyframes loader {
+                0% {
+                    transform: /*translateX(-50%) translateY(-50%) */ scale(1) rotate(-90deg);
+                }
+
+                25% {
+                    transform: scale(1.1) rotate(-90deg);
+                }
+
+                50% {
+                    transform: scale(1.1) rotate(-180deg);
+                }
+
+                75% {
+                    transform: scale(1.1) rotate(-180deg);
+                }
+
+                100% {
+                    transform: /*translateX(-50%) translateY(-50%) */ scale(1) rotate(-180deg);
+                }
+            }</style><style class="ef94-4e32-4d5b-ac04-f297fc564b23">
+.hljs-comment, .hljs-quote { color: #A2A09F; font-style: italic; } .hljs-doctag, .hljs-keyword, .hljs-formula { color: #B08CFF; } .hljs-section, .hljs-name, .hljs-selector-tag, .hljs-deletion, .hljs-subst { color: #FF7C72; } .hljs-literal { color: #1CE2B2; } .hljs-string, .hljs-regexp, .hljs-addition, .hljs-attribute, .hljs-attr, .hljs-meta-string { color: #A6FF8F; } .hljs-built_in, .hljs-class .hljs-title { color: #FBF38C; } .hljs-variable, .hljs-template-variable, .hljs-type, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-number { color: #FF7C72; } .hljs-symbol, .hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-title { color: #61C3FF; } .hljs-emphasis { font-style: italic; } .hljs-strong { font-weight: bold; } .hljs-link { text-decoration: underline; } @keyframes fade-in { 0% { opacity:0}100% { opacity:1}}@keyframes fade { 10% { transform:scale(1, 1)}35% { transform:scale(1, 1.7)}40% { transform:scale(1, 1.7)}50% { opacity:1}60% { transform:scale(1, 1)}100% { transform:scale(1, 1); opacity:0}}[data-language] code,[class^="lang"] code,pre [data-language],pre [class^="lang"] { opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; animation:fade-in 50ms ease-in-out 2s forwards}[data-language] code.rainbow,[class^="lang"] code.rainbow,pre [data-language].rainbow,pre [class^="lang"].rainbow { animation:none; transition:opacity 50ms ease-in-out}[data-language] code.loading,[class^="lang"] code.loading,pre [data-language].loading,pre [class^="lang"].loading { animation:none}[data-language] code.rainbow-show,[class^="lang"] code.rainbow-show,pre [data-language].rainbow-show,pre [class^="lang"].rainbow-show { opacity:1}pre { position:relative}pre.loading .preloader div { animation-play-state:running}pre.loading .preloader div:nth-of-type(1) { background:#0081f5; animation:fade 1.5s 300ms linear infinite}pre.loading .preloader div:nth-of-type(2) { background:#5000f5; animation:fade 1.5s 438ms linear infinite}pre.loading .preloader div:nth-of-type(3) { background:#9000f5; animation:fade 1.5s 577ms linear infinite}pre.loading .preloader div:nth-of-type(4) { background:#f50419; animation:fade 1.5s 715ms linear infinite}pre.loading .preloader div:nth-of-type(5) { background:#f57900; animation:fade 1.5s 853ms linear infinite}pre.loading .preloader div:nth-of-type(6) { background:#f5e600; animation:fade 1.5s 992ms linear infinite}pre.loading .preloader div:nth-of-type(7) { background:#00f50c; animation:fade 1.5s 1130ms linear infinite}pre .preloader { position:absolute; top:12px; left:10px}pre .preloader div { width:12px; height:12px; border-radius:4px; display:inline-block; margin-right:4px; opacity:0; animation-play-state:paused; animation-fill-mode:forwards}pre { border:1px solid #ccc; word-wrap:break-word; padding:6px 10px; line-height:19px; margin-bottom:20px}pre code { border:0; padding:0; margin:0; border-radius:0}code { margin:0px 2px; padding:0px 5px; font-size:12px}pre,code { font-family:Consolas, 'Liberation Mono', Courier, monospace; color:#333; border-radius:3px}pre,pre code { font-size:13px}pre .comment { color:#998}pre .support { color:#0086B3}pre .tag,pre .tag-name { color:navy}pre .keyword,pre .css-property,pre .vendor-fix,pre .sass,pre .class,pre .id,pre .css-value,pre .entity.function,pre .storage.function { font-weight:bold}pre .css-property,pre .css-value,pre .vendor-fix,pre .support.namespace { color:#333}pre .constant.numeric,pre .keyword.unit,pre .hex-color { font-weight:normal; color:#099}pre .entity.class { color:#458}pre .entity.id,pre .entity.function { color:#900}pre .attribute,pre .variable { color:teal}pre .string,pre .support.value { font-weight:normal; color:#d14}pre .regexp { color:#009926}</style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><style id="_goober"> @keyframes go2264125279{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go3020080000{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go463499852{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go1310225428{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go651618207{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go901347462{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go4109123758{z-index:9999;}.go4109123758 > *{pointer-events:auto;}</style><style type="text/css" id="react-draggable-style-el">.react-draggable-transparent-selection *::-moz-selection {all: inherit;}
+.react-draggable-transparent-selection *::selection {all: inherit;}
+</style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style></head><body class="h-auto"><div class="COMPONENT rounded-md w-52 h-auto builder bg-white text-sm tooltip fixed p-1.5 shadow" style="--delay: 2.4s; left: 20vw; top: 250px;"><p class="inline-block bg-gray-50 text-gray-800 shadow p-1 text-sm">Fade-out delay;</p><div class="p-1 flex slider-parent relative w-full mb-1 bg-gray-50 text-black text-sm current"><span class="text-xs inline-block relative p-0.5 shadow-inner rounded">2.4s</span><input min="0" step="0.1" value="1.3" oninput="this.parentNode.parentNode.style.setProperty('--delay', this.value + 's'), this.previousElementSibling.textContent=this.value+'s'" max="100" class="bg-gray-100 delay focus:border-gray-600 border-2 relative w-1/2 text-xs" type="range"><input type="number" min="1" oninput="this.previousElementSibling.max=Math.max(this.value, 1)" value="100.3" class="focus:border-gray-600 border-2 text-center w-1/3 bg-gray-100 shadow relative text-xs"></div><div class="flex mb-1 shadow select-this"><button class="relative p-0.5 rounded-lg bg-blue-50 scale-out"><div style="--delay: 1.2s; text-align: unset;" class="p-1 divide-x-2 bg-gray-50 divide-current duration-500 w-auto tooltip to-left rounded-md shadow text-gray-700 absolute flex items-center"><span class="cssText hover:bg-white rounded-inherit p-1 mr-1 inline-block"></span><span style="border-top-right-radius: inherit; border-bottom-right-radius: inherit;" class="p-1 hover:bg-white text-pink-600 h-auto inline-block className">no-focus, tooltip, slide, no-hover, absolute, whitespace-pre-wrap, inset-0.5, overflow-scroll, text-sm, p-1, inline-block, bg-gray-100, shadow, show</span></div><div class="decorate rounded-inherit top-0 left-0 absolute overflow-hidden h-full w-full"><div style="--tw-bg-opacity: 1" class="duration-700 origin-bottom-right -right-2 -bottom-0.5 p-3 shadow bg-gray-50 rounded-full transform absolute"></div><div style="--tw-bg-opacity: 1" class="duration-700 origin-top-left -left-2 -top-0.5 p-3 shadow bg-gray-50 rounded-full transform  absolute"></div></div><p class="truncate w-full relative">tagName: <span class="inline-block p-1 text-blue-600 bg-blue-100 rounded">div</span></p></button><button class="relative p-1 hover:bg-gray-100"><div class="w-full p-1 font-sans shadow rounded-md tooltip to-top absolute bg-white text-gray-700"><div>disabled until any element except<span class="p-1 text-gray-100 inline-block bg-gray-700">input, p and button</span>on the page is selected</div></div><i class="fa fa-h-square transform rotate-90"></i><p class="w-auto text-xs">append here</p></button></div><div class="flex items-center font-sans"><div class="select-none drag-handle relative p-1 rounded-md bg-pink-100 scale-out" style="touch-action: none;"><div class="flex tooltip justify-between to-left text-pink-300 absolute bg-pink-50 text-current rounded-inherit p-0.5 border-2 border-pink-50"><div class="relative"><p class="p-px h-5 w-5 font-black relative flex items-center justify-center border-2 border-pink-300 rounded-full">!</p></div><p class="text-pink-700 pl-0.5 text-xs w-20">click to reset<span class="inline-block p-1 shadow bg-pink-200">[x, y]</span>before dragging and vice-versa</p></div><span class="status">drag here</span><i class="fa fa-anchor"></i></div><hr class="py-2 sep ver border-0 bg-pink-400 p-px rounded shadow"><div tabindex="0" style="--delay: 1.5s;" class="tooltip-parent relative p-0.5 hover:bg-pink-100 rounded"><span>[x, y]</span><button onclick="let t = this.parentNode.parentNode.parentNode, c=&quot;to-top&quot;;
+						  t.classList.replace(&quot;to-bottom&quot;,c)||t.classList.replace(&quot;to-left&quot;,c)||t.classList.replace(&quot;to-right&quot;,c)||t.classList.add(c)" tabindex="0" style="--arrow-x:-3px;" class="tooltip to-top absolute text-center rounded left-3 bg-pink-50 w-full text-current shadow"><i class="fa fa-arrow-up"></i></button><button onclick="let t = this.parentNode.parentNode.parentNode, c=&quot;to-left&quot;;
+						  t.classList.replace(&quot;to-bottom&quot;,c)||t.classList.replace(&quot;to-right&quot;,c)||t.classList.replace(&quot;to-top&quot;,c)||t.classList.add(c)" tabindex="0" class="shadow tooltip to-left absolute text-center rounded top-3 right-full -left-10 bg-pink-50 w-full text-current"><i class="fa fa-arrow-left"></i></button><button onclick="let t = this.parentNode.parentNode.parentNode, c=&quot;to-right&quot;;
+						  t.classList.replace(&quot;to-bottom&quot;,c)||t.classList.replace(&quot;to-top&quot;,c)||t.classList.replace(&quot;to-left&quot;,c)||t.classList.add(c)" tabindex="0" class="tooltip to-right absolute text-center rounded bg-pink-50 w-full text-current shadow"><i class="fa fa-arrow-right"></i></button><button onclick="let t = this.parentNode.parentNode.parentNode, c=&quot;to-bottom&quot;;
+						  t.classList.replace(&quot;to-right&quot;,c)||t.classList.replace(&quot;to-top&quot;,c)||t.classList.replace(&quot;to-left&quot;,c)||t.classList.add(c)" tabindex="0" style="--arrow-x: -3px;" class="left-3 tooltip to-bottom absolute text-center rounded bg-pink-50 w-full text-current shadow"><i class="fa fa-arrow-down"></i></button></div></div><hr class="sep hor bulge-center border-0"><div class="bg-gray-100 rounded flex flex-col items-center"><div class="relative h-auto w-full flex scale-out"><ol class="relative bg-gray-50 w-full p-1 rounded"><li class="tooltip-parent p-px rounded relative"><button class="rounded text-current px-2 w-full flex" style="text-align:unset;"><i class="fa fa-chevron-left tooltip absolute text-current to-left hover:bg-yellow-100 p-2.5 rounded" onclick="build.reset_class('to-left', this.parentNode.nextElementSibling)"></i><i class="fa fa-chevron-right tooltip absolute text-current to-right hover:bg-yellow-100 p-2.5 rounded" onclick="build.reset_class('to-right', this.parentNode.nextElementSibling)"></i><div class="shadow py-1 rounded w-full"><i class="fa fa-tree rounded relative p-1 shadow rounded"></i>dom tree</div><label role="button" class="focus-within:border-yellow-500 border-transparent border-2 toggle-wrapper ml-3 bg-gray-100 rounded shadow relative"><input type="checkbox" title="activate"><div class="tooltip to-top absolute rounded bg-gray-50 shadow text-current p-2 text-center" data-details="[inactive]"><br><hr class="sep hor bulge-center border-0">toggle editor</div><span class="toggle"></span></label></button><div style="--delay: 0.5s; bottom: 0%; top:unset; transform:none;" class="tooltip absolute to-right"><div class="-left-5 absolute bottom-full"><aside class="shadow bg-gray-700 rounded p-1"><button class="tooltip absolute h-full top-0 left-0 rounded bg-white shadow p-1 whitespace-pre"><i class="w-6 fa-power-off fa"></i>see through</button><i class="fa-power-off fa text-white w-6 text-center"></i></aside></div><!--expand collapse parent--><div class="editor relative flex h-auto shadow w-auto items-start tooltip-parent"><div style="--tw-bg-opacity: 0.5; --offset: 44px; left: 485px; top: 0px;" class="md:h-36 unaffected h-44 tags-parent z-10 right-2 bg-gray-100 blurred md:text-center w-auto absolute shadow border-gray-100 border-2 rounded"><div class="unaffected cursor-pointer border-2 border-gray-500 border-dashed bg-gray-100 text-gray-700 rounded-md drag-handle absolute bottom-full mb-2" style="touch-action: none;"><div class="unaffected flex absolute rounded-md duration-150 bg-gray-100 top-0 bottom-0 flex-col items-center justify-around"><i class="p-0.5 fa-sm fa fa-chevron-up"></i><i class="p-0.5 fa-sm fa fa-chevron-down"></i></div><div class="flex relative right-0 p-1 left-0 items-center justify-around"><i class="p-0.5 fa-sm fa fa-chevron-left"></i><i class="p-0.5 fa fa-sm fa-chevron-right"></i></div><p class="unaffected p-1 text-xs bg-gray-100 absolute bottom-0 whitespace-pre left-7 bg-gray-100 shadow">drag here</p></div><datalist style="--tw-bg-opacity: 0.99;" id="tags" class="decorate-parent h-full overflow-hidden space-y-1 block bg-gray-50 text-gray-700 p-1"><div class="decorate inset-0 absolute rounded overflow-hidden"><div class="absolute p-6 -bottom-4 -right-4 rounded-full bg-gray-50 shadow duration-300" style="--tw-bg-opacity: 0.3;"></div><div class="absolute p-6 -left-4 -top-4 rounded-full bg-gray-100 shadow duration-150" style="--tw-bg-opacity: 0.1;"></div><div class="shadow absolute p-2 bottom-0 right-0 rounded-full bg-gray-50 bg-blend-difference duration-200" style="--tw-bg-opacity: 0.1;"></div></div><div class="optgroup"><option data-details="[description]" val="#text" class="hide"></option><option data-details="[description]" val="a" class="hide"></option><option data-details="[description]" val="area" class="hide"></option><option data-details="[description]" val="audio" class="hide"></option><option data-details="[description]" val="base" class="hide"></option><option data-details="[description]" val="body" class="hide"></option><option data-details="[description]" val="br" class="hide"></option><option data-details="[description]" val="button" class=""></option><option data-details="[description]" val="canvas" class="hide"></option><option data-details="[description]" val="data" class="hide"></option><option data-details="[description]" val="datalist" class="hide"></option><option data-details="[description]" val="details" class="hide"></option><option data-details="[description]" val="dialog" class="hide"></option><option data-details="[description]" val="dir" class="hide"></option><option data-details="[description]" val="div" class="hide"></option><option data-details="[description]" val="dlist" class="hide"></option><option data-details="[description]" val="embed" class="hide"></option><option data-details="[description]" val="fieldset" class="hide"></option><option data-details="[description]" val="font" class="hide"></option><option data-details="[description]" val="footer" class="hide"></option><option data-details="[description]" val="form" class="hide"></option><option data-details="[description]" val="frame" class="hide"></option><option data-details="[description]" val="frameset" class="hide"></option><option data-details="[description]" val="h1" class="hide"></option><option data-details="[description]" val="h2" class="hide"></option><option data-details="[description]" val="h3" class="hide"></option><option data-details="[description]" val="h4" class="hide"></option><option data-details="[description]" val="h5" class="hide"></option><option data-details="[description]" val="h6" class="hide"></option><option data-details="[description]" val="head" class="hide"></option><option data-details="[description]" val="header" class="hide"></option><option data-details="[description]" val="hr" class="hide"></option><option data-details="[description]" val="html" class="hide"></option><option data-details="[description]" val="i" class="hide"></option><option data-details="[description]" val="iframe" class="hide"></option><option data-details="[description]" val="image" class="hide"></option><option data-details="[description]" val="input" class="hide"></option><option data-details="[description]" val="label" class="hide"></option><option data-details="[description]" val="legend" class="hide"></option><option data-details="[description]" val="li" class="hide"></option><option data-details="[description]" val="link" class="hide"></option><option data-details="[description]" val="main" class="hide"></option><option data-details="[description]" val="map" class="hide"></option><option data-details="[description]" val="marquee" class="hide"></option><option data-details="[description]" val="media" class="hide"></option><option data-details="[description]" val="menu" class="hide"></option><option data-details="[description]" val="meta" class="hide"></option><option data-details="[description]" val="meter" class="hide"></option><option data-details="[description]" val="mod" class="hide"></option><option data-details="[description]" val="object" class="hide"></option><option data-details="[description]" val="ol" class="hide"></option><option data-details="[description]" val="optgroup" class="hide"></option><option data-details="[description]" val="option" class="hide"></option><option data-details="[description]" val="output" class="hide"></option><option data-details="[description]" val="p" class="hide"></option><option data-details="[description]" val="param" class="hide"></option><option data-details="[description]" val="picture" class="hide"></option><option data-details="[description]" val="pre" class="hide"></option><option data-details="[description]" val="progress" class="hide"></option><option data-details="[description]" val="quote" class="hide"></option><option data-details="[description]" val="script" class="hide"></option><option data-details="[description]" val="section" class="hide"></option><option data-details="[description]" val="select" class="hide"></option><option data-details="[description]" val="slot" class="hide"></option><option data-details="[description]" val="source" class="hide"></option><option data-details="[description]" val="span" class="hide"></option><option data-details="[description]" val="style" class="hide"></option><option data-details="[description]" val="table" class="hide"></option><option data-details="[description]" val="tablecaption" class="hide"></option><option data-details="[description]" val="tablecell" class="hide"></option><option data-details="[description]" val="tablecol" class="hide"></option><option data-details="[description]" val="tablerow" class="hide"></option><option data-details="[description]" val="tablesection" class="hide"></option><option data-details="[description]" val="template" class="hide"></option><option data-details="[description]" val="textarea" class="hide"></option><option data-details="[description]" val="time" class="hide"></option><option data-details="[description]" val="title" class="hide"></option><option data-details="[description]" val="track" class="hide"></option><option data-details="[description]" val="ul" class="hide"></option><option data-details="[description]" val="unknown" class="hide"></option><option data-details="[description]" val="video" class="hide"></option><!--[placeholder option to prevent parent collapse--><option data-details="[description]" val="figure" class="hide"></option><option data-details="[description]" val="img" class="hide"></option><option data-details="[description]" val="figcaption" class="hide"></option><option data-details="[description]" val="sallah" class="hide"></option><option data-details="[description]" val="article" class="hide"></option><option data-details="[description]" val="aside" class="hide"></option><option data-details="[description]" val="nav" class="hide"></option><option data-details="[description]" val="code" class="hide"></option><option data-details="[description]" val="strong" class="hide"></option><option data-details="[description]" val="cite" class="hide"></option><option data-details="[description]" val="hgroup" class="hide"></option><option data-details="[description]" val="summary" class="hide"></option><option data-details="[description]" val="address" class="hide"></option><option data-details="[description]" val="thead" class="hide"></option><div style="--tw-bg-opacity: 0.3;" class="md:h-32 h-40 font-fredoka duration-300 opacity-0 p-1 text-center align-middle shadow-inner flex-col rounded relative bg-gray-200 pb-1 flex text-gray-700"><i style="--tw-bg-opacity:0.2;" class="text-gray-500 bg-gray-100 my-1 fa flex fa-search p-2">?!</i><div class="h-full flex justify-center space-x-1 items-center">no match<p class="text-gray-400 p-2 h-4 w-4 font-black relative flex items-center justify-center border-4 border-gray-400 rounded-full">!</p><p class="font-sans">hit the backspace a few times</p></div><div role="button" class="decorate-parent relative text-xs p-1.5 text-yellow-500 hover:bg-gray-100 rounded-md bg-gray-50 duration-300"><span class="z-10 md:whitespace-pre relative rounded-md">add uvideo to sugggestions</span><div class="rounded-md decorate inset-0 absolute overflow-hidden"><div class="absolute p-8 -bottom-4 -right-4 rounded-full bg-yellow-400 shadow duration-300" style="--tw-bg-opacity: 0.3;"></div><div class="absolute p-10 -left-4 -top-4 rounded-full bg-yellow-300 shadow duration-150" style="--tw-bg-opacity: 0.12;"></div><div class="shadow absolute p-4 bottom-0 right-0 rounded-full bg-yellow-50 bg-blend-difference duration-200" style="--tw-bg-opacity: 0.1;"></div></div></div></div></div></datalist></div><div style="--arrow-color: rgb(249, 250, 251); --offset: 44px; left: 150px; top: 0px;" class="z-10 right-2 classes-text-parent md:text-center blurred space-y-1 flex items-stretch flex-col w-auto absolute p-1"><div class="unaffected cursor-pointer border-2 border-yellow-500 border-dashed bg-yellow-100 text-gray-700 rounded-md drag-handle absolute bottom-full right-12 mb-2" style="touch-action: none;"><div class="flex absolute rounded-md duration-150 bg-yellow-100 top-0 bottom-0 flex-col items-center justify-around"><i class="p-0.5 fa fa-sm fa-chevron-up"></i><i class="p-0.5 fa fa-sm fa-chevron-down"></i></div><div class="flex relative right-0 p-1 left-0 items-center justify-around"><i class="p-0.5 fa fa-sm fa-chevron-left"></i><i class="p-0.5 fa fa-sm fa-chevron-right"></i></div><p class="unaffected p-1 text-xs bg-yellow-100 absolute bottom-0 whitespace-pre left-7 bg-gray-100 shadow">drag here</p></div><datalist id="css" style="--tw-bg-opacity: 0.6;" class="decorate-parent backdrop-filter backdrop-blur-sm unaffected rounded-md flex flex-col space-y-1 relative block bg-gray-50 text-gray-700 p-1.5"><div class="decorate inset-0 absolute overflow-hidden"><div class="absolute p-10 -bottom-4 -right-4 rounded-full bg-gray-50 shadow duration-200" style="--tw-bg-opacity: 0.1;"></div><div class="absolute p-10 -left-4 -top-4 rounded-full bg-gray-100 shadow duration-150" style="--tw-bg-opacity: 0.08;"></div><div class="shadow absolute p-2 bottom-0 right-0 rounded-full bg-gray-50 bg-blend-difference duration-200" style="--tw-bg-opacity: 0.05;"></div></div><div class="wrapper h-auto"></div></datalist><div class="rounded-md relative bg-squiggle flex items-center bg-white bottom-0 rounded shadow p-0.5 text-gray-900"><label style="--tw-bg-opacity: 0.6" role="tooltip-parent button" class="mr-1.5 relative bg-yellow-100 shadow text-xs focus-within:border-yellow-500 border-transparent border-2 toggle-wrapper rounded"><input type="checkbox" title="activate"><div class="tooltip to-bottom flex align-middle absolute rounded bg-gradient-to-br from-white via-yellow-50 to-yellow-100 shadow text-yellow-600 p-2 text-center" data-details="[inactive]"><br><hr class="sep ver bulge-center border-0">persist</div><span class="toggle"></span></label><span style="--tw-bg-opacity: 0.7" class="no-of-css-files p-1 bg-white">0</span><p class="text-sm font-sans font-semibold">[uncached css files detected]</p><div class="relative h-full flex justify-center items-center"><p class="p-0.5 h-5 w-5 font-black relative flex items-center justify-center border-2 border-current rounded-full">!</p></div></div></div><div style="width: 40vw; z-index: 2; height: 63vh;" class="relative dom-content p-px pt-2 h-24 overflow-y-scroll overflow-visible w-full shadow-inner bg-white"><ol class="font-sans list-outside list-decimal pl-5 space-y-0.5"><li class="text-gray-700 relative" index="0" data-after="\n/"><div class="relative mb-1 p-1">
+		<div class="rounded-inherit top-0 left-0 absolute overflow-hidden h-full w-full">
+		  <div class="duration-700 origin-bottom-right -right-2 top-3/4 translate-y-1 p-10 shadow bg-yellow-50 shadow rounded-full transform scale-150 absolute"></div>
+		  <div class="duration-700 origin-top-left -left-7 bottom-3/4 p-10 shadow bg-yellow-50 shadow rounded-full transform scale-150 absolute"></div>
+		</div>
+        <div>
+		  <div spellcheck="false" class="relative text whitespace-pre text-yellow-700 overflow-scroll text-xs outline-none shadow py-1 pl-0.5 rounded" contenteditable="true" data-placeholder="className OR text">const forEach = mDize([].forEach);
+/**/
+Rainbow.color();
+let terminal = {
+  watch: function(obj, sct, arr) {
+    arr = ['short_name', 'exchange', 'last_price', 'change', 'change_percent', 'volume', 'description'],
+    sct = tools.querySelector('.chart-tick'),
+    forEach(this.data ||= sct.querySelectorAll('code'),
+    (el, i)=&gt;el.textContent = (i^2?'':'$') + obj[arr[i]]),
+    (this.watch_cb||(_=&gt;_))(obj)
+  },
+token: function(token, arg, rgx) {
+                  /* may need updating whenever TradingView api schema changes */
+                  rgx = arg ? new RegExp(`${arg}=[^,&amp;]+`,'g') : /(utm_term|symbol)=[^,&amp;]+/g,
+/* demoFrame available by virtue of id='demoFrame' */
+                  arg = w.chart.src.replace(rgx, _=&gt;(_ = _.split('='),
+                  _[0] + `=${token}`)),
+                  console.log('::IFRAME_SRC::', arg)
+                  w.chart.src = arg;
+  },
+  outTrade: function(obj, tick) {
+    tick = tools.querySelector('.trade-tick code'),
+    objWalk(tick, ['pN', 'nES', 'cL']).remove('dots-6'),
+    tick.innerText = JSON.stringify(obj).replace(/,|\{/g, e=&gt;e+'\n').replace('}', '\n}').replace(/\\/g, ''),
+    setTimeout(_=&gt;objWalk(tick, ['pN', 'nES', 'cL']).add('dots-6'), 1750)
+  }
+},
+socket= new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade');
+socket.onmessage = (event, data, arr, keys) =&gt; {
+  data = {}, arr =['Event type', 'Event time', 'Symbol',  'Trade ID', 'Price', 'Quantity', 'Buyer order ID', 'Seller order ID', 'Trade time', 'Market maker is buyer', 'Ignore'];
+  if(event.data) Object.values(event.data=JSON.parse(event.data))
+    .forEach((e, i, _)=&gt;{ data[arr[i]]=e, /time/.test(arr[i])&amp;&amp;(data[arr[i]]=new Date(e))
+    }), terminal.outTrade(data);
+};
+(objWalk.setDict =function(arr){
+  objWalk.dict||={};
+  if(arr) for(let str, val, i = arr.length; i;  str=(val=arr[--i]).charAt(0), val.replace(/[A-Z]/g, _=&gt;str+=_), objWalk.dict[str]=val);
+})(['classList', 'previousSibling', 'nextSibling',  'lastChild', 'firstChild', 'nextElementSibling', 'previousElementSibling', 'parentNode', 'lastElementChild', 'childNodes', 'textContent', 'firstElementChild']);
+w.onpopstate = (event) =&gt; {
+  console.log('EVENT-POPPED', event)
+};
+window.addEventListener('message', function(event) {
+      makeAwait(_=&gt;typeof (_=event.data) !=='string' ? _ : JSON.parse(_)).then(obj=&gt;{
+        obj.data&amp;&amp;terminal.watch(obj.data)
+      }).catch(console.log);
+});</div>
+		</div>
+      </div>
+	  
+	  <div class="wrap-on-line rounded-md decorate-parent">
+		<div class="decorate rounded-inherit top-0 left-0 absolute overflow-hidden h-full w-full">
+		  <div style="--tw-bg-opacitya: 0.8" class="duration-700 origin-bottom-right -right-2 top-3/4 p-4 bg-white shadow rounded-full transform-gpu scale-150 absolute"></div>
+		  <div style="--tw-bg-opacitya: 0.8" class="duration-700 origin-top-left -left-7 bottom-3/4 p-4 bg-white shadow rounded-full transform-gpu scale-150 absolute"></div>
+		</div>
+		<span class="relative flex flex-col items-start">
+		  <span data-placeholder="tagName" style="font-family: Arial;" class="tag font-fredoka" contenteditable="true" spellcheck="false">#text</span><div class="shadow cursor-pointer font-sans tooltip to-bottom absolute text-yellow-600 bg-yellow-50 p-0.5 whitespace-pre rounded"><i class="bg-yellow-200 shadow m-0.5 p-1 rounded-full fa fa-highlighter"></i>highlight</div>
+		</span>
+		
+		<div class="w-auto relative">
+			<span style="--tw-bg-opacity:0.3" contenteditable="true" data-placeholder="[attribute]" class="attribute-name border-yellow-100 border-2 inline-block outline-none relative bg-yellow-200 p-1"></span>
+		</div>
+		<div class="w-full relative flex-1 overflow-y-hidden overflow-scroll">
+		  <div spellcheck="false" style="--tw-bg-opacity:0.2" class="attribute-value rounded-md border-gray-50 bg-gray-100 border-2 flex-1 h-auto outline-none text-yellow-600 pt-0.5 pl-1 whitespace-pre m-0.5 relative shadow w-auto" contenteditable=""></div>
+	    </div>
+	  </div></li></ol></div><div style="--delay: 0.8s;" class="tooltip to-top flex absolute items-center justify-center space-x-2"><div class="editor-resizer space-x-1 flex items-center justify-center p-1 rounded bg-gray-100 text-xs shadow text-gray-700"><div class="-space-x-1.5 flex"><i class="fa fa-arrow-left"></i><i class="fa fa-arrow-right"></i></div><span class="relative">width</span><div class="p-1 size bg-gray-200 shadow relative" contenteditable="true" data-gramm="false" wt-ignore-input="true">40</div><span class="p-0.5" contenteditable="">vw</span><hr style="--height:2px;--width:6px;" class="py-3 relative sep ver border-0 bulge-center"><span class="relative">height</span><div class="p-1 size bg-gray-200 shadow relative text-center whitespace-pre" data-placeholder="[0-9]+" contenteditable="true" data-gramm="false" wt-ignore-input="true">63</div><span class="p-0.5" contenteditable="">vh</span></div></div><!--Tooltip to left for elements count and relational selections, along with the delimeter for creating a new item in the list--><div style="--y: -50%;" class="decorate-parent flex space-x-0.5 rounded p-1 tooltip w-auto to-left absolute bg-white shadow"><div class="rounded-md decorate inset-0 absolute overflow-hidden"><div class="absolute p-4 -bottom-4 -right-4 rounded-full bg-yellow-400 duration-300" style="--tw-bg-opacity: 0.3;"></div><div class="absolute p-5 -left-4 -top-4 rounded-full bg-yellow-300 duration-150" style="--tw-bg-opacity: 0.12;"></div></div><div class="static unaffected text-left bg-white text-xs"><code class="relative dom-walker">{<ul class="list-none text-xs"><li class="text-center whitespace-pre flex"><span contenteditable="true" spellcheck="false" class="p-1" data-placeholder="<N>" data-gramm="false" wt-ignore-input="true">1</span><hr class="sep ver p-px bg-black"><span class="p-1" contenteditable="true" spellcheck="false" data-placeholder="relation" data-gramm="false" wt-ignore-input="true">pN</span></li></ul>}</code><div class="inline-flex relative items-center justify-center"><div class="rounded-md decorate inset-0 absolute overflow-hidden"><div class="absolute p-4 -bottom-4 -right-4 rounded-full bg-yellow-400 shadow duration-300" style="--tw-bg-opacity: 0.3;"></div><div class="absolute p-5 -left-4 -top-4 rounded-full bg-yellow-300 shadow duration-150" style="--tw-bg-opacity: 0.12;"></div><div class="shadow absolute p-2 bottom-0 left-0 rounded-full bg-yellow-50 bg-blend-difference duration-200" style="--tw-bg-opacity: 0.1;"></div></div><label role="button" class="focus-within:border-yellow-200 focus-within:bg-yellow-100 border-transparent border-2 toggle-wrapper rounded shadow relative"><input type="checkbox" title="activate"><div class="px-1 tooltip to-left flex align-middle absolute rounded bg-white shadow items-center justify-center text-current p-0.5 text-center" data-details="[inactive]"><br><hr class="sep ver bulge-center border-0 p-0.5 h-full py-3 border-transparent">highlight</div><span class="toggle"></span></label><button class="hover:bg-yellow-300 fa fa-crosshairs p-1.5 mt-0 rounded shadow h-full relative ml-1"></button></div><output class="block p-1 font-semibold text-yellow-700 bg-gradient-to-r from-yellow-100 text-xs">HTMLBodyElement</output><hr class="p-px bulge-center text-yellow-500 relative sep hor border-0"><!--no longer required
+                              <span contenteditable=true data-placeholder='<Classname>' spellcheck=false class='relative outline-none overflow-scroll text-xs inline-block p-px shadow border-2 border-transparent' style='border-bottom-color: orange; max-width: 15vw; min-width:55px;'></span> 
+                              <div class='relative flex items-start divide-x-1.5 divide-yellow-400' style='max-width: 15vw;'>
+                                <span contenteditable=true data-placeholder='<Attribute>' spellcheck=false class='text-gray-700 outline-none overflow-scroll whitespace-pre inline-block p-0.5 shadow border-2 border-transparent' style='border-bottom-color: orange; min-width:65px;'></span>
+                                <span contenteditable=true data-placeholder='<Value>' spellcheck=false class='text-gray-700 outline-none whitspace-pre overflow-scroll block p-0.5 shadow border-2 border-transparent' style='border-bottom-color: orange; min-width:58px;'></span>
+                              </div>--><div style="--tw-bg-opacity: 0.5" class="p-1 bg-yellow-50 shadow text-xs relative">[current]<hr class="p-0.5 rounded-md bg-gray-600 relative inline-block sep ver border-0"><div class="relative mt-1 flex"><span data-placeholder="DOM method" spellcheck="false" class="whitespace-pre bg-yellow-50 shadow p-0.5 outline-none" contenteditable="true" data-gramm="false" wt-ignore-input="true">append</span>(<button class="extrapolate-dom focus:bg-gray-800 text-yellow-200 p-1 bg-yellow-200 text-yellow-600 fa fa-sm fa-mouse-pointer"></button>)</div></div><button class="extrapolate-dom rounded-md focus:bg-yellow-200 focus:shadow text-xs font-sans relative whitespace-nowrap group"><i class="bg-yellow-100 p-2 relative rounded-full fa fa-bookmark -ml-1"></i><span class="duration-100 group-hover:bg-yellow-200 rounded p-0.5 py-1">delegate to</span></button></div><div><label role="button" style="--slider-checked-color:#ddd; --slider-rail-checked-color:#aaa;" class="focus-within:border-gray-500 focus-within:bg-gray-100 border-transparent border-2 toggle-wrapper rounded absolute bottom-full"><input type="checkbox" title="activate"><div class="flex items-center justify-between right-full mr-2 p-0.5 text-xs text-gray-600 bg-white shadow absolute"><hr class="sep ver rounded border-0 p-0.5 bg-gray-300 py-2.5 border-transparent">Enter:<span class="font-semibold m-px text-xs p-px bg-gray-100 rounded-sm">⊣⊢</span>maps to \n</div><span class="toggle" style="transform: scale(0.76);"></span></label><figure class="relative cursor-pointer flex" role="button"><i class="far text-md fa-trash-alt p-1 rounded bg-yellow-100 shadow"></i><figcaption class="p-1 text-xs bg-yellow-50 shadow">remove from page</figcaption></figure><hr class="p-px bulge-center text-gray-600 relative sep hor border-0"><h6 class="text-xs">Insertion direction</h6><div class="space-x-1 relative h-inherit items-center justify-center flex"><div tabindex="0" class="p-1.5 bg-gray-700 shadow inline-block rounded fa fa-chevron-up text-yellow-200" onclick="this.nextElementSibling.classList.remove('text-yellow-200'), this.nextElementSibling.classList.add('bg-yellow-200'), this.classList.remove('bg-yellow-200'), this.classList.add('text-yellow-200'), build.vars.dom_tree.editor.insertionDirection='UP'" role="button"></div><div tabindex="0" class="p-1.5 bg-gray-700 shadow inline-block rounded fa fa-chevron-down bg-yellow-200" onclick="this.previousElementSibling.classList.remove('text-yellow-200'), this.previousElementSibling.classList.add('bg-yellow-200'), this.classList.remove('bg-yellow-200'), this.classList.add('text-yellow-200'), build.vars.dom_tree.editor.insertionDirection='DOWN'" role="button"></div></div><label class="toggle-wrapper m-3.5 switch" style="--slider-checked-color:gray; --switch-size:12px;" role="button"><input type="checkbox"><div class="fa-xs px-1 tooltip to-right flex align-middle absolute rounded bg-white shadow items-center justify-center text-current p-0.5 text-center" data-details="[inactive]"><br><hr class="sep ver bulge-center border-0 p-0.5 h-full py-3 border-transparent">cloneNode(<div class="text-black border-current border-l border-r p-1 text-center mx-1 py-2" data-placeholder="deep" onclick="setTimeout(_=>this.focus(), 60)" spellcheck="false" contenteditable="true" data-gramm="false" wt-ignore-input="true">true</div>)</div><span class="slider"></span></label></div><!--[END]--></div></div></div></li><!--END--></ol></div></div></div><div style="--reduce: 30px" class="sm:left-2 bottom-20 mouse absolute z-1 left-4 show"><p class="ml-5 text-xs top-full absolute -left-full text-gray-100" style="letter-spacing:normal;">Scroll down for more</p></div><!--UUID::HTML-start::IDUU--><section class="relative mb-4 h-auto sm:m-10"><iframe title="advanced chart TradingView widget" lang="en" id="chart" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="https://www.tradingview.com/widgetembed/?hideideas=1&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en#%7B%22symbol%22%3A%22NASDAQ%3AAAPL%22%2C%22frameElementId%22%3A%22tradingview_fafb7%22%2C%22interval%22%3A%221%22%2C%22range%22%3A%22YTD%22%2C%22hide_side_toolbar%22%3A%220%22%2C%22allow_symbol_change%22%3A%221%22%2C%22save_image%22%3A%221%22%2C%22watchlist%22%3A%22BINANCE%3ABTCUSDT%22%2C%22details%22%3A%221%22%2C%22calendar%22%3A%221%22%2C%22hotlist%22%3A%221%22%2C%22studies%22%3A%22STD%3B24h%25Volume%5Cu001fSTD%3BAverage%25Day%25Range%22%2C%22theme%22%3A%22light%22%2C%22style%22%3A%221%22%2C%22timezone%22%3A%22Etc%2FUTC%22%2C%22withdateranges%22%3A%221%22%2C%22show_popup_button%22%3A%221%22%2C%22studies_overrides%22%3A%22%7B%7D%22%2C%22enable_publishing%22%3A%221%22%2C%22utm_source%22%3A%22www.tradingview.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22chart%22%2C%22utm_term%22%3A%22NASDAQ%3AAAPL%22%2C%22page-uri%22%3A%22www.tradingview.com%2Fwidget%2Fadvanced-chart%2F%22%7D" class="vh-full w-full rounded-3xl border-2"></iframe></section><section class="h-full pt-6" id="tools"><div class="text-lg ml-7 font-serif">Connect your source of market data below</div><div class="align-top [&amp;>*]:align-middle [&amp;>*]:p-2 [&amp;>*]:inline-block text-xs text-center sm:text-left inline-block p-4"><div class="text-left mx-12 relative inline-block border-gray-300 rounded-2xl border [&amp;>*]:p-2 chart-tick pb-10"><code class="inline-block font-fredoka">AAPL</code><div>exchange:<code class="-mt-1.5 ml-3 float-right p-1 border rounded">Cboe One</code></div><div>latest price:<code class="font-semibold -mt-0.5 text-yellow-600 ml-3 float-right p-1">$180.78</code></div><div>change:<code class="-mt-0.5 text-red-500 ml-3 float-right p-1">1.55</code></div><div>change percent:<code class="-mt-0.5 text-green-700 ml-3 float-right p-1">0.86</code></div><div>volume:<code class="-mt-0.5 font-semibold ml-3 float-right p-1">19170162</code></div><code class="right-full top-0 mt-1 absolute p-1 mr-1">Apple Inc.</code><i class="m-2 rounded-full text-center bg-gray-200 w-5 inline-block p-6 top-0 -left-2/3 absolute fa fa-exclamation invisible"></i><button class="ripple m-1 absolute bottom-0 left-0 border rounded rounded-bl-xl text-xs text-center bg-gray-50" onclick="(terminal.connected=this).classList.add('bg-blue-300'), this.lastChild.data='disconnect'"><i class="fa fa-plus mr-2"> </i>connect data</button><i class="absolute top-1 left-full text-xs">Data from the chart above<span class="align-middle mx-2 p-0.5 bg-current rounded-full inline-block"> </span>Available only in the browser</i></div><div style="padding:0" class="md:ml-9 md:mr-14 bulge-center font-mono text-gray-700 inline-flex relative text-sm md:h-24 h-px w-full md:w-0.5 text-center my-7 sm:w-2/3"><span class="left-1/2 -top-4 md:-left-4 p-2 md:top-1/3 absolute text-black bg-white">or</span></div><div class="border-gray-400 mr-12 trade-tick text-left relative inline-block border-gray-300 rounded-2xl border chart-tick pb-8 rounded-bl-none"><pre data-trimmed="true" class="bg-gray-50 rainbow-show rounded-xl"><code data-language="javascript" class="rainbow rainbow-show" style="font-size:11px;">{<br>"Event type":"trade",<br>"Event time":"2023-11-07T16:09:15.896Z",<br>"Symbol":"BTCUSDT",<br>"Trade ID":3271465889,<br>"Price":"34709.53000000",<br>"Quantity":"0.00057000",<br>"Buyer order ID":23128123570,<br>"Seller order ID":23128122443,<br>"Trade time":"2023-11-07T16:09:15.895Z",<br>"Market maker is buyer":false,<br>"Ignore":true<br>}</code><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></pre><i class="m-3 inline-block bottom-12 right-0" style="position:absolute"></i><button class="p-2 ripple m-2 absolute bottom-0 left-0 border rounded rounded-bl-xl text-xs text-center bg-gray-50" onclick="(page.connected=this).classList.add('bg-blue-300'), this.lastChild.data='connected'"><i class="fa fa-plus mr-2"> </i>connect data</button><i class="absolute top-1 ml-2 left-full text-xs">Realtime trade info for a crypto from Binance<span class="align-middle mx-2 p-0.5 bg-current rounded-full inline-block"> </span>Defaults to BTCUSDT</i><div class="cursor-pointer -left-px absolute top-full mb-1"><p tabindex="0" class="whitespace-pre border-gray-400 rounded-b-xl sm:pr-4 p-2 border-b border-l border-r bg-white sm:whitespace-pre">select trade stream type ⇲</p>
+<div class="mt-1.5 m-1 left-full bg-white border-2 top-0 w-4/5 absolute mb-2 rounded-md [&amp;>*]:block tooltip divide-y-2 divide-gray-300 [&amp;>*]:p-2">
+<button class="hover:bg-gray-100 text-current text-xs text-left">• Aggregate Trade</button>
+<button class="hover:bg-gray-100 text-current text-xs text-left">• Trade</button>
+</div></div></div>
+</div>
+<article class="[&amp;>*]:inline-block inline-block relative md:mt-0 mt-10 p-5 vh-full mt-10"><header class="mt-4 relative border-b p-1.5 text-sm bg-gray-50 bg-yellow-300 z-1">Connected as <strong>Binance "Trade"@BTC</strong></header><br><section class="[&amp;>*]:inline-block"><form class="[&amp;>*]:inline-block my-3 [&amp;>*]:p-2"><p class="inline-block text-left mb-2"><span class="m-px absolute">Grid trading</span>Grid trading</p><br>
+
+<input class="rounded-md bg-gray-100 p-3" placeholder="upper limit" required=""><br><div class="m-2 relative text-xs inline-block border-gray-400 rounded-bl-md p-3 border-b border-l border-r">• Latest price ⇲<div class="left-0 right-0 -mx-4 bg-white border shadow top-full my-2 absolute rounded-md [&amp;>*]:block tooltip [&amp;>*]:p-2 font-sans" onclick="let o=this.querySelector('.bg-gray-100'), t=event.target; this.previousSibling.data = t.textContent+' ⇲', t.tagName==='BUTTON'&amp;&amp;[t, o].forEach(e=>e.classList.toggle('bg-gray-100'))">
+<button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Exchange</button>
+<button class="hover:bg-gray-100 text-current text-xs text-left bg-gray-100" type="button">• Latest price</button>
+<button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Change</button><button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Change percent</button><button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Change volume</button></div></div><input class="rounded-md bg-gray-100 p-3" placeholder="lower limit" required=""><br><div class="border-gray-400 pt-2 mt-2 border-t relative pl-0"><input class="mr-5 rounded-md bg-gray-100 p-3" placeholder="number of grids" required=""><button class="m-2 bg-yellow-200 p-4 ripple relative" type="submit">begin</button></div></form><br><form class="[&amp;>*]:inline-block my-3 [&amp;>*]:p-2"><p class="inline-block text-left mb-2"><span class="m-px absolute">Grid trading</span>Grid trading</p><br>
+
+<input class="rounded-md bg-gray-100 p-3" placeholder="upper limit" required=""><br><div class="m-2 relative text-xs inline-block border-gray-400 rounded-bl-md p-3 border-b border-l border-r">• Latest price ⇲<div class="left-0 right-0 -mx-4 bg-white border shadow top-full my-2 absolute rounded-md [&amp;>*]:block tooltip [&amp;>*]:p-2 font-sans" onclick="let o=this.querySelector('.bg-gray-100'), t=event.target; this.previousSibling.data = t.textContent+' ⇲', t.tagName==='BUTTON'&amp;&amp;[t, o].forEach(e=>e.classList.toggle('bg-gray-100'))">
+<button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Exchange</button>
+<button class="hover:bg-gray-100 text-current text-xs text-left bg-gray-100" type="button">• Latest price</button>
+<button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Change</button><button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Change percent</button><button class="hover:bg-gray-100 text-current text-xs text-left" type="button">• Change volume</button></div></div><input class="rounded-md bg-gray-100 p-3" placeholder="lower limit" required=""><br><div class="border-gray-400 pt-2 mt-2 border-t relative pl-0"><input class="mr-5 rounded-md bg-gray-100 p-3" placeholder="number of grids" required=""><button class="m-2 bg-yellow-200 p-4 ripple relative" type="submit">begin</button></div></form></section>
+</article><br><a href="terminal.html" target="_blank" class="border-current border-b text-blue-800 text-sm">Open this page in a new tab to see realtime data <i class="ml-2 text-lg fa fa-external-link-alt"></i></a></section><!--UUID::HTML-end::IDUU--><div class="top-1/3 left-2 fixed COMPONENT tooltip"><div class="-mt-6 absolute tooltip to-right flex-col flex p-1.5 rounded-md text-sm text-center bg-gray-50" data-details="save"><hr class="sep hor border-0 p-px bg-gray-600" style="--pad:30%;"><div class="relative bg-gray-50 p-1.5 shadow text-xs"><div class="flex">exclude:<div class="p-1 focus:border-gray-400 ml-2 outline-none" spellcheck="false" data-placeholder="className" style="border-bottom-width: 3px;" contenteditable="true" data-gramm="false" wt-ignore-input="true" data-quillbot-element="EvANS8r3R4B1As-Fx8fBo"></div></div><div class="flex">name:<div class="p-1 focus:border-gray-400 ml-4 outline-none flex-1 whitespace-pre" spellcheck="false" style="border-bottom-width: 3px;" data-placeholder="fileName" contenteditable="true" data-gramm="false" wt-ignore-input="true" data-quillbot-element="5Dg0zlFYYRlWny5BmYCx0">terminal.html</div></div></div></div><button class="fa fa-arrow-down p-3 shadow bg-gray-100 border-2 border-gray-50" onclick="promisify(re=>eval(this.nextElementSibling.innerText.replace(/\n{2}/g, '\n')))
+.then(_=>{
+  this.exclude=objWalk((this.fileName =objWalk(this.previousElementSibling, {3:['lastElementChild']})).parentNode.parentNode,
+  {2:'firstElementChild'});
+  let clone=html.cloneNode(true), excluded;
+  if(this.exclude.textContent&amp;&amp;(excluded=clone.qsa(this.exclude.textContent))) excluded.forEach(e=>e.remove());
+  save(new Blob(['<!DOCTYPE HTML>'+clone.outerHTML], { type: 'text/html' }), this.fileName.textContent ||=w.location.pathname.split('/').pop())
+})"></button><div class="bg-gray-50 mt-4 absolute tooltip top-full p-2 text-xs whitespace-pre font-mono" data-placeholder="Execute code before the page is saved" spellcheck="false" contenteditable="true" data-gramm="false" wt-ignore-input="true"></div></div><div class="hidden transform -translate-y-full bottom-3/4 COMPONENT h-20 flex bg-white right-5 fixed tooltip ff83e9bc-5e66-438d-8415-7a2a4ab0ab79 to-top"><div class="absolute p-1 top-0.5 left-0.5 text-xs font-fredoka bg-gray-50">: output :<div class="absolute no-arrow font-sans bg-white show w-52 break-words p-2 right-full mr-1.5 shadow text-center" data-details="" style="top:0px; transform:none;">output appears here pre-wrapped</div></div><div class="flex items-center text-sm pl-1">window.localStorage["</div><div class="flex items-center relative"><div class="text-center text-xs p-1 m-auto duration-300 bg-gray-100 shadow-md whitespace-pre focus:shadow-none focus:border-gray-500 outline-none relative" data-placeholder="property" spellcheck="false" onkeydown="(()=>{
+  let storage, context=objWalk(this, {2:['nextElementSibling','firstElementChild','nextElementSibling']}),
+      children=context.children, fragment=d.createDocumentFragment(), elm;
+  if(!this.activated) (this.init=()=>{
+    this.activated=true;
+    let prop, keys; keys=Object.keys(storage=w.localStorage).concat(prop=Object.keys(storage.__proto__));
+    for(let i=keys.length; i--;) fragment.appendChild((this.options ||=[])[i]=elm=build_nodes({name:'option',
+        attributes:{0:{name:'data-details', value:Is((this.values ||=[])[i]=storage[keys[i]])}, 1:{name:'val', value:(this.keys ||=[])[i]=keys[i]}, length:2}
+      })), prop.indexOf(keys[i])>-1&amp;&amp;elm.classList.add('__proto__');
+    context.innerHTML=`<hr class=&quot;sep hor p-px bg-gray-500 border-0 rounded-full relative&quot; style=&quot;--pad:20%; --width: 60%;&quot;>`,
+    context.appendChild(fragment)
+  })();
+  this.escape  ||=_=>_.replace('|', '\\|').replace('\x5c','').replace(/\[|\]\(|\)|\*/g,_=>'\\'+_).replace('/','\\\\/').replace('.', '\\\\\\.').replace(/:/g,'\\\\:')
+  this.refresh ||=_=>((this.other ||=objWalk(this, {3:['firstElementChild', 'nextElementSibling']})).init=this.values=this.keys=this.options=void 0, this.init())
+  let options=this.keys;
+  this.output  ||=objWalk(objWalk(this, {2:['parentNode']}), {2:'firstElementChild'});
+  this.promise ||=cb=>new Promise(resolve=>setTimeout(_=>resolve(cb())));
+  !(async _=> {
+    await this.promise(_=>this.textContent).then(text=>{
+      if(event.keyCode===13) this.textContent=text.trim()
+      /*Autofill*/
+      let query=this.escape(text), arr=options.filter(e=>e.startsWith(query));
+      //arr.length===1&amp;&amp;context.qsa('option:not(.hide)').length===1&amp;&amp;(this.textContent=arr[0]); 
+      /*Search*/
+      for(let i = options.length,j=0; j<i;) this.options[j].classList[(options[j].startsWith(text)||options[j].search(query)>-1)||!d.activeElement.innerText?'remove':'add']('hide'), j++
+    });
+     let text=this.textContent;
+    (this.update=_=> {
+      if(_) this.textContent=_;
+      (this.circuit ||=objWalk(objWalk(this, {1:['parentNode', 'nextElementSibling']}), {1:['firstElementChild', 'nextElementSibling']}))
+        /* text is replaced with what it is assigned to in order
+         * to prevent a closure on its value by the update method;
+         * such a closure will make update be glued with a stale value of text
+        */
+      .classList[!Is(window.localStorage[text],'Function')
+        /*Output*/
+        ? (text&amp;&amp;(this.output.textContent=window.localStorage[text]||'output appears here pre-wrapped'), 'remove')
+        : text&amp;&amp;'add'||'remove']('open-circuit');
+    })()
+  })()
+})()" contenteditable="true" data-gramm="false" wt-ignore-input="true"></div><div class="no-arrow exempted h-auto editor text-center absolute rounded-md bg-gradient-to-r flex-col flex from-gray-50 to-white shadow tooltip to-left bg-white text-sm no-hover p-1" data-details="#(properties || keys) list
+" style="top: 0px; bottom: unset; --y:3.5em; --focus-out-no-hover-transition:0.1s;"><datalist style="--tw-bg-opacity: 0.99;" id="tags" class="decorate-parent overflow-hidden space-y-1 block bg-gray-50 text-gray-700 p-1 relative"><div class="decorate inset-0 overflow-hidden absolute"><div class="absolute p-6 -bottom-4 -right-4 rounded-full bg-gray-50 shadow duration-300" style="--tw-bg-opacity: 0.3;"></div><div class="absolute p-6 -left-4 -top-4 rounded-full bg-gray-100 shadow duration-150" style="--tw-bg-opacity: 0.1;"></div><div class="shadow absolute p-2 bottom-0 right-0 rounded-full bg-gray-50 bg-blend-difference duration-200" style="--tw-bg-opacity: 0.1;"></div></div><div class="items-center optgroup flex flex-col h-32 overflow-y-scroll overflow-hidden" onclick="(()=>{
+  let t;
+  this.input ||=objWalk(this, {2:['parentNode', 'previousElementSibling']})
+  if(this.input.activated&amp;&amp;(t=event.target).tagName==='OPTION') {
+    this.input.update(t.getAttribute('val'));
+  }
+})()" onmousemove="(()=>{
+  var lastY=this.lastY ||=0;
+  (this.init ||=()=>{
+    var viewport = this.getBoundingClientRect();
+    var scrollHeight = this.scrollHeight;//may be replaced with 0
+    var maxScrollTop = scrollHeight - viewport.height;
+    var thumbHeight = Math.pow(viewport.height, 2)/scrollHeight;
+    var maxTopOffset = viewport.height - thumbHeight;
+    this.scaling = maxTopOffset / maxScrollTop;
+  })();
+  setTimeout(_=>(this.scrollTop += ((event.clientY - lastY)/this.scaling)/(this.clientHeight/(this.children.length/2)), this.lastY=event.clientY),250)
+})()
+"><hr class="sep hor p-px bg-gray-500 border-0 rounded-full relative" style="--pad:20%; --width: 60%;"><option val="setItem" data-details="Function" class="__proto__"></option><option val="removeItem" data-details="Function" class="__proto__"></option><option val="key" data-details="Function" class="__proto__"></option><option val="getItem" data-details="Function" class="__proto__"></option><option val="clear" data-details="Function" class="__proto__"></option><option val="length" data-details="Number" class="__proto__"></option><option val="EventReporter|lixilsfb1j5dr0h7vfe" data-details="String"></option><option val="./public/section-3/content.txt" data-details="String"></option><option val="EventReporter|lixils921ngu9gpy01" data-details="String"></option><option val="EventReporter|lixilt9uf7lac3a01x" data-details="String"></option><option val="bust-cache?v=1.0.1" data-details="String"></option><option val="viewer-status|is-logged-in" data-details="String"></option><option val="EventReporter|lixilsfblwclnrydj5" data-details="String"></option><option val="./public/section-5/content.txt" data-details="String"></option><option val="EventReporter|lixilsfa1jnef0tvybi" data-details="String"></option><option val="./public/section-3/markup.txt" data-details="String"></option><option val="EventReporter|lixilt9tv332zz7525" data-details="String"></option><option val="./public/section-4/data.txt" data-details="String"></option><option val="./public/section-5/markup.txt" data-details="String"></option></div><div style="--tw-bg-opacity: 0.3;" class="relative md:h-4 h-6 font-fredoka duration-300 p-1 text-center align-middle shadow-inner flex-col rounded relative bg-gray-200 pb-1 flex text-gray-700"></div></datalist></div></div><div class="h-20 relative px-0.5 py-1 flex text-sm"><span class="flex items-center">"]</span><hr class="relative sep ver p-px bg-yellow-400 duration-500 ease" style="padding-top:20px; margin-top:calc(var(--height)-var(--pad));"><div class="relative">(<span class="relative whitespace-pre"><div class="inline relative"><span class="p-1 inline-block text-xs outline-none shadow-md ml-1 border-2 text-center" spellcheck="false" data-placeholder="key or index" disabled="true" onkeydown="(()=>{
+  this.refresh ||=_=>((this.other ||=objWalk(this, {3:['firstElementChild', 'nextElementSibling']})).init=this.options=this.keys=void 0, this.build()),
+  this.circuit ||=this.parentNode.nextElementSibling,
+  this.storage ||=w.localStorage,
+  this.context ||=this.nextElementSibling.qs('.optgroup'),
+  !this.activated&amp;&amp;(this.build ||=_=> {
+    this.activated=true;
+    let frag=d.createDocumentFragment(), j=this.storage;
+    for(let i in j) {
+      if(j.hasOwnProperty(i)) {
+        (this.options ||=[]).push(frag.appendChild(build_nodes({name:'option', attributes:{
+          0:{name:'val', value:i}, 1:{name:'data-details', value:Is(j[i])}, length:2
+       }}))), (this.keys ||=[]).push(i)
+      }
+    }
+    this.context.innerHTML=`<hr class=&quot;sep hor p-px bg-gray-500 border-0 rounded-full relative&quot; style=&quot;--pad:20%; --width: 60%;&quot;/>`
+    return this.context.appendChild(frag), this;
+  })();
+  let options=this.keys, bool=(this.ref ||=objWalk(objWalk(this, {4:['parentNode','previousElementSibling']}),'firstElementChild')).circuit;
+  
+ !(async _=>{
+	await this.ref?.promise(_=>this.textContent).then(text=>{
+      let query=(this.escape ||=_=>_.replace('|', '\\|').replace('\x5c','').replace(/\[|\]\(|\)|\*/g,_=>'\\'+_).replace('/','\\\\/').replace('.', '\\\\\\.').replace(/:/g,'\\\\:'))(text);
+      if(event.keyCode===13) this.textContent=text.trim()
+      else if(options) for(let j=options.length; j--;) this.options[j].classList[(options[j].startsWith(text)||options[j].search(query)>-1)||!d.activeElement.innerText?'remove':'add']('hide')
+	})
+  if(bool) {
+    if(bool.classList.contains('open-circuit')) {
+      let text=this.textContent;
+      (this.update=_=> {
+        if(_) this.textContent=_;
+        let shouldOpen;
+        switch(this.ref.textContent) {
+          case 'getItem':
+          case 'key':
+            shouldOpen=!!0
+            this.ref.output.textContent=this.storage[this.ref.textContent](text)//||'output appears here pre-wrapped';
+          break;
+          case 'setItem':
+            shouldOpen=!0;
+            this.circuit.classList[text?'add':'remove']('open-circuit')
+          break;
+          default: shouldOpen=!!0; if(event.keyCode===13&amp;&amp;this.textContent&amp;&amp;this.storage[this.ref.textContent]) this.storage[this.ref.textContent](this.textContent), this.refresh().ref.refresh(), this.textContent='';
+        }
+        this.circuit.classList[shouldOpen?'add':'remove']('open-circuit')
+      })()
+    }
+  }
+ })()
+})()" contenteditable="true" data-gramm="false" wt-ignore-input="true">./public/section-5/content.txt</span><div class="no-arrow exempted h-auto editor text-center absolute rounded-md bg-gradient-to-r flex-col flex from-gray-50 to-white shadow tooltip to-left bg-white text-sm no-hover p-1" data-details="#(properties || keys) list
+" style="top: 0px; bottom: unset; --y:3.5em; --focus-out-no-hover-transition:0.2s;"><datalist style="--tw-bg-opacity: 0.99;" id="tags" class="decorate-parent overflow-hidden space-y-1 block bg-gray-50 text-gray-700 p-1"><div class="decorate inset-0 overflow-hidden absolute"><div class="absolute p-6 -bottom-4 -right-4 rounded-full bg-gray-50 shadow duration-300" style="--tw-bg-opacity: 0.3;"></div><div class="absolute p-6 -left-4 -top-4 rounded-full bg-gray-100 shadow duration-150" style="--tw-bg-opacity: 0.1;"></div><div class="shadow absolute p-2 bottom-0 right-0 rounded-full bg-gray-50 bg-blend-difference duration-200" style="--tw-bg-opacity: 0.1;"></div></div><div class="items-center optgroup flex flex-col h-32 overflow-y-scroll overflow-hidden" onclick="(()=>{
+  let t;
+  this.input ||= objWalk(this, {2:['parentNode', 'previousElementSibling']}); 
+  if((t=event.target).tagName==='OPTION') {
+    let val=t.getAttribute('val');
+    this.input.update?.call(null, val), this.input.textContent=val
+  }
+})()" onmousemove="(()=>{
+  var lastY=this.lastY ||=0;
+  (this.init ||=_=>{
+    var viewport = this.getBoundingClientRect();
+    var scrollHeight = this.scrollHeight;//may be replaced with 0
+    var maxScrollTop = scrollHeight - viewport.height;
+    var thumbHeight = Math.pow(viewport.height, 2)/scrollHeight;
+    var maxTopOffset = viewport.height - thumbHeight;
+    this.scaling = maxTopOffset / maxScrollTop;
+  })();
+  setTimeout(_=>(this.scrollTop += ((event.clientY - lastY)/this.scaling)/(this.clientHeight/(this.children.length/2)), this.lastY=event.clientY),250)
+})()
+"><hr class="sep hor p-px bg-gray-500 border-0 rounded-full relative" style="--pad:20%; --width: 60%;"><option data-details="String" val="./public/section-5/markup.txt"></option><option data-details="String" val="./public/section-4/data.txt"></option><option data-details="String" val="EventReporter|lixilt9tv332zz7525"></option><option data-details="String" val="./public/section-3/markup.txt"></option><option data-details="String" val="EventReporter|lixilsfa1jnef0tvybi"></option><option data-details="String" val="./public/section-5/content.txt"></option><option data-details="String" val="EventReporter|lixilsfblwclnrydj5"></option><option data-details="String" val="viewer-status|is-logged-in"></option><option data-details="String" val="bust-cache?v=1.0.1"></option><option data-details="String" val="EventReporter|lixilt9uf7lac3a01x"></option><option data-details="String" val="EventReporter|lixils921ngu9gpy01"></option><option data-details="String" val="./public/section-3/content.txt"></option><option data-details="String" val="EventReporter|lixilsfb1j5dr0h7vfe"></option></div><div style="--tw-bg-opacity: 0.3;" class="relative md:h-4 h-6 font-fredoka duration-300 p-1 text-center align-middle shadow-inner flex-col rounded relative bg-gray-200 pb-1 flex text-gray-700"></div></datalist></div></div><hr class="sep hor border-0 p-px bg-yellow-400 relative duration-500" style="--pad:20%;"><span class="text-xl inline-flex">,</span></span><div class="relative border-4 border-yellow-300 rounded-md p-1 inline-block"><div class="text-xs text-center font-sans tooltip to-bottom absolute flex flex-col whitespace-pre shadow-md p-1 bg-white font-semibold" style="transform:translateX(-5%); right:0px; left: unset; --arrow-x:8.6em; --arrow-degree:45deg; --arrow-y:-5px;" data-details="Arrow icon sets '$0' when clicked,
+press enter on any input field below to setItem*"><div class="font-semibold flex space-y-0.5 items-center mt-1sm" onkeydown="(()=>{
+    if((this.circuit||=objWalk(this.pNode||=this.parentNode.parentNode, ['previousElementSibling', 'firstElementChild', 'nextElementSibling'])).classList.contains('open-circuit')) {
+      this.$0||=this.pNode.lastElementChild.$0;
+      let $0=this.$0;
+      let codex, has=this.circuit.previousElementSibling.firstElementChild;
+      this.arr||=[has, has.ref]
+      setTimeout(_=>{
+        codex=this.textContent.split(/\s*\|\|\s*/).map(e=>e.replace(/(eval\(|\)$)|\$0\./g,''));
+        let val,i;
+        val=($0&amp;&amp;$0[codex[i=0]])||codex[i=1]||eval('val=codex[i=2]');
+        if(val&amp;&amp;event.keyCode===13&amp;&amp;this.arr[1].textContent==='setItem'&amp;&amp;this.arr[0].textContent) {
+          w.localStorage.setItem(this.arr[0].textContent, val)
+          event.target.textContent=event.target.textContent.trim();
+          this.arr.forEach(e=>e.refresh())
+        }
+      }) 
+    }
+})()">$0.<span class="inline-block bg-gray-50 p-1.5 text-center border-2 shadow outline-none" data-placeholder="value" spellcheck="false" contenteditable="true" data-gramm="false" wt-ignore-input="true">innerText</span><div class="relative">||<span class="inline-block bg-gray-50 p-1.5 text-center border-2 shadow outline-none" data-placeholder="string" spellcheck="false" contenteditable="true" data-gramm="false" wt-ignore-input="true">underscored</span></div>|| eval(<div class="inline-block bg-gray-100  p-1.5 text-center mx-1 border-2 shadow outline-none text-center" spellcheck="false" data-placeholder="global variable" contenteditable="true" data-gramm="false" wt-ignore-input="true"></div>)</div></div><button class="relative fa p-1 bg-yellow-400 rounded fa-mouse-pointer" onclick="!tooltip.classList.contains('not-here')&amp;&amp;(()=>{
+  /*required below to prevent the click event below from propagating to the one below*/
+  event.stopPropagation(), event.cancelBubble=true;
+  this.circuit ||=objWalk(this, ['parentNode', 'previousElementSibling', 'firstElementChild', 'nextElementSibling']);
+  if(this.circuit.classList.contains('open-circuit')) {
+    this.ancestor ||=objWalk(this, {4:'parentNode'}),
+    this.callback ||=e=>{
+      if(e.target !== this.ancestor &amp;&amp; !relation(this.ancestor, e.target)[0]) {
+        this.$0 = e.target,
+        this.revoke()
+      }
+    },
+    (this.add ||=_=>{
+      this.ancestor.classList.add('not-here'),
+      body.classList.add('notify', 'custom-cursor'),
+      w.addEventListener('click', this.callback),
+      w.addEventListener('keydown', this.keydownCallback=e=>{
+        if(e.keyCode===27) this.revoke()
+      }, {once:true})
+    })(),
+    this.revoke ||=_=>{
+      this.ancestor.classList.remove('not-here'),
+      body.classList.remove('notify', 'custom-cursor'),
+      w.removeEventListener('click', this.callback),
+      w.removeEventListener('keydown', this.keydownCallback)
+    }
+  }
+})()"></button></div>)<button class="relative p-2 inline-block ml-2 fa fa-undo-alt bg-white shadow-md" onclick="(()=>{
+  if(!this.array) {
+    let intermediate=objWalk(objWalk(this, {2:'previousElementSibling'}), {2:'firstElementChild'});
+    this.array ||=[intermediate, objWalk(objWalk(intermediate, {4:['parentNode','previousElementSibling']}),'firstElementChild')];
+  }
+  this.array.forEach(e=>e.activated&amp;&amp;e.refresh());
+})()
+"><div class="tooltip to-bottom bg-gray-50 text-gray-700 p-2 absolute font-sans font-normal" data-details="" style="">Refresh: requires an input in the input fields above before working</div></button></div></div><div class="fa-xs absolute fa-expand-alt top-full fa bg-yellow-300 p-1.5 right-12 mt-2 border-2 border-yellow-50" onclick="(()=>{
+  this.parentNode.classList.toggle('to-top');
+})()"><div class="tooltip to-right bg-inherit text-gray-700 p-1 absolute show font-sans font-normal text-xs" data-details="localStorage"></div></div></div><!--END--><aside class="hidden tooltip COMPONENT controls fixed bottom-8 flex right-24 rounded-xl text-xs bg-gray-100 shadow border-2 border-gray-100 z-10 to-bottom"><button class="absolute bottom-full p-2 fa fa-chevron-down bg-gray-100 shadow mb-6" onclick="this.parentNode.classList.toggle('to-bottom'), this.classList.toggle('fa-chevron-up')"><div class="tooltip to-top absolute bg-inherit p-2 text-xs font-normal font-sans text-gray-700 rounded whitespace-pre" data-details="upload and watch linked resources"></div></button><div class="rounded-lg flex items-center tooltip-parent justify-between"><div class="decorate rounded-inherit inset-0.5 absolute overflow-hidden"><div style="--tw-bg-opacity: 0.6" class="duration-300 origin-bottom-right -right-7 top-3/4 p-1.5 shadow bg-gray-400  rounded-full transform scale-150 absolute"></div><div style="--tw-bg-opacity: 0.7" class="duration-300 origin-top-left -left-7 bottom-3/4 p-1.5 shadow bg-gray-300 rounded-full transform scale-150 absolute"></div></div><datalist id="css-files" style="--delay: 0.5s; --arrow-y: 700%; transform: none; bottom: 0%; top: unset;" class="block rounded-md text-pink-600 bg-pink-100 tooltip p-1 pr-1 space-y-1 absolute to-left"><i class="shadow p-2 -ml-2 duration-300 hover:bg-pink-50 rounded fa fa-undo relative"><div class="bg-white rounded tooltip to-left flex flex-col font-sans p-0.5 text-gray-600 text-xs absolute w-auto"><button onclick="build.revert?build.revert():build.reset_class(&quot;to-top&quot;)" class="whitespace-pre p-1.5 bg-pink-50 shadow rounded absolute top-full">revert tooltip into view</button><div class="bg-white p-0.5 shadow">reload assets<hr class="sep bulge-left hor border-0 text-pink-400"><div class="p-0.5 flex space-x-0.5 items-center justify-center"><div class="relative bg-pink-100 p-1">'edit asset names'<div style="top:unset;bottom:-170%;transform:translateY(0%);" class="rounded tooltip to-left bg-gray-50 shadow p-0.5 absolute assets"><h1 class="text-center text-lg">scripts</h1><div class="script"><div class="group flex w-full justify-between whitespace-pre p-1 rounded">../js/ripples.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div><div class="group flex w-full justify-between whitespace-pre p-1 rounded">../js/rellax.min.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div><div class="group flex w-full justify-between whitespace-pre p-1 rounded">../js/build.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div><div class="group flex w-full justify-between whitespace-pre p-1 rounded">../js/draggabilly.pkgd.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div><div class="group flex w-full justify-between whitespace-pre p-1 rounded">../js/js.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div><div class="group flex w-full justify-between whitespace-pre p-1 rounded">../js/utils.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div><div class="group flex w-full justify-between whitespace-pre p-1 rounded">https://s3.tradingview.com/tv.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div><div class="group flex w-full justify-between whitespace-pre p-1 rounded">../js/rainbow-custom.min.js<i class="cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative"><p class="font-sans p-1 rounded bg-inherit to-top tooltip absolute" data-details="refresh asset"></p></i></div></div><hr class="sep bulge-center hor border-0 text-pink-400"><h1 class="text-center text-lg">links</h1><div class="hover:[&amp;>*]:border-2:border-orange link text-center"><div class="group flex w-full justify-between whitespace-pre p-1 rounded" contenteditable="">../favicon.ico</div><div class="group flex w-full justify-between whitespace-pre p-1 rounded" contenteditable="">../css/build.css</div><div class="group flex w-full justify-between whitespace-pre p-1 rounded" contenteditable="">../css/tailwind.min.css</div><div class="group flex w-full justify-between whitespace-pre p-1 rounded" contenteditable="">../css/all.min.css</div></div><script>let a, s = ['script', 'link'];
+                                                new Promise((r)=>(a = d.head.qsa(s[0]),
+                                                r(d.head.qsa(s[1])))).then(_=>{
+                                                    console.log(_)
+                                                    if (_.length) {
+                                                        _ = [a, _]
+                                                        let out = s.map(_=>qs('.assets .' + _))
+                                                          , syntax = `<div class='group flex w-full justify-between whitespace-pre p-1 rounded'_</div>`
+                                                          , gt = mDize(prot_H.getAttribute)
+                                                          , st = e=>e[0].setAttribute('href', e[1])
+                                                        let o = {}
+                                                          , index = 0
+                                                          , children = []
+                                                          , get = _=>o[children.indexOf(_)] || get(_.parentNode) || get(_.parentNode.parentNode);
+
+                                                        for (let i = 0; i < 2; i++) {
+                                                            out[i].innerHTML = '';
+                                                            _[i].forEach(e=>out[i].innerHTML += syntax.replace('_', _=>{
+                                                                o[index++] = e;
+                                                                let f = s=>gt(e, s);
+                                                                return f('src') ? '>' + f('src') + `<i class='cursor-pointer group-hover:border-yellow-400 border-2 fa fa-crosshairs ml-2 p-1 bg-pink-100 shadow rounded relative'><p class='font-sans p-1 rounded bg-inherit to-top tooltip absolute' data-details='refresh asset'></p></i>` : 'contenteditable>' + f('href')
+                                                            }
+                                                            ))
+                                                            children = children.concat(slice(out[i].children))
+                                                        }
+
+                                                        out[0].parentNode.onkeydown = e=>setTimeout(_=>st([get(e.target), e.target.innerText]), 10);
+                                                        out[0].onclick = e=>get(e.target).remove()
+                                                    }
+                                                }
+                                                )</script></div></div><hr class="sep bg-pink-300 py-5 p-px rounded-md ver border-0 text-pink-400"><p class="bg-gray-50 p-0.5">smash "Enter" to add</p><p data-placeholder="add" class="inline-block outline-none hover:bg-pink-200 text-pink-600 rounded shadow focus:border-pink-200 border-2 border-transparent font-fredoka text-center p-px" contenteditable="true" data-gramm="false" wt-ignore-input="true"></p></div></div></div></i><hr class="sep bulge-left hor border-0 text-pink-400">activity<hr class="sep bulge-right hor border-0 text-pink-400"><p class="whitespace-pre hover:bg-pink-200 rounded-md p-0.5"><i class="fa fa-pen duration-300 text-current rounded-full p-1"></i>design</p><div class="upload hover:bg-pink-200"><div class="relative rounded-md p-0.5 flex justify-between items-center"><i class="shadow fa text-current fa-arrow-up duration-300 rounded-full p-1"></i><p class="w-full">uploaded css</p></div><div class="dump" style="--tw-scale-x: 212.531;"><pre class="rounded overflow-hidden relative"><div style="transition-duration: 3710.5533333333333ms;" class="bg-gradient-to-[disabled] from-transparent via-pink-200 to-gray-50 origin-top-left w-px absolute h-6 ease-in-out"></div><p class="px-1 py-0.5 relative">tailwind.min.css  | 2934.498 KB
+</p><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></pre></div></div><p class="whitespace-pre hover:bg-pink-200 rounded-md p-0.5"><i class="fa fa-save text-current duration-300 rounded-full p-1"></i>save</p></datalist><div style="--tw-bg-opacity: 0.3" class="relative px-1 py-2 shadow mx-2 bg-gray-50 rounded text-center"><i class="fa fa-pen duration-300 hover:bg-gray-300 rounded-full p-1"></i><button class="hover:bg-gray-200 shadow rounded-md" onclick="let t=this.firstElementChild; t.getAttribute('clicked')||/*the condition is required to make event.preventDefault() work when clicking on this element via tooltip's select element functionality*/!tooltip.classList.contains('not-here')&amp;&amp;setTimeout(_=>this.firstElementChild.click(),0), false"><label onclick="this.setAttribute('clicked',' '), setTimeout(_=>this.removeAttribute('clicked'), 2)" class="duration-300 rounded-full"><i class="fa fa-arrow-up p-1"></i><input multiple="" accept=".css" type="file" class="hidden h-0 w-0" tabindex="-1" onchange="if(this.files[0]){
+              build.worker.initialized=false;
+              let arg=this.files, fn=(e,i,a)=>e.length>=a[(i+1)%a.length].length,longest = prot_A.map.call(this.files,_=>_.name).filter(fn).find(fn),
+              out = this.parentNode.parentNode.parentNode.previousElementSibling.qs('.upload .dump'), spacer=longest.replace(/()/g, &quot; &quot;).replace(/\S+/g, &quot;&quot;), 
+              txt=&quot;&quot;;
+              out.style.cssText=&quot;&quot;; let notify=this.previousElementSibling; notify.innerHTML=`<svg viewBox='0 0 32 32' aria-hidden='true' focusable='false'><path d='M6.5 23.5c-.7 0-1.4-.4-1.7-1C3.6 20.5 3 18.3 3 16 3 8.8 8.8 3 16 3s13 5.8 13 13c0 1.1-.9 2-2 2s-2-.9-2-2c0-5-4-9-9-9s-9 4-9 9c0 1.6.4 3.1 1.2 4.5.6 1 .2 2.2-.7 2.7-.4.2-.7.3-1 .3z'> <animateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='.5s' repeatCount='indefinite'></animateTransform></path></svg>`;
+              
+              let i,current=arg[0], status=out.previousElementSibling.lastElementChild, incr=0,interval = setInterval(function(){current = arg[incr];let{size, lastModifiedDate, name} = current; if(incr===(arg.length-1)){              setTimeout(()=>status.innerText='uploaded css', 100+current.size/4000); clearInterval(interval);              notify.innerHTML='';}                status.innerText = `uploading  `;                         setTimeout(()=>status.innerText = `creating objects for ${name}`, size/4000),                setTimeout(()=> status.innerText = `getting styles and scopes of ${name}`, size/4250),                build.css.cacheIndexOffset=build.css.processed.length, !build['css'][name]&amp;&amp;!async function(){await current.text().then((text) =>{build.css.largest=size>build.css.largest?size:build.css.largest, build.css.all_text +=build.css.uuid+text, build.css({name,size,lastModifiedDate,current,text,number:incr}),incr++;})}(), setTimeout(()=>status.innerText = `exiting ...`, size/5000);
+              txt +=`<div style=&quot;transition-duration: ${450+(size/900)}ms;&quot; class=&quot;bg-gradient-to-[disabled] from-transparent via-pink-200 to-gray-50 origin-top-left w-px absolute h-6 ease-in-out&quot;></div><p class=&quot;px-1 py-0.5 relative&quot;>${name}${spacer.substr(0, spacer.length-name.length)} | ${(size/1000).toFixed(3)} KB\n</p>`;
+              
+              out.innerHTML=`<pre class=&quot;rounded overflow-hidden relative&quot;>${txt}</pre>`;
+              let children = out.qs(&quot;pre &quot;).children, scale=`--tw-scale-x: ${getStyle(prot_A.find.call(children, e=>e.textContent.search(longest)^-1), &quot;width&quot;)?.split(&quot;px&quot;)[0]}`
+              out.style.cssText=scale;}, 900)}"></label></button><i class="fa fa-save duration-300 hover:bg-gray-300 rounded-full p-1"></i></div><div class="text absolute hover:bg-gray-100 p-0.5 rounded border-2 border-gray-50 left-full bg-white"><p class="whitespace-pre"><i class="fa fa-expand rounded bg-gray-50 shadow h-full relative"></i>[cheatsheet]</p><div style="left: -50%; --arrow-x: 700%; --arrow-degree: -45deg;" class="border-2 border-gray-200 tooltip to-top absolute p-1 bg-white shadow"><p class="p-1">when you click on the<em class="inline-block p-px bg-gray-100 relative">`select ${this}`</em>button you can:</p><hr class="sep hor border-0 bg-gray-700 p-px"><ul class="list-disc list-inside"><li>select the body element by clicking and dragging the mouse cursor to select all text and release within the browser's viewport</li><li>select the html element by repeating the steps above but releasing the mouse cursor outside the browser's viewport</li></ul></div></div></div></aside><div class="COMPONENT fixed bg-white tooltip b452f67d-c1b3-4fd5-b2e7-1ce66ff60d2b to-lefts top-1/3 to-left"><div class="left-full focus:shadow focus:bg-white absolute bg-pink-100 text-pink-700 text-sm rounded ml-5"><button class="fa fa-images p-2 text-pink-700" onclick="(()=>{objWalk(this, {2:'parentNode'}).classList.toggle('to-left')})()"></button><div class="tooltip to-right font-sans p-1.5 absolute bg-inherit text-xs font-normal whitespace-pre">locally stored images</div></div><div class="relative shadow mt-2 border-2 border-gray-50 divide-y-2 divide-pink-400 text-xs"><section class="p-2 space-y-2"><div class="p-1 py-0.5 focus:border-pink-400 border-white outline-none" style="border-width: 0px 2px 0px 2px;" data-placeholder="accepted formats" spellcheck="false" onkeydown="setTimeout(_=>{
+  (this.fileInput ||=objWalk(this, {4:['nextElementSibling', 'firstElementChild']}))
+  .setAttribute('accept', '.'+this.textContent.replace(/\s+/g,',.'))
+})" contenteditable="true" data-gramm="false" wt-ignore-input="true">png jpeg jpg avif webp svg</div><div class="relative flex items-start space-x-2 items-center"><label role="button" style="--slider-checked-color: hotpink; --slider-rail-checked-color: pink;" class="text-xs focus-within:border-pink-300 border-transparent border-2 toggle-wrapper rounded-md shadow relative" onclick="(()=>{
+  this.fileInput ||=this.nextElementSibling.qs('input')
+  if((this.input ||=this.qs('input')).checked) this.fileInput.setAttribute('multiple','')
+  else this.fileInput.removeAttribute('multiple')
+})()"><input type="checkbox" title="activate"><div class="mt-1 tooltip to-bottom flex justify-center absolute rounded bg-pink-100 shadow text-gray-700 p-1 text-center" data-details="[inactive]" style="transform:none; left:0px; --arrow-x:-6em;"><br><hr class="sep ver p-px bulge-center border-0"><span class="whitespace-pre">multiple selections</span></div><span class="toggle"></span></label><button class="hover:bg-pink-100 shadow rounded-md" onclick="let t=this.firstElementChild; t.getAttribute('clicked')||/*the condition is required to make event.preventDefault() work when clicking on this element via tooltip's select element functionality*/!tooltip.classList.contains('not-here')&amp;&amp;setTimeout(_=>this.firstElementChild.click(),0), false"><label onclick="this.setAttribute('clicked',' '), setTimeout(_=>this.removeAttribute('clicked'), 2)" class="duration-300 rounded-full"><i class="fa fa-arrow-up p-1"></i><input accept=".png,.jpeg,.jpg,.avif,.webp,.svg" type="file" class="hidden h-0 w-0" tabindex="-1" onchange="(()=>{
+  this.path ||=(this.bars ||=objWalk(this, {2:['parentNode','nextElementSibling']})).nextElementSibling,
+  this.output ||=objWalk(objWalk(this, {4:['parentNode']}), ['nextElementSibling', 'lastElementChild']);
+  let arg, MB=1024**2, interval, loaded_imgs=[], stored;
+  if((arg=this.files).length) {
+    this.bars.classList.add('bars-3');
+    let i, obj, frag=d.createDocumentFragment(), current, incr=0; interval = window.setInterval(_=>{
+      let {size, lastModifiedDate, name}=current=arg[incr];
+      frag.appendChild((obj=build_nodes({name:'figure',
+        innerHTML:`<img class=&quot;filter saturate-200 relative&quot; src=&quot;${(this.path.value||this.path.placeholder)+name}&quot;>
+          <span class=&quot;-top-1 size -left-1 border-2 rounded-br-lg border-pink-50 p-px absolute font-sans shadow bg-pink-100 text-pink-700 z-10 text-xs font-mono&quot;>&amp;lt;size&amp;gt;</span><figcaption class=&quot;relative whitespace-pre text-xs text-center res m-auto&quot;></figcaption>`,
+        attributes: {0:{name:'class',value:'p-1 relative'},length: 1},
+	    selectorStrings:['.size', '.res']})).element);
+      obj.children[0].textContent=(''+size/MB).slice(0,4)+ ' mb',
+      (loaded_imgs[incr]=new Image()).src=this.path.value+name,      
+      loaded_imgs[incr].onload=function() {
+        new Promise(resolve=>resolve(this.naturalWidth)).then(width=>{
+          stored.textContent=width+' ∙⨉∙ '+this.naturalHeight
+        })
+      },
+      stored=obj.children[1];
+      if(incr===(arg.length-1)) {
+        clearInterval(interval);
+        this.output.innerHTML='', this.output.appendChild(frag); 
+        setTimeout(_=>this.bars.classList.remove('bars-3'), 100+incr*10)
+      }
+      incr++;
+     },50);
+  }
+})()
+" multiple=""></label></button><div class="p-1.5"></div><input class="rounded py-1.5 pl-1 border-2 border-black" placeholder="../general inspire/" type="text"></div></section><section class="p-2 relative overflow-visible"><div class="items-center flex space-x-1 my-1">thumbnails<button class="border-2 focus:border-gray-400 fa fa-columns ml-2 p-2 rounded-full bg-gray-50 hover:bg-gray-200 border-gray-400" onclick="(()=>{
+  (this.section ||=this.parentNode.nextElementSibling).classList.replace('grid', 'flex-wrap')
+  this.classList.add('border-gray-400'),
+  this.nextElementSibling.classList.remove('border-gray-400')
+})()"></button><button class="border-2 focus:border-gray-400 fa ml-2 p-2 rounded-full bg-gray-50 hover:bg-gray-200 fa-table" onclick="(()=>{
+  (this.section ||=this.parentNode.nextElementSibling).classList.replace('flex-wrap', 'grid')
+  this.classList.add('border-gray-400'),
+  this.previousElementSibling.classList.remove('border-gray-400')
+})()"></button><button class="rounded border-2 p-1 border-pink-50 bg-pink-100 text-pink-500">process</button><button class="p-2 shadow far fa-trash-alt relative fa-lg" onclick="(this.dump ||=objWalk(this, {1:['parentNode', 'nextElementSibling']}))
+.innerHTML='';"><div class="font-sans to-top tooltip absolute bg-gray-50 p-2 text-sm" data-details="clear"></div></button><div class="relative shadow focus-within:bg-pink-100 text-pink-700 bg-white rounded-md"><button class="relative fa fa-crosshairs p-2 text-current" onclick="!tooltip.classList.contains('not-here')&amp;&amp;(()=>{
+  this.script=objWalk(this, ['nextElementSibling', 'lastElementChild', 'firstChild'])
+  /*required below to prevent the click event below from propagating to the one below*/
+  event.stopPropagation(), event.cancelBubble=true;
+  if(this.script.data) {
+    this.ancestor ||=objWalk(this, {5:'parentNode'}),
+    this.callback ||=e=>{
+      if(e.target !== this.ancestor &amp;&amp; !relation(this.ancestor, e.target)[0]) {
+        this.$0 = e.target,
+        this.revoke();
+//added
+eval(this.script.data)
+//end of added
+      }
+    },
+    (this.add ||=_=>{
+      this.ancestor.classList.add('not-here'),
+      body.classList.add('notify', 'custom-cursor'),
+      w.addEventListener('click', this.callback),
+      w.addEventListener('keydown', this.keydownCallback=e=>{
+        if(e.keyCode===27) this.revoke()
+      }, {once:true})
+    })(),
+    this.revoke ||=_=>{
+      this.ancestor.classList.remove('not-here'),
+      body.classList.remove('notify', 'custom-cursor'),
+      w.removeEventListener('click', this.callback),
+      w.removeEventListener('keydown', this.keydownCallback)
+    }
+  }
+})()"></button><div class="text-center tooltip to-bottom absolute bg-white p-1 font-normal font-sans text-xs flex flex-col outline-none focus:border-pink-300" data-details="[script]:[click on crosshair to set $0]"><hr class="relative sep hor border-0 p-px bg-pink-400 rounded" style="--pad:30%;"><div class="relative bg-pink-100 shadow p-1.5 whitespace-pre-wrap text-left">const section=objWalk(this, {2:['parentNode', 'nextElementSibling']}),
+selected_img= section.qs('figure.border-2.border-pink-500 img'),
+path = ((this.path ||=objWalk(this, [{3:'parentNode'}, 'pES', {2:'lEC'}])).value?this.path.placeholder=this.path.value:this.path.placeholder),
+imgs = section.querySelectorAll('figure img'),
+unslh =_=&gt;_.split('/').pop();
+//if(selected_img &amp;&amp;(path+=selected_img.src.split('/').pop())) this.$0.nextElementSibling.style.backgroundImage=`url(${path})`;
+let current = this.$0, i=0;
+while(current = current.nextElementSibling) {
+  current.src = path+unslh(selected_img.src)
+  //current.style.backgroundImage=`url(${imgs[i++].src})`
+  
+}</div></div></div></div><div class="w-inherit px-1 hover:[&amp;>*]:shadow-4:shadow-gray-300 relative font-serif shadow-md overflow-scroll h-24 flex grid-cols-4 pb-2 flex-wrap" style="max-width:300px;" onclick="(()=>{
+  let p=slice(event.composedPath(),0,2), which;
+  for(let i=p.length; i--;) if(p[i].tagName=='FIGURE') which=p[i];
+  if(which) (this.selected=which).classList.add('border-2','border-pink-500'), this.previous?.classList.remove('border-2','border-pink-500'), this.previous=which;
+})()"><figure class="p-1 relative border-2 border-pink-500"><img class="filter saturate-200 relative" src="../general inspire/original-0d3e6568fb2823ff79da94ba203e69db.png">
+          <span class="-top-1 size -left-1 border-2 rounded-br-lg border-pink-50 p-px absolute font-sans shadow bg-pink-100 text-pink-700 z-10 text-xs font-mono">0.21 mb</span><figcaption class="relative whitespace-pre text-xs text-center res m-auto">1024 ∙⨉∙ 768</figcaption></figure><figure class="p-1 relative"><img class="filter saturate-200 relative" src="../general inspire/original-0f17695dbe19fe7ff5bfdfb19c89cae8.png">
+          <span class="-top-1 size -left-1 border-2 rounded-br-lg border-pink-50 p-px absolute font-sans shadow bg-pink-100 text-pink-700 z-10 text-xs font-mono">0.16 mb</span><figcaption class="relative whitespace-pre text-xs text-center res m-auto">1024 ∙⨉∙ 768</figcaption></figure><figure class="p-1 relative"><img class="filter saturate-200 relative" src="../general inspire/original-be45c2a6a0ca71549db8a1c41db9f703.png">
+          <span class="-top-1 size -left-1 border-2 rounded-br-lg border-pink-50 p-px absolute font-sans shadow bg-pink-100 text-pink-700 z-10 text-xs font-mono">0.24 mb</span><figcaption class="relative whitespace-pre text-xs text-center res m-auto">1024 ∙⨉∙ 768</figcaption></figure><figure class="p-1 relative"><img class="filter saturate-200 relative" src="../general inspire/original-e036db57e0e6c2a37a8ac9f2682451da.png">
+          <span class="-top-1 size -left-1 border-2 rounded-br-lg border-pink-50 p-px absolute font-sans shadow bg-pink-100 text-pink-700 z-10 text-xs font-mono">0.62 mb</span><figcaption class="relative whitespace-pre text-xs text-center res m-auto">1024 ∙⨉∙ 768</figcaption></figure></div></section><section class="p-2 flex flex-col items-start"><div class="relative border-gray-700" style="border-bottom-width:3px;">Images to Data Urls</div>processing ...<div class="relative flex p-2 bg-pink-100 border-2 border-pink-50 rounded mt-1"><input class="inline w-11 text-center bg-pink-100 focus:shadow outline-none" type="number" onkeydown="setTimeout(_=>{
+  let valid=+this.value
+  if(valid) this.other.value=this.canvas.width=(this.canvas.height=valid)*2
+})" onfocus="setTimeout(_=>{
+  this.value=(this.canvas ||=objWalk(this, ['parentNode', 'nextElementSibling'])).height
+  this.other ||= objWalk(this, {3:'nextElementSibling'})
+})" placeholder="y"><hr class="sep ver p-px border-0 bg-pink-400"><input class="inline w-11 text-center bg-pink-100 focus:shadow outline-none mr-1" type="number" onfocus="setTimeout(_=>{
+  this.value=(this.canvas ||=objWalk(this, ['parentNode', 'nextElementSibling'])).width
+  this.other ||= objWalk(this, {3:'previousElementSibling'})
+})" onkeydown="setTimeout(_=>{
+  let valid=+this.value
+  if(valid) this.other.value=this.canvas.height=(this.canvas.width=valid)/2
+})" placeholder="x"></div><canvas class="relative bg-gray-50 shadow mt-2" width="4" height="2"></canvas></section></div></div><aside style="border-bottom-width: 2px;" class="hidden left-4 bottom-1/2 tooltip COMPONENT e1a10-78c1-413e-b0ef-9574f2c39d92 p-1 border-gray-800 fixed text-sm sm:w-1/3 to-top"><div class="tooltip slide no-hover absolute no-focus"><div class="text-sm flex items-center mb-1">5 files uploaded<label class="relative whitespace-pre"><input class="font-mono p-1.5 ml-2 border-2 rounded-md hover:border-gray-300 focus:bg-gray-100" placeholder="filter files" oninput="let section = this.section ||=objWalk(this, [{3:'parentNode'}, 'nextElementSibling']),
+names = this.names, items =this.items, show = 'show',
+hide='absolute', cList=section.lastElementChild.classList;
+this.reset=function() {
+  items.forEach(item=>item.classList.replace(hide, show))
+}
+/*
+  the algorithm in the filter method below works by filtering all up to the
+  one that matches, it can be easily reversed; ascending or descending,
+  simply by reversing the &quot;names&quot; array above.
+  If the &quot;items&quot; array above is also reversed then it works as a
+  filter that filters the count of items if an only if the search
+  criterion is made to be index-based.
+*/
+this.filter=text=>{
+  let watch;
+  for (let i = names.length, j = 0; j < i; ) {
+    (names[j].charAt(0) === text.charAt(0) &amp;&amp; names[j].search(text.substr(1)) > -1) &amp;&amp; (watch=j, show=hide, hide='show')
+    items[j].classList.replace(show, hide), j++;
+  }
+  if(watch===undefined) {
+    !text&amp;&amp;(this.reset(), show=hide, hide='show'),
+    cList.replace(hide, show)
+  } else {
+    cList.replace('show', 'absolute')
+  }
+}
+if(names) this.filter(this.value.toLowerCase())"><div class="tooltip to-right absolute p-1 bg-yellow-400 text-xs" data-details="filters files with typed characters"></div></label></div><hr class="sep hor bulge-center text-yellow-400 border-0" style="width:30%"><div class="flex text-xs"><div class="relative flex items-center w-full"><span class="truncate w-3/4">6</span><hr class="sep ver p-0.5 bg-black rounded-full"><span class="bg-yellow-400 p-1 rounded-tr-md rounded-br-md">.jpg</span></div><span class="p-2"></span></div></div><section class="overflow-x-hidden overflow-scroll relative files-list grid w-full sm:grid-cols-1 grid-cols-1 p-1 pl-3 gap-8 sm:gap-1 mt-1 pb-4" onclick="let concerned=slice(event.composedPath(),0, 3);
+if(concerned=concerned.find(e=>e.tagName==='FIGURE')) this.qs('.decorate:not(.opacity-0)').classList?.add('opacity-0'), concerned.firstElementChild.classList.remove('opacity-0');" style="max-height:12em;"><p class="h-28 flex items-center justify-center tooltip no-hover no-focus slide show"><i class="fa fa-exclamation mx-4 border-4 rounded-full h-10 w-10 text-center p-2.5 border-black"></i>uploaded items appear here</p></section><div class="absolute top-full mt-3 left-0 w-full"><div class="bg-white cursor-pointer float-right whitespace-pre hover:bg-gray-100 shadow rounded-md flex items-center font-sans pr-1" onclick="this.firstElementChild.click()" type="button" tabindex="0" onkeydown="/Enter|Space/.test(event.code)&amp;&amp;this.firstElementChild.click()"><label onclick="this.setAttribute('clicked', true), setTimeout(_=>this.removeAttribute('clicked'), 60)" class="duration-300 rounded-full pointer-events-none"><i class="fa fa-upload p-2.5 bg-gray-100 mr-1"></i><input type="file" class="hidden h-0 w-0" tabindex="-1" multiple="" accept="*" onchange="(_=>{
+  this.bars         ||= objWalk(this, [{4:'parentNode'}, 'firstElementChild', {2:'lastElementChild'}]),
+  this.fileName     ||= objWalk(this.bars, ['previousElementSibling', {2:'firstElementChild'}]),
+  this.fileExt      ||=objWalk(this.fileName, {2:'nextElementSibling'}),
+  this.notify       ||= objWalk(this.fileName, [{2:'parentNode'}, {2:'previousElementSibling'}, 'firstChild']),
+  this.output       ||=objWalk(this.bars, [{2:'parentNode'}, 'nextElementSibling']),
+  (this.searchInput ||=objWalk(this.notify, ['nextElementSibling', 'firstElementChild'])).items=[],
+  this.searchInput.names=[];
+  //the code below only show items when they are needed
+  objWalk(this.notify, {2:'parentNode'}).classList.replace('absolute', 'show'),
+  requestAnimationFrame(execute.bind(this));
+function execute() {
+  let arg, MB=1024**2, interval, rgx=/(png|docx|jpe|jpg|pdf|ppt|xlsx|zip|txt)$/;
+  if((arg=this.files).length) {
+    this.bars.classList.add('bars-3');
+    let i, obj, later=[], frag=d.createDocumentFragment(), current, incr=0; interval = window.setInterval(_=>{
+      let {size, lastModifiedDate, name}=current=arg[incr], match=name.match(rgx);
+      frag.appendChild(this.searchInput.items[incr]=(obj=build_nodes({name:'figure',
+        innerHTML:`
+         <div class=&quot;inset-0 bg-inherit decorate opacity-0 absolute left-0 sm:overflow-hidden sm:rounded-md&quot;><div class=&quot;duration-150 ease bg-gray-300 shadow h-full w-full rounded-full sm:h-5 sm:w-5 absolute sm:relative sm:p-10 sm:left-3/4&quot; style=&quot;--tw-bg-opacity:0.8; --tw-scale-x:1.5; --tw-scale-y:1.5&quot;></div> <div class=&quot;duration-150 ease bg-gray-100 sm:bg-gray-200 shadow h-full w-full rounded-full sm:h-5 sm:w-5 absolute sm:relative sm:border-gray-100 border-2 sm:bottom-full sm:p-10&quot; style=&quot;--tw-bg-opacity:0.7; --tw-scale-x:1; --tw-scale-y:1;&quot;></div></div>
+         <div class='h-0.5 w-2/3 absolute bg-pink-300 bottom-0'></div>
+         <div style='z-index:1' class='w-5/6 right-0 md:w-3/4 duration-100 ease-in-out divide-x-2 divide-gray-400 text-xs absolute sm:mr-4 md:m-0 sm:right-1/4 lg:right-5 top-1/2 sm:top-0 sm:w-1/2 flex shadow bg-gray-50 rounded name'>
+           <div class='overflow-hidden truncate flex-1 p-3 sm:p-2 '></div>
+           <div class='p-2 rounded-tr rounded-br flex items-center bg-gray-100'></div>
+         </div>
+          <img alt='file-type-icon' height=48 width=48 class=&quot;text-xs filter saturate-200 relative&quot; src=&quot;img&quot;>
+          <span style='z-index:1;' class=&quot;translate-x-2/3 duration-150 -top-0.5 ease-in sm:left-0 -md:translate-y-1/2 ml-5 transform md:translate-x-full sm:top-3/4 whitespace-pre size border-2 border-pink-100 p-1 absolute font-sans shadow bg-pink-50 text-pink-500 text-xs font-light&quot;>&amp;lt;size&amp;gt;</span><figcaption class=&quot;-top-0.5 sm:right-full right-1/4 md:top-full sm:mr-4 md:m-0 md:ml-5 md:translate-x-3/4 transform whitespace-pre inline-block absolute bg-gray-50 shadow border-2 border-gray-100 p-1 text-xs text-center date-modified&quot;></figcaption>`
+          .replace('src=&quot;img&quot;', 'src=./'+(match?match[0]:'generic')+'.png'),
+        attributes: {0:{name:'class', value:'tooltip show no-hover no-focus slide sm:m-2 md:m-4 duration-200 ease-out p-1 w-full'},length: 1},
+	    selectorStrings:['.size', '.date-modified','.name>*', '.name>*+*']})).element);
+      obj.children[0].textContent=(''+size/MB).slice(0,5)+ ' mb',
+      obj.children[1].textContent=lastModifiedDate.toDateString(),
+      
+      obj.children[2].textContent=this.fileName.textContent=name
+      .replace(/(\.|)[a-z]+$/,_=>(this.fileExt.textContent=obj.children[3].textContent=_, '')),
+      //line break
+      this.searchInput.names[incr]=name.toLowerCase(),
+      later[incr]=objWalk(obj.children, {2:['1', 'previousElementSibling']});
+      this.notify.data = 'uploading files...'
+      if(incr===(arg.length-1)) {
+        clearInterval(interval);
+        frag.appendChild(build_nodes({name:'p',
+          innerHTML:`<i class=&quot;fa fa-exclamation mx-4 border-4 rounded-full h-10 w-10 text-center p-2.5 border-black&quot;> </i>no match found`,
+          attributes: {0:{name:'class', value:'h-28 flex items-center justify-center tooltip no-hover no-focus slide absolute'}}
+        }));
+        this.output.innerHTML='', this.output.appendChild(frag);
+        this.notify.data = arg.length + ' files uploaded' 
+        setTimeout(_=>this.bars.classList.remove('bars-3'), 100+incr*10)
+        /*setTimeout(_=>{
+          let figures=this.output.children;
+          for(let i=0; i<figures.length; i++) figures[i].lastElementChild.textContent=later[i].naturalWidth+' x '+later[i].naturalHeight;
+        },100)*/
+      }
+      incr++;
+     }, arg.length>5?50:200);
+  }
+}
+})()"></label><p class="relative">upload attachments</p></div></div><div class="focus:shadow focus:bg-white absolute bg-gray-100 text-gray-700 text-sm top-full rounded mt-3"><button class="fa fa-images p-2 text-gray-700" onclick="(()=>{objWalk(this, {2:'parentNode'}).classList.toggle('to-top')})()"></button><div class="tooltip to-bottom font-sans p-1.5 absolute bg-inherit text-xs font-normal whitespace-pre">upload files</div></div></aside><div class="COMPONENT block fixed w-80 bg-gray-50 shadow h-1/5 bottom-10 ml-8 tooltip p-1 to-left"><div class="text-xs absolute bottom-full mb-1 space-x-1 flex"><div class="cursor-pointer h-24 overflow-scroll no-arrow rounded tooltip to-top show absolute mb-1.5 p-1 bg-gray-100 shadow min-w-full w-auto hover:[&amp;>*]:shadow-4:shadow-gray-300" style="left:-28px;transform: none;" onclick="let t,p;
+this.output||=objWalk(this.parentNode, {1:['parentNode', 'lastElementChild']}),
+this.init=function(initialize) {
+  this.output.prettify = function prettify(a) {
+  let line = '\n\r', tab='\t', _tabs='\t\t', space=' ';
+  if(a==='{') return space+a+line+tab;
+  else if(a==='/*'||a==='*/') return line+tab+a+(a==='*/'?line:'')
+  else if(a===';') return a+line+tab;
+  else if(/;(\s|\t|\n|)+\}/.test(a)) return a.split(/\s*/).join(line)+line;
+},
+  this.output.head||=document.head,
+  this.output.promise||=cb=>new Promise(resolve=>setTimeout(_=>resolve(cb())));
+  this.output.init=function(value){
+    if(value) this.textContent=(this.styleTag=this.head.qs('style.'+value)||
+      this.head.appendChild(build_nodes({name:'style', attributes:{0:{name:'class', value}, length:1},
+        textContent:'\n'+this.textContent.replace(/\s+/g,' ').replace(/<br>/g, '\n')
+      }))).innerText.replace(/^\n+/,'').replace(/\s+/g,' ').replace(/\{|\/\*|\*\/|;(\s|\t|\n|)+\}|;/g, this.prettify);
+  };
+  this.output.init(initialize)
+};
+//synthetic events are known by the check below.
+event.pointerId===-1&amp;&amp;this.init();
+if((t=event.target).tagName==='DIV') {
+  !this.output.initialized&amp;&amp;(this.init(), this.output.initialized=!0);
+  let uuid;
+  if((uuid=t.firstChild.data)!==this.previous) this.output.setAttribute('data-stored',uuid), this.output.init(this.previous=uuid);
+} else {
+  p=t.parentNode;
+  if(p._r('previousElementSibling')('nextElementSibling', arg=>{
+    arg=arg.parentNode.output.textContent='';
+    return false;
+  })) {
+    p.remove(), this.output.styleTag.remove();
+  }
+}"><div class="hover:[&amp;>*]:border-2:border-orange flex w-62 justify-between whitespace-pre p-0.5 relative">be88bf2f-65dc-4be1-a04c-5bb025e8266b<i class="rounded p-1.5 p-px far fa-trash-alt mx-1"></i></div><div class="hover:[&amp;>*]:border-2:border-orange flex w-62 justify-between whitespace-pre p-0.5 relative">dc1f98df-28d1-4c1f-983a-3b09a8cb137d<i class="rounded p-1.5 p-px far fa-trash-alt mx-1"></i></div><div class="hover:[&amp;>*]:border-2:border-orange flex w-62 justify-between whitespace-pre p-0.5 relative">ce77170-0f0a-456b-8792-cbe8bb2cfff8<i class="rounded p-1.5 p-px far fa-trash-alt mx-1"></i></div><div class="hover:[&amp;>*]:border-2:border-orange flex w-62 justify-between whitespace-pre p-0.5 relative">ef94-4e32-4d5b-ac04-f297fc564b23<i class="rounded p-1.5 p-px far fa-trash-alt mx-1"></i></div></div><div class="relative"></div><span class="p-2 border-2 border-gray-50 inline-block bg-gray-100">css</span><button class="focus:bg-yellow-200 bg-yellow-100 p-2 font-fredoka" onclick="let node=build_nodes({name:'div', attributes:{0:{name:'class',
+  value:'hover:[&amp;>*]:border-2:border-orange flex w-62 justify-between whitespace-pre p-0.5 relative'},
+  length:1},
+  innerHTML:`${className_uuid()}<i class=&quot;rounded p-1.5 p-px far fa-trash-alt mx-1&quot;></i>`
+});
+(this.output||=this.parentNode.firstElementChild).appendChild(node);"><span class="fa fa-dice mr-1"></span>uuid</button><span class="p-1 flex items-center bg-gray-50 shadow items-center outline-none focus:border-gray-600 text-center" data-placeholder="x" style="border-bottom-width:3px;" contenteditable="true" data-gramm="false" wt-ignore-input="true"></span><span class="p-1 flex items-center bg-gray-50 shadow items-center outline-none focus:border-gray-600 text-center" style="border-bottom-width:3px;" data-placeholder="y" contenteditable="true" data-gramm="false" wt-ignore-input="true"></span></div><button class="absolute fa-expand fa left-full p-1.5 bg-yellow-300 ml-5 focus:border-yellow-600 border-2 border-yellow-300" onclick="this.parentNode.classList.toggle('to-left')"><div class="tooltip font-sans absolute p-1.5 text-sm bg-inherit to-right font-normal whitespace-pre" data-details="style rules"></div></button><div class="inset-1 overflow-scroll whitespace-pre-wrap absolute bg-gray-100 outline-none p-1 pl-2 text-xs font-fredoka" spellcheck="false" style="" data-stored="be88bf2f-65dc-4be1-a04c-5bb025e8266b" oninput="if(event.data||event.inputType.search(/insertFromPaste|deleteContentBackward/)>-1) {
+   this.trigger||=objWalk(this.parentNode, {2:'firstElementChild'})
+   let text;
+   if(!this.initialized) {
+     trigger.click()//defines trigger.init
+     trigger.init(this.getAttribute('data-stored')),
+     this.initialized=!0
+   }
+   else if(text=this.styleTag) this.promise(_=>{
+     if(!text.checked) text.checked=!0, this.textContent.length<text.textContent.length&amp;&amp;(this.textContent=text.innerText.replace(/^\n/,''));
+     return '\n'+this.textContent.replace(/\s+/g,' ').replace(/<br>/g, '\n')})
+     .then(text=>{
+       this.styleTag.textContent=text
+   })
+}" contenteditable="true" data-gramm="false" wt-ignore-input="true">
+
+	/* START of specific on-page styling 
+
+	*/
+
+ .textarea[contenteditable]:empty:before  {
+
+	 font-size: 14px;
+
+	 line-height: 20px;
+
+}
+
+ html  {
+
+	 scroll-behavior: smooth;
+
+}
+
+ footer form.tooltip.slide, aside.tooltip.slide  {
+
+	 --x: -20%;
+
+	 --focus-within-no-focus-transition: opacity 0.5s ease, transform 0.3s 0.05s ease-out, visibility 0s 0.12s !important;
+
+}
+
+ footer form.tooltip.slide.show  {
+
+	 --x: 0%;
+
+}
+
+ 
+
+	/* END of specific on-page styling 
+
+	*/
+
+ .\[\&amp;\&gt;\*\]\:pointer-events-none &gt; *  {
+
+	 pointer-events: none;
+
+}
+
+ button &gt; i:not(.tooltip)  {
+
+	 pointer-events: none;
+
+}
+
+ .bg-noisy  {
+
+	 background: url(../noise.svg);
+
+}
+
+ .custom-cursro  {
+
+	 cursor: url('data:image/svg+xml;
+
+	 utf8,&lt;svg xmlns="http://www.w3.org/2000/svg" height="28" viewport="0 0 28 28" style="font-size:16px"&gt;&lt;text y="50%"&gt;◁▪▷&lt;/text&gt;&lt;/svg&gt;') 16 0, auto;
+
+}
+
+ .transition-hr  {
+
+	 transition: transform .2s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+}
+
+ [contenteditable=true]:empty:before  {
+
+	 font: normal 12px/16px Consolas, sans-serif;
+
+	 color: #a4acb4;
+
+}
+
+ 
+
+	/* START | styling for dying light animation 
+
+	*/
+
+ .loader .lines span:nth-child(3), .loader .lines span:nth-child(4), .loader .lines span:nth-child(3)::before, .loader .lines span:nth-child(4)::before  {
+
+	 bottom: 0px;
+
+}
+
+ .loader .lines span:nth-child(5), .loader .lines span:nth-child(3), .loader .lines span:nth-child(5)::after, .loader .lines span:nth-child(3)::after  {
+
+	 left: 0px;
+
+}
+
+ .loader .lines span:nth-child(5), .lines span:nth-child(2), .loader .lines span:nth-child(5)::before, .lines span:nth-child(2)::before  {
+
+	 top: 0px;
+
+}
+
+ .lines span:nth-child(2), .loader .lines span:nth-child(4), .lines span:nth-child(2)::after, .loader .lines span:nth-child(4)::after  {
+
+	 right: 0px;
+
+}
+
+ .loader .lines span  {
+
+	 height: 15px;
+
+	 position: absolute;
+
+	 width: 15px;
+
+	 z-index: 1;
+
+}
+
+ .loader .lines span::before  {
+
+	 left: 0px;
+
+	 height: 6px;
+
+	 width: 100%;
+
+}
+
+ .loader .lines span::before, .loader .lines span::after  {
+
+	 content: "";
+
+	 position: absolute;
+
+}
+
+ .loader .lines span::after  {
+
+	 height: 100%;
+
+	 top: 0px;
+
+	 width: 6px;
+
+}
+
+ .loader .lines span::before, .loader .lines span::after  {
+
+	 background: #0000002f;
+
+	 content: "";
+
+	 position: absolute;
+
+}
+
+ .loader .lines  {
+
+	 animation: loader 0.9s ease 0s infinite normal none running;
+
+	 height: 115%;
+
+	 position: absolute;
+
+	 width: 115%;
+
+	 left: -7.5%;
+
+	 top: -7.5%;
+
+}
+
+ .loader .square  {
+
+	 top: 0px;
+
+	 right: 0px;
+
+	 bottom: 0px;
+
+	 left: 0px;
+
+	 position: absolute;
+
+}
+
+ 
+
+	/*ending for avatar loader in article_1 
+
+	*/
+
+ .\[\&amp;\&gt;\*\]\:relative &gt; *  {
+
+	 position: relative;
+
+}
+
+ 
+
+	/*end of styles for blurred gradient ball 
+
+	*/
+
+ .font-fantasy  {
+
+	 font-family: fantasy;
+
+}
+
+ .\[\&amp;\&gt;\*\]\:animate-y-full &gt; *  {
+
+	 animation: translate-y-full 0.5s var(--delay) cubic-bezier(0.37, 0, 0.63, 1) forwards;
+
+	 display: inline-block;
+
+}
+
+ 
+
+	/*END: of styles for intro text 
+
+	*/
+
+ .\[\&amp;\&gt;\*\]\:p-1 &gt; *  {
+
+	 padding: var(--base-whole-number-unit);
+
+}
+
+ button:disabled  {
+
+	 cursor: not-allowed;
+
+	 color: initial;
+
+}
+
+ .skeleton  {
+
+	 color: transparent;
+
+	 animation: skeleton-loading 0.8s ease-in-out infinite alternate;
+
+}
+
+ @keyframes skeleton-loading  {
+
+	 0%  {
+
+	 background-color: hsl(200, 20%, 80%);
+
+}
+
+ 100%  {
+
+	 background-color: hsl(200, 20%, 95%);
+
+}
+
+ } .ripple  {
+
+	 overflow: hidden;
+
+}<div>.dots-bars-5 {
+  width: 40px;
+  height: 30px;
+  --c: linear-gradient(currentColor 0 0);
+  background: var(--c) 0 100%/8px 30px, var(--c) 50% 100%/8px 20px, var(--c) 100% 100%/8px 10px;
+  background-repeat: no-repeat;
+  position: relative;
+  clip-path: inset(-100% 0);
+}</div><div>.dots-bars-5::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  left: -16px;
+  top: 0;
+  animation: db5-1 2s linear infinite, db5-2 0.5s cubic-bezier(0,200,.8,200) infinite;
+}</div><div>@keyframes db5-1 {</div><div>0% {
+  left: -16px;
+  transform: translateY(-8px);
+}
+100% {
+  left: calc(100% + 8px);
+  transform: translateY(22px);
+}
+100% {
+  top: -0.1px;
+}</div><div>}
+
+ .dots-6  {
+
+	 width: 30px;
+
+	 aspect-ratio: 1.154;
+
+	 --_g: no-repeat radial-gradient(farthest-side,currentColor 90%,#0000);
+
+	 background: var(--_g) 50% 0, var(--_g) 0 100%, var(--_g) 100% 100%;
+
+	 background-size: 35% calc(35%*1.154);
+
+	 animation: d6 0.58s infinite;
+
+}
+
+ @keyframes d6  {
+
+	 50%, 100%  {
+
+	 background-position: 100% 100%,50% 0,0 100%;
+
+}
+
+ } .\[\&amp;\&gt;\*\]\:whitespace-pre &gt; *  {
+
+	 white-space: pre;
+
+}
+
+ article.inset-0 &gt; .cr-centered-card-container  {
+
+	 --centered-card-width-percentage: 10;
+
+	 --centered-card-max-width: 40rem;
+
+}
+
+ .cr-centered-card-container  {
+
+	 display: block;
+
+	 height: inherit;
+
+	 margin: 0 auto;
+
+	 max-width: var(--centered-card-max-width);
+
+	 
+
+	/*min-width: 550px;
+
+	 arbitrary, can be ignored to prevent overflow on small screens 
+
+	*/
+
+ position: relative;
+
+	 width: calc(100% * var(--centered-card-width-percentage));
+
+	 flex-basis: calc(var(--centered-card-max-width)/ var(--centered-card-width-percentage)) flex: 1 1 0;
+
+}
+
+ 
+
+	/*styles to make tooltip more functional 
+
+	*/
+
+ @media (min-width: 500px)  {
+
+	 .tooltip.base\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+
+ .base\:relative  {
+
+	 position: relative } } @media (min-width: 640px)  {
+
+	 main label.switch:first-of-type .tooltip  {
+
+	 
+
+	/*tooltip.to-right styles 
+
+	*/
+
+ left: calc(100% + 10px) !important;
+
+	 top: 50%;
+
+	 transform: translate(0px, -50%) !important;
+
+	 bottom: unset;
+
+}
+
+ main label.switch:first-of-type .tooltip:after  {
+
+	 content: unset;
+
+}
+
+ section.prots article &gt; main &gt; section  {
+
+	 background-color: transparent;
+
+}
+
+ .sm\:left-1\/6  {
+
+	 left: calc(100%/6);
+
+}
+
+ .sm\:right-1\/6  {
+
+	 right: calc(100%/6) } .tooltip.sm\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+
+ .tooltip.sm\:show.no-hover, .tooltip.sm\:show.no-focus  {
+
+	 pointer-events: auto;
+
+}
+
+ } @media (min-width: 768px)  {
+
+	 .md\:left-unset  {
+
+	 left: unset;
+
+}
+
+ .tooltip.md\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0% !important;
+
+	 
+
+	/*needed in some cases 
+
+	*/
+
+ } .tooltip.md\:show.no-hover, .tooltip.md\:show.no-focus  {
+
+	 pointer-events: auto;
+
+}
+
+ } @media (min-width: 1024px)  {
+
+	 section.prots article &gt; main &gt; section iframe  {
+
+	 height: 85%;
+
+}
+
+ .tooltip.lg\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+
+ .tooltip.lg\:show.no-hover, .tooltip.lg\:show.no-focus, .tooltip.lg\:show.no-hover .tooltip.show,.tooltip.lg\:show.no-focus .tooltip.show  {
+
+	 pointer-events: auto;
+
+}
+
+ } @media (min-width: 1280px)  {
+
+	 .tooltip.xl\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+
+ .tooltip.xl\:show.no-hover, .tooltip.xl\:show.no-focus  {
+
+	 pointer-events: auto;
+
+}
+
+ } .\[\&amp;\&gt;\*\]\:inline-block &gt; *  {
+
+	 display: inline-block;
+
+}
+
+ </div></div></div><div class="error text-red-700 text-xs mt-6 COMPONENT fixed bg-yellow-100 shadow bottom-1/3 ml-3 tooltip p-3 to-left"><code>Uncaught SyntaxError: Identifier 'forEach' has already been declared</code><button class="ml-4 absolute fa-code fa top-full left-full p-1.5 bg-yellow-300 focus:border-yellow-600 border-2 border-yellow-300" onclick="this.parentNode.classList.toggle('to-left')"><div class="tooltip font-sans absolute p-1.5 text-sm bg-inherit to-right font-normal whitespace-pre" data-details="window.onerror"></div></button></div><script>
+            let build;
+            window.onload = function() {
+                build = new init();
+                build.css.all_text = '',
+                build.css.largest = 0,
+                build.css.uuid = 'dfdccc76-eabf-4e86-8ca8-e8f57d6a1d05';
+                animations.addRippleAnimations();
+            }
+
+            /*
+  let arr=[], i; for(let j of Object.getOwnPropertyNames(w)) /HTML[^]+Element/g.test(j)&amp;&amp;arr.push(j.replace(/HTML|Element/g,'').toLowerCase().replace(/ulist/g,'ul').replace(/olist/g,'ol').replace('anchor','a').replace('heading', 'h1').replace('directory', 'dir').replace('paragraph','p'))
+  arr.push(['h2','h3','h4','h5','h6', 'section','header','main','footer','html'])
+  console.log(arr.toString());
+*/</script><div class="w-3/4 COMPONENT block fixed sm:w-96 bg-gray-50 shadow h-1/5 bottom-10 left-4 tooltip 311b76d2-3edc-4a27-a21a-581bd5fdb5d7 to-top" id="all_scripts"><style class="">.code-blocks .tooltip.slide.show, .scripted .flex p.show {
+                    --x: 0%;
+                }
+
+                .code-blocks .tooltip.slide, .scripted .flex p {
+                    --x: 5%;
+                }
+
+                .scripted .flex p {
+                    white-space: pre;
+                    padding: 0.5rem;
+                    font-weight: 500;
+                    text-align: center;
+                    background-color: rgb(243,244,246)
+                }
+
+                .scripted .flex p:not(:first-child) {
+                    position: absolute;
+                }</style><div><div class="flex space-x-1 bottom-full absolute"><div class="bg-gray-50 items-center flex text-xs mb-2 shadow p-1.5"><div class="relative"></div><span>script</span><hr class="sep ver py-2 p-px border-0 bg-yellow-500 shadow"><div class="font-mono space-x-2 flex items-center"><div class="border-gray-300 mx-1 duration-300 bg-gray-100 p-1 whitespace-pre focus:shadow-none focus:border-gray-500 outline-none" data-placeholder="countdown : 3" style="border-bottom-width: 3px;" contenteditable="true" data-gramm="false" wt-ignore-input="true">1</div>[s]<div class="whitespace-pre">to eval(<button class="py-1.5 rounded bg-gray-200 shadow-md hover:bg-white" onclick="(()=>{
+  let value,
+  timer=objWalk(objWalk(this, {2:'parentNode'}), 'firstElementChild'),
+  context=objWalk(objWalk(this, {4:'parentNode'}), 'nextElementSibling').qs('.show'),
+  evaluated=context.parentNode.qs('.evaluation-count')||context.parentNode.appendChild(build_nodes({name:'div',
+    attributes:{0:{name:'class', value:'evaluation-count inline-block text-black bg-yellow-400 absolute top-full mt-1'}, length:1},
+    innerHTML:`evaluated [<span class='py-1.5 px-0.5 shadow bg-yellow-300'> </span>]`
+  })); 
+  this.clear=_=>(this.interval=w.clearInterval(this.interval), this.textContent=value='▶', timer.textContent=this.stored);  
+  if(this.textContent===(value='| |')) {
+    clear();
+  }
+  else {
+    let timeout; this.stored=timeout=+timer.textContent||timer.getAttribute('data-placeholder').match(/[0-9]+$/)[0];
+    this.loop=_=>{
+      if(timeout>0) {timer.textContent=--timeout}
+      else {
+        try{
+          w.eval(context.firstChild.data), context.setAttribute('count', evaluated.qs('span').textContent=1+ +(context.getAttribute('count')||0))
+         } catch(err) {console.log(err)}
+        timer.textContent=timeout=this.stored-1
+     //clear() will be called by prev and next buttons
+      }
+    }
+    this.interval ||=w.setInterval(this.loop, 1e3)
+  }
+  this.textContent=value;
+})()">▶</button>)</div></div></div><div class="relative inline-block bg-gray-100 shadow mb-2 flex px-2 space-x-2.5"><button class="relative hover:bg-gray-100 font-black bg-gray-200 px-1 shadow text-gray-700" onclick="//the condition is used to act in lieu of event.preventDefault()
+!tooltip.classList.contains('not-here')&amp;&amp;(()=>{
+   let blocks=objWalk(this, {2:['parentNode','nextElementSibling']}),
+     node=build_nodes({name:'div', attributes:{
+          0: {name:'class', value:'tooltip slide no-hover no-focus absolute whitespace-pre-wrap inset-0.5 overflow-scroll text-sm p-1 inline-block bg-gray-100 shadow'},
+          length: 1
+        },
+        get innerText() {return '//<timestamp>: '+new Date().toString()}
+     }), status=this.parentNode.lastElementChild, current;
+     (current=blocks.qs('.show')).after(node),
+     setTimeout(_=>(current.classList.remove('show'), node.classList.add('show')),20);
+     
+   status.textContent=status.textContent.replace(/[0-9]+$/, blocks.qsa('.tooltip').length)
+   .replace(/[0-9]+/,a=>+a+1)
+})()">+<div class="absolute tooltip to-bottom shadow p-1 rounded bg-gray-50 text-xs font-thin whitespace-pre font-sans" data-details="add"></div></button><button class="fa fa-chevron-left text-xs relative hover:bg-gray-200 font-bold bg-gray-50 px-1 shadow text-gray-700 flex items-center" onclick="//the condition is used to act in lieu of event.preventDefault()
+!tooltip.classList.contains('not-here')&amp;&amp;(()=>{
+    let status=this.parentNode.lastElementChild, value, other, children, current,
+    context=objWalk(this, {2:['parentNode','nextElementSibling']}), 
+    element;
+/*  Left here to improve code understanding 
+    this.UUID   ||= context.parentNode.nextElementSibling.lastElementChild,
+    this.UUIDs   ||= this.UUID.children,
+    this.lookup ||={};
+*/
+    for(let i=context.qsa('.tooltip'), j=0; j<i.length; j++) {
+      i[j].classList.contains('show')&amp;&amp;(current=j), (children ||=[]).push(i[j])
+    }
+    if(value=children[current]) {
+        status.textContent=status.textContent.replace(/[0-9]+/, current||children.length);
+        if(other=children[current=current?--current%children.length:children.length-1]) {
+          this.callback(current);
+          value.classList.remove('show'), other.classList.add('show'),
+          objWalk(this.parentNode.previousElementSibling, {3:'lastElementChild'}).clear?.call(null),
+          context.qs('.evaluation-count span').textContent=+other.getAttribute('count')
+        }
+    }
+})()"><div class="absolute tooltip to-bottom shadow bg-gray-50 text-gray-600 font-sans text-xs whitespace-pre font-normal p-2" data-details="previous code block"></div></button><button class="fa fa-chevron-right text-xs relative hover:bg-gray-200 font-bold bg-gray-50 px-1 shadow text-gray-700 flex items-center" onclick="//the condition is used to act in lieu of event.preventDefault()
+!tooltip.classList.contains('not-here')&amp;&amp;(()=>{
+    let status=this.parentNode.lastElementChild, value, other, children, current,
+    context=objWalk(this, {2:['parentNode','nextElementSibling']});
+    
+    for(let i=context.qsa('.tooltip'), j=0; j<i.length; j++) {
+      !i[j].classList.contains('evaluation-count')&amp;&amp;(i[j].classList.contains('show')&amp;&amp;(current=j), children ||=[]).push(i[j])
+    }
+    if((value=children[current])&amp;&amp;(other=children[++current%children.length])) {
+        (this.ref ||= this.previousElementSibling).callback(current%this.ref.UUIDs.length)
+        value.classList.remove('show'), other.classList.add('show'),
+        status.textContent=status.textContent.replace(/[0-9]+/, children.length===current?1:(current<children.length?current+1:current))
+            objWalk(this.parentNode.previousElementSibling, {3:'lastElementChild'}).clear?.call(null),
+        context.qs('.evaluation-count span').textContent=+other.getAttribute('count')
+    }
+})()"><div class="shadow absolute tooltip to-bottom bg-gray-50 text-gray-600 font-sans text-xs whitespace-pre font-normal p-2" data-details="next  code block"></div></button><button class="relative hover:bg-gray-100 font-bold text-lg bg-gray-200 px-1.5 shadow text-gray-700 flex items-center" onclick="//the condition is used to act in lieu of event.preventDefault()
+!tooltip.classList.contains('not-here')&amp;&amp;(()=>{
+   let uuids  = (this.ref ||= objWalk(this, {2:'previousElementSibling'})).UUIDs,
+       blocks = objWalk(this, {2:['parentNode','nextElementSibling']}), children=blocks.qsa('.tooltip'), 
+        index=objWalk(this, {2:'firstElementChild'}).textContent.trim(),
+        current=blocks.qs('.show'),
+        at=children.findIndex(e=>e===current),
+        status=this.parentNode.lastElementChild,
+        previous=children[index];
+        previous ||=current.previousElementSibling||current.nextElementSibling
+  let __current, next;
+   next=(__current=uuids[index]||uuids[at]||this.ref.qs('.show'))._r('previousElementSibling')('nextElementSibling', d.createElement('div'))
+  if(previous&amp;&amp;children.length>1&amp;&amp;!event.target.hasAttribute('contenteditable')) this.ref.init(index||at), __current.remove(), next.classList.add('show'), (children[index]||current).remove(), previous.classList.add('show'), status.textContent=(at||1)+' of '+blocks.qsa('.tooltip').length;
+})();">-<div class="absolute tooltip to-right bg-gray-50 text-gray-600 font-sans text-xs whitespace-pre font-normal p-2 flex items-center" data-details="remove"><span class="border-transparent border-2 p-1 ml-1 outline-none focus:shadow" style="border-bottom-color:black;" data-placeholder="index" contenteditable="true" data-gramm="false" wt-ignore-input="true"></span></div></button><div class="whitespace-pre font-fredoka absolute bg-gray-100 shadow-md p-1 text-xs bottom-full text-center left-full" onclick="">2 of 3</div></div></div><div class="absolute code-blocks inset-1.5"><div class="no-focus tooltip slide no-hover absolute whitespace-pre-wrap inset-0.5 overflow-scroll text-sm p-1 inline-block bg-gray-100 shadow">/* &lt;timestamp &gt;: Mon May 22 2023 07:35:29 GMT-0700 (Pacific Daylight Time) */
+async function makeAwait(entity) {
+    return await (entity &amp;&amp;entity.call?entity():entity)
+}
+function cAF(id) {
+  window.cancelAnimationFrame(id)
+}
+function toggleTooltip(nodes, index, len) {
+   if(len=nodes.length) {
+    for(let i = len; i--; ) nodes[i].classList[i==index?'add':'remove']('show');
+  }
+}
+function scrollFn(obj, el, rise, jumps, prop, fn, arr, i) {
+  cAF(scrollFn.id), i = 0, el = obj.el, rise = obj.rise, jumps = obj.jumps, fn = obj.fn, arr = [-1, 1], prop = obj.prop,
+  rAF(id=&gt;fn(el['scroll'+prop] = el['scroll'+prop] + arr[+rise] * jumps[0] * i ** jumps[1], i++, scrollFn.id=id)&amp;&amp;cAF(id), true)
+}
+async function makeAwait(entity) {
+    return await (entity &amp;&amp;entity.call?entity():entity)
+}
+function reUnique(input) {
+    for(let arr = [], j=input.length, slice, found, least=input[0]; j--;) {
+        if(!found) input[j].length &lt; least.length&amp;&amp;(least = input[j]);
+        else {
+          /*handle trimming stored input here*/
+          arr[j] = (slice=input[j].slice(0, least.length)).length&gt;=least.length?slice:input[j],
+          !j &amp;&amp;(input = iterate(new Set(arr), 'values'));
+        }
+        if(!j&amp;&amp;!found) found=true, j=input.length;
+    }
+    return input;
+}
+function iterate(iterable, which, itr, result=[], value) {
+  if(iterable&amp;&amp;iterable.values&amp;&amp;iterable.values().next&amp;&amp;/keys|values|entries/.test(which)) {
+    itr = iterable[which]();
+    while((value = itr.next().value)&amp;&amp;result.push(value));
+    return result;
+  }
+}
+function byteFormat(num, res='') {
+  if(num &lt;1024) {
+    res = num+' bytes';
+  } else if(1024 &lt;=num &amp;&amp;num &lt;1048576) {
+    res += num/1024,
+    res = res.slice(0, res.indexOf('.')+3) /*3-1 dp*/+' KB'
+  } else {
+    res += num/1048576,
+    res = res.slice(0, res.indexOf('.')+3) /*3-1 dp*/+' MB'
+  }
+  return res
+}
+function hrTransit(ctx, index, pad, other, dir, recondex, cped) {
+&nbsp;cped = (hrTransit.recon ||= [[], []]);
+&nbsp;if(ctx) {
+&nbsp;&nbsp;index = +index;
+&nbsp;&nbsp;hrTransit.ctx !== ctx &amp;&amp;(hrTransit.ctx = ctx, hrTransit.arr=map(ctx.querySelectorAll('span &gt;hr'),
+(e, i, a, _, _1)=&gt;(!((hrTransit.values||=[])[i]=+(_=((hrTransit.hrs||=[])[i]=e).style).getPropertyValue('--tw-translate-x').replace('%', ''))&amp;&amp;(hrTransit.index=i), _))),
+&nbsp;&nbsp;other = hrTransit.index;
+&nbsp;&nbsp;if(hrTransit.index!==index) {
+&nbsp;&nbsp;&nbsp;dir = (hrTransit.index &lt;index ? '' : '-')+`${110+(pad||'')}%`,
+&nbsp;&nbsp;&nbsp;hrTransit.hrs[other].ontransitionend=function() {
+&nbsp;&nbsp;&nbsp;&nbsp;hrTransit.arr[other].setProperty('--tw-translate-x', dir),
+&nbsp;&nbsp;&nbsp;&nbsp;this.ontransitionend = hrTransit.arr[index].setProperty('--tw-translate-x', '0%'),
+        hrTransit.arr.forEach((e, i, arr)=&gt;{
+         i !==index &amp;&amp;(
+            e.setProperty('--tw-translate-x', (i &gt;index?'-':'')+`${110+(pad||'')}%`)
+          )
+        })
+&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;hrTransit.arr[other].setProperty('--tw-translate-x', dir),
+&nbsp;&nbsp;&nbsp;hrTransit.index = index,
+&nbsp;&nbsp;&nbsp;cped[0][recondex]===ctx &amp;&amp;(cped[1][recondex] = index)
+&nbsp;&nbsp;}
+&nbsp;}
+}
+function minMax(obj, isRem, arr=['min','max'], vary, cnst, fn, str) {
+  minMax.switch = fn = (value, isRem) =&gt;isRem ? value*16 : value/16,
+    
+  arr.forEach((e, i, arr, max)=&gt;{
+    arr[i] = obj[e], max = arr[2+i] = obj['v'+e],
+    !i ? vary = (obj[arr[1+i]] - arr[i])/(obj['v'+arr[i+1]] - max) : (cnst = (arr[i] - max * vary)/16, str = `clamp(${fn(arr[i-1], false)}rem, ${cnst.toFixed(3)}rem + ${(100*vary).toFixed(2)}vw, ${fn(arr[i], false)}rem ) `)
+  });
+  return str
+}
+function rAF(callback, anim, time, store, _cb) {
+  /* cAF(rAF.interval) prevents dangerous clogging but left to be handled by implementations */
+  rAF.interval = (rAF.kept=(store=w.requestAnimationFrame)||
+  (anim?setInterval:setTimeout))(_cb=_=&gt;{
+	anim
+    ? (time?rAF.interval = setInterval(_cb) : store &amp;&amp;(rAF.interval = store(_cb))) 
+     : clearTimeout(rAF.interval),
+     (!anim &amp;&amp;+time)?_=setTimeout(_1=&gt;callback(_), time):callback(rAF.interval)
+  }, 1000/60);
+  return rAF
+}
+function getIndexes(arr, chks, indxs=[]) {
+  chks = typeof chks === 'string'?[chks]:chks;
+  for(let i=0,j=arr.length; i &lt;j; chks.find(e=&gt;e===arr[i])!=void 0 &amp;&amp;indxs.push(i), i++);
+  return indxs
+}</div><div class="no-focus tooltip slide no-hover absolute whitespace-pre-wrap inset-0.5 overflow-scroll text-sm p-1 inline-block bg-gray-100 shadow show">const forEach = mDize([].forEach);
+/**/
+Rainbow.color();
+let terminal = {
+  watch: function(obj, sct, arr) {
+    arr = ['short_name', 'exchange', 'last_price', 'change', 'change_percent', 'volume', 'description'],
+    sct = tools.querySelector('.chart-tick'),
+    forEach(this.data ||= sct.querySelectorAll('code'),
+    (el, i)=&gt;el.textContent = (i^2?'':'$') + obj[arr[i]]),
+    (this.watch_cb||(_=&gt;_))(obj)
+  },
+token: function(token, arg, rgx) {
+                  /* may need updating whenever TradingView api schema changes */
+                  rgx = arg ? new RegExp(`${arg}=[^,&amp;]+`,'g') : /(utm_term|symbol)=[^,&amp;]+/g,
+/* demoFrame available by virtue of id='demoFrame' */
+                  arg = w.chart.src.replace(rgx, _=&gt;(_ = _.split('='),
+                  _[0] + `=${token}`)),
+                  console.log('::IFRAME_SRC::', arg)
+                  w.chart.src = arg;
+  },
+  outTrade: function(obj, tick) {
+    tick = tools.querySelector('.trade-tick code'),
+    objWalk(tick, ['pN', 'nES', 'cL']).remove('dots-6'),
+    tick.innerText = JSON.stringify(obj).replace(/,|\{/g, e=&gt;e+'\n').replace('}', '\n}').replace(/\\/g, ''),
+    setTimeout(_=&gt;objWalk(tick, ['pN', 'nES', 'cL']).add('dots-6'), 1750)
+  }
+},
+socket= new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade');
+socket.onmessage = (event, data, arr, keys) =&gt; {
+  data = {}, arr =['Event type', 'Event time', 'Symbol',  'Trade ID', 'Price', 'Quantity', 'Buyer order ID', 'Seller order ID', 'Trade time', 'Market maker is buyer', 'Ignore'];
+  if(event.data) Object.values(event.data=JSON.parse(event.data))
+    .forEach((e, i, _)=&gt;{ data[arr[i]]=e, /time/.test(arr[i])&amp;&amp;(data[arr[i]]=new Date(e))
+    }), terminal.outTrade(data);
+};
+(objWalk.setDict =function(arr){
+  objWalk.dict||={};
+  if(arr) for(let str, val, i = arr.length; i;  str=(val=arr[--i]).charAt(0), val.replace(/[A-Z]/g, _=&gt;str+=_), objWalk.dict[str]=val);
+})(['classList', 'previousSibling', 'nextSibling',  'lastChild', 'firstChild', 'nextElementSibling', 'previousElementSibling', 'parentNode', 'lastElementChild', 'childNodes', 'textContent', 'firstElementChild']);
+w.onpopstate = (event) =&gt; {
+  console.log('EVENT-POPPED', event)
+};
+window.addEventListener('message', function(event) {
+      makeAwait(_=&gt;typeof (_=event.data) !=='string' ? _ : JSON.parse(_)).then(obj=&gt;{
+        obj.data&amp;&amp;terminal.watch(obj.data)
+      }).catch(console.log);
+});</div><div class="tooltip slide no-hover no-focus absolute whitespace-pre-wrap inset-0.5 overflow-scroll text-sm p-1 inline-block bg-gray-100 shadow">//&lt;timestamp &gt;: Fri Jul 14 2023 20:40:13 GMT-0700 (Pacific Daylight Time)
+function getColorClasses(rgx_1, rgx_2, colors, gradients, slice) {
+&nbsp;getColorClasses.colors = colors = new Set(), getColorClasses.gradients = gradients = new Set(),
+&nbsp;rgx_1 = /(((((group-|)(hover|focus))|(sm|md|lg|xl)):|)((bg|text|border)-(red|indigo|gray|yellow|white|black|green|blue|pink|purple)-[0-9]+))/g,
+&nbsp;rgx_2 = /(((((group-|)(hover|focus))|(sm|md|lg|xl)):|)((from|via|to)-(red|indigo|gray|yellow|white|black|green|blue|pink|purple)-[0-9]+))/g,
+&nbsp;slice =_=&gt;[].slice.call(_) ;
+
+&nbsp;&nbsp;const gen = (arr, dump, rgx) =&gt;{
+&nbsp;&nbsp;&nbsp;arr.forEach((e, i, arr)=&gt;slice(d.querySelectorAll(`[class*=${e}-]`)).forEach(el=&gt;el.classList.value.replace(rgx, (_,b)=&gt;dump.add(b))))
+&nbsp;&nbsp;}
+&nbsp;&nbsp;gen(['bg', 'text', 'border'], colors, rgx_1),
+&nbsp;&nbsp;gen(['from', 'via', 'to'], gradients, rgx_2),
+&nbsp;&nbsp;console.log(colors, gradients)
+}</div><div class="text-sm evaluation-count px-1 p-0.5 inline-block text-black bg-gray-50 absolute top-full mt-1 rounded-md">evaluated [<span class="py-1.5 px-0.5 shadow bg-yellow-300">0</span><button class="absolute bg-gray-50 p-2 ml-3 fa-chevron-up fa shadow" onclick="(()=>{
+  (this.trigger ||=objWalk(this, {4:'parentNode'})).classList.toggle('to-top');
+    this.classList.replace('fa-chevron-up', 'fa-chevron-down') ||
+    this.classList.replace('fa-chevron-down', 'fa-chevron-up');
+})()"><div class="absolute p-2 bg-inherit shadow font-sans font-normal text-xs whitespace-pre left-full bottom-0">script blocks</div></button><div class="relative"></div></div></div></div><div class="scripted absolute bottom-full mb-14 text-xs"><p class="bg-gray-100 p-2">◢[ className UUIDs for each code block script below ]◣</p><hr class="sep hor h-px bulge-center"><div class="flex"><p class="tooltip slide no-hover">c2b36360-43df-4284-ba5e-17f8e0f75b15</p><p class="tooltip slide no-hover show">df2c7301-2c6f-4d36-bd55-f35b4e69d492</p><p class="tooltip slide no-hover">d72f56-ef30-4a6e-a5a4-ccb4fc33ddfb</p></div></div><button class="ripple hover:bg-white hover:text-yellow-600 rounded absolute p-1 bg-yellow-300 text-xs tooltip show to-right font-semibold text-center" style="" onclick="let hash   = concerned.UUID.querySelector('.show').textContent, existed = d.querySelector('script.'+hash),
+    script = build_nodes({name:'script', attributes:{0:{name:'class', value:hash}}});
+script.textContent=concerned.context.querySelector('.show').innerText.replace(/\n{2}/g, '\n'),
+/*made writes to the DOM in one paint callback*/
+requestAnimationFrame(_=>{existed&amp;&amp;existed.remove(), d.body.appendChild(script)}),
+this.textContent='[appended]: update script on page'
+">[appended]: update script on page</button><button class="p-1 rounded px-2 absolute left-full bg-black ml-2 text-yellow-500 z-1 ripple tooltip show -bottom-0.5" id="remove-scripts" style="" onclick="d.querySelector('script.'+concerned.UUID.querySelector('.show').textContent)?.remove(), this.previousElementSibling.textContent='append to page as script'">remove</button><script class="initialize">let all_scripts = window['all_scripts']
+                  , concerned = objWalk(all_scripts, ['firstElementChild', 'nextElementSibling', 'firstElementChild', 'lastElementChild', 'firstElementChild', 'nextElementSibling']);
+                //set up object properties
+                concerned.callback = function(current) {
+                    (this.stored ? this.stored : concerned.UUID.qs('.show')).classList.remove('show');
+                    if ((element = this.lookup[current])) {
+                        element.classList.add('show')
+                    } else {
+                        (this.lookup[current] = element = this.UUIDs[current] || this.UUID.insertBefore(build_nodes({
+                            name: 'p',
+                            innerText: className_uuid(),
+                            attributes: {
+                                0: {
+                                    name: 'class',
+                                    value: 'tooltip slide no-hover'
+                                }
+                            }
+                        }), this.UUIDs[0])).classList.add('show')
+                    }
+                    let script = d.querySelector('script.' + (this.stored = element).textContent);
+                    concerned.appender.textContent = script ? '[appended]: update script on page' : 'append to page as script';
+                }
+                ,
+                concerned.init ||= function(current) {
+                    delete this.lookup[current],
+                    this.UUIDs = this.UUID.children
+                }
+                ,
+                concerned.context ||= objWalk(concerned, {
+                    2: ['parentNode', 'nextElementSibling']
+                }),
+                concerned.UUID ||= concerned.context.parentNode.nextElementSibling.lastElementChild,
+                concerned.UUIDs ||= concerned.UUID.children,
+                concerned.appender ||= concerned.UUID.parentNode.nextElementSibling,
+                concerned.lookup ||= {};</script></div><!--UUID::script-start::IDUU--><!--UUID::script-end::IDUU--><script class="df2c7301-2c6f-4d36-bd55-f35b4e69d492">const forEach = mDize([].forEach);
+/**/
+Rainbow.color();
+let terminal = {
+  watch: function(obj, sct, arr) {
+    arr = ['short_name', 'exchange', 'last_price', 'change', 'change_percent', 'volume', 'description'],
+    sct = tools.querySelector('.chart-tick'),
+    forEach(this.data ||= sct.querySelectorAll('code'),
+    (el, i)=>el.textContent = (i^2?'':'$') + obj[arr[i]]),
+    (this.watch_cb||(_=>_))(obj)
+  },
+token: function(token, arg, rgx) {
+                  /* may need updating whenever TradingView api schema changes */
+                  rgx = arg ? new RegExp(`${arg}=[^,&]+`,'g') : /(utm_term|symbol)=[^,&]+/g,
+/* demoFrame available by virtue of id='demoFrame' */
+                  arg = w.chart.src.replace(rgx, _=>(_ = _.split('='),
+                  _[0] + `=${token}`)),
+                  console.log('::IFRAME_SRC::', arg)
+                  w.chart.src = arg;
+  },
+  outTrade: function(obj, tick) {
+    tick = tools.querySelector('.trade-tick code'),
+    objWalk(tick, ['pN', 'nES', 'cL']).remove('dots-6'),
+    tick.innerText = JSON.stringify(obj).replace(/,|\{/g, e=>e+'\n').replace('}', '\n}').replace(/\\/g, ''),
+    setTimeout(_=>objWalk(tick, ['pN', 'nES', 'cL']).add('dots-6'), 1750)
+  }
+},
+socket= new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade');
+socket.onmessage = (event, data, arr, keys) => {
+  data = {}, arr =['Event type', 'Event time', 'Symbol',  'Trade ID', 'Price', 'Quantity', 'Buyer order ID', 'Seller order ID', 'Trade time', 'Market maker is buyer', 'Ignore'];
+  if(event.data) Object.values(event.data=JSON.parse(event.data))
+    .forEach((e, i, _)=>{ data[arr[i]]=e, /time/.test(arr[i])&&(data[arr[i]]=new Date(e))
+    }), terminal.outTrade(data);
+};
+(objWalk.setDict =function(arr){
+  objWalk.dict||={};
+  if(arr) for(let str, val, i = arr.length; i;  str=(val=arr[--i]).charAt(0), val.replace(/[A-Z]/g, _=>str+=_), objWalk.dict[str]=val);
+})(['classList', 'previousSibling', 'nextSibling',  'lastChild', 'firstChild', 'nextElementSibling', 'previousElementSibling', 'parentNode', 'lastElementChild', 'childNodes', 'textContent', 'firstElementChild']);
+w.onpopstate = (event) => {
+  console.log('EVENT-POPPED', event)
+};
+window.addEventListener('message', function(event) {
+      makeAwait(_=>typeof (_=event.data) !=='string' ? _ : JSON.parse(_)).then(obj=>{
+        obj.data&&terminal.watch(obj.data)
+      }).catch(console.log);
+});</script></body></html>

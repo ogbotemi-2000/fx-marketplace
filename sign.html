@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<head>
+<link href='css/tailwind.min.css' rel='stylesheet'></link>
+<link href='css/utils.css' rel=stylesheet></link>
+<script src='js/utils.js'></script>
+<script src='js/ripples.js'></script>
+<script src='both.js'></script>
+</head>
+
+<body class="text-center pt-10">
+  <iframe  onload="notices = _qsa('body form > .tooltip'); let txt=['textContent', 'innerHTML'].map(p=>this.contentWindow.document.body[p]); if(txt.length) txt[0].charAt(0)==='.'?location.pathname='/dashboard':(notices[1].innerHTML=txt[1], animations.addRippleAnimations())" name="signed" id="signed" style='z-index:2;' class="bg-white border-2 border-transparent rounded-lg h-full w-full top-0 px-10 tooltip no-hover no-focus-within no-focus absolute"></iframe>
+  <form target="signed" oninput="notices.forEach(el=>el.textContent='')" onsubmit="event.preventDefault(); let signin=this.getAttribute('data-signin'), which=this.which.value=['up', 'in'][signin]; this.viaIframe.value=+!!!window.parent.parent.parent; return validate(which)" class="inline-block relative text-center p-2" method="POST" action="/sign" data-signin="0">
+    <!--start of error bearing elements -->
+    <div class="mt-6 show top-1/3 tooltip no-hover no-focus slide text-red-600 text-sm text-left absolute"></div>
+    <div class="mt-4 pt-1 show top-56 tooltip no-hover absolute no-focus slide text-red-600 text-sm text-left"></div>
+    <!--end -->
+    <input class="hidden" tabindex="-1" name="which" value="up">
+    <input class="hidden" tabindex="-1" name="viaIframe" value="0">
+    <aside class="[&amp;>*]:p-2 show" onclick="let inputs, ctx = objWalk(this, 'nES').children, t = event.target, bool;
+      if(t.tagName==='BUTTON') bool=+/Sign in/.test(t.textContent), notices.forEach(el=>el.textContent=''),
+      (hrTransit(this, bool), toggleTooltip(ctx, bool)), this.parentNode.setAttribute('data-signin', bool),
+      inputs = [0, 1].map(e=>slice(this.parentNode.inputs.children[e].querySelectorAll('input:not([name=reset])'))),
+      inputs.forEach((arr, i)=>arr.forEach(input=>input[(bool===i?'set':'remove')+'Attribute']('required', '')))
+     ">
+      <button class="ripple align-middle relative" type="button">
+        <span class="pointer-events-none py-2 overflow-hidden inline-block p-px relative">
+          Sign up
+          <hr class="transition-hr bottom-px border-0 bg-gray-800 absolute left-0 right-0 h-0.5 w-full transform-gpu" style="--tw-translate-x: 0%;">
+        </span>
+      </button>
+      <span style="padding:0" class="bulge-center font-mono text-gray-700 inline-flex relative mx-6 text-sm h-14 w-0.5 flex items-center justify-center"><span class="p-2 text-black bg-white">or</span></span>
+      <button class="ripple align-middle relative" type="button">
+        <span class="pointer-events-none py-2 overflow-hidden inline-block p-px relative">
+          Sign in
+          <hr class="transition-hr bottom-px border-0 bg-gray-800 absolute left-0 right-0 h-0.5 w-full transform-gpu" style="--tw-translate-x: -110%;">
+        </span>
+      </button>
+    </aside>
+    <fieldset class="relative my-8 rounded-lg" name="inputs">
+      <main style="--focus-within-no-focus-transition: opacity 0.5s ease, transform 0.3s 0.05s ease-out, visibility 0s 0.12s;" class="tooltip no-hover no-focus no-focus-within slide compact relative show">
+        <div class="relative">
+          <input required="" class="relative focus:outline-none block bg-transparent text-sm p-1.5 w-full border-0 border-gray-900" title="Email address" name="up_email" style="border-bottom-width: 1px;" oninput=""><span class="left-0 absolute opacity-50 h-full w-10 top-0 pointer-events-none"></span>
+          <div class="w-full relative pointer-events-none"></div>
+          <label class="whitespace-pre pointer-events-none text-gray-500 text-sm absolute left-1 top-0">Email address</label>
+        </div>
+        <br><br><br>
+        <div class="relative">
+          <input required="" type="password" name="up_pwd" class="relative focus:outline-none block bg-transparent text-sm p-1.5 w-64 border-0 border-gray-900" title="Password with at least Aa, 1-9 or !#$@" style="border-bottom-width: 1px;"><span class="left-0 absolute opacity-50 h-full w-10 top-0 pointer-events-none"></span>
+          <div class="w-full relative pointer-events-none"></div>
+          <label class="whitespace-pre pointer-events-none text-gray-500 text-sm absolute left-0 top-0">Password with at least Aa, 1-9 or !#$@</label>
+        </div>
+      </main>
+      <aside style="--focus-within-no-focus-transition: opacity 0.5s ease, transform 0.3s 0.05s ease-out, visibility 0s 0.12s;" class="compact tooltip no-hover no-focus no-focus-within slide absolute inset-0 items-center">
+        <!--account recovery input field-->
+        <div id="recovery" class="-bottom-32 rounded-lg pt-24 p-8 -top-24 -inset-1 absolute tooltip no-hover no-focus no-focus-within -slide-y" style="background:#eeefff; --focus-within-no-focus-transition: opacity 0.5s ease, transform 0.3s 0.05s ease-out, visibility 0s 0.12s;">
+          <button class="ripple focus:bg-purple-200 rounded-tr-xl rounded-bl-xl border-current text-gray-600 border-l border-b p-4 text-2xl font-black right-0 absolute top-0" type="button" onclick="this.parentNode.classList.remove('show')">×</button><h4 class="font-semibold text-gray-600 absolute top-0 mt-6">Forgot Password</h4>
+          <input class="relative focus:outline-none block bg-transparent text-sm p-1.5 w-full border-0 border-gray-900" title="Enter email for password reset" name="reset" style="border-bottom-width: 1px;">
+          <div class="w-full relative pointer-events-none"></div>
+          <label class="left-8 pointer-events-none text-gray-500 text-sm absolute  mt-24 top-0">Enter email for password reset</label>
+          <div class="mt-8 text-right"><button type="button" class="ripple relative rounded-md p-2 bg-purple-200">begin account recovery</button></div>
+        </div>
+
+        <!--sign in formm input areas-->
+        <div class="relative">
+          <input class="relative focus:outline-none block bg-transparent text-sm p-1.5 w-full border-0 border-gray-900" title="Your email address" name="in_email" style="border-bottom-width: 1px;"><span class="left-0 absolute opacity-50 h-full w-10 top-0 pointer-events-none"></span>
+          <div class="w-full relative pointer-events-none"></div>
+          <label class="whitespace-pre pointer-events-none text-gray-500 text-sm absolute left-1 top-0">Your email address</label>
+        </div>
+        <br><br><br>
+        <div class="relative">
+          <input title="Your password" type="password" class="relative focus:outline-none block bg-transparent text-sm p-1.5 w-full border-0 border-gray-900" name="in_pwd" style="border-bottom-width: 1px;"><span class="left-0 absolute opacity-50 h-full w-10 top-0 pointer-events-none"></span>
+          <div class="w-full relative pointer-events-none"></div>
+          <label class="whitespace-pre pointer-events-none text-gray-500 text-sm absolute top-0 left-0">Your password</label>
+        </div>
+          
+      </aside>
+    </fieldset>
+    <button name="send" type="submit" class="relative ripple mt-10 inline-block w-32 rounded-2xl p-4 border-gray-700 bg-yellow-300">
+      <i class="left-0 m-2.5 top-0 absolute"></i> submit
+    </button>
+  </form>
+  <script>
+  let form=d.forms[0], notices, load=bool=>objWalk(form.send, ['fEC', 'cL'])[bool?'add':'remove']('dots-6');
+  
+  function validate(which, email) {
+    /* it was found to be that errors that occur before "return false" or other default preventing code is encountered makes the form submit itself if its 
+       fields are valid. Calling `event.preventDefault` before any function call or return statements is a surefire way to prevent (pun, ^_^) this behaviour
+    */
+    if(!notices.filter(e=>e.textContent).length) email = form[which+'_email'].value.trim(),
+    load(true),
+    both.validateEmail(email)
+    ? (xhr.open('GET', `sign/exists?${which}_email=${email}`), xhr.send())
+    : (notices[0].textContent = 'Please input a valid email address', load(false));
+  }
+  xhr.onload = function(e,t) {
+    t=e.target.response;
+    setTimeout(load, 1200)
+    !(notices[0].textContent = t)&&form.submit()
+  }
+  w.addEventListener('DOMContentLoaded', function(ev) {
+    animations.addRippleAnimations(),
+    notices = _qsa('body form > .tooltip')/*,
+      setTimeout(_=>{
+        (_=_qs('form > aside').children)[2].click(),
+        objWalk(_, ['1', 'fEC', 'cL']).replace('border-transparent', 'border-gray-700'),
+        notices[0].textContent = "<!--login-message-->"
+      }, 100)*/
+  })
+  </script>
+  </body>
+</html>
