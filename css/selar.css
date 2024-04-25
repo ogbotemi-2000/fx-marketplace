@@ -1,0 +1,119 @@
+@media (min-width: 500px) {
+  #growShrink .fluid.base\:show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: relative;
+  } 
+}
+@media (min-width: 640px) {
+  #growShrink .fluid.sm\:show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: relative;
+  } 
+}
+@media (min-width: 768px) {
+  #growShrink .fluid.md\:show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: relative;
+  } 
+}
+@media (min-width: 1024px) {
+  #growShrink .fluid.lg\:show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: relative;
+  } 
+}
+@media (min-width: 1280px) {
+  #growShrink .fluid.xl\:show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: relative;
+  }
+  #growShrink a+div {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+#growShrink .fluid {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+#growShrink a+div a {
+  margin: 0;
+  display: block;
+  padding: 1em;
+  font-size: 14px;
+  white-space: pre;
+}
+#growShrink a {
+  transition: opacity 0.2s ease, visibility 0s;
+  padding: 0.8em;
+  margin: 0.2em;
+  display: inline-block;
+  color: inherit;
+  text-decoration: inherit;
+  font-family: sans-serif;
+}
+#growShrink a+div{
+  display: inline-block;
+  position: relative;
+}
+#growShrink a+div > div{
+  right: 0px;
+  position: absolute;
+  margin-top: -0.4em;
+  opacity: 0;
+  color: inherit;
+  background: white;
+  pointer-events: none;
+  transition: margin-top 0.4s ease, opacity 0.2s 0.1s;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0.2em 0;
+}
+#growShrink a+div:hover > div,
+#growShrink a+div:focus-within > div {
+  margin-top: 0em;
+  opacity: 1;
+  pointer-events: auto;
+}
+#growShrink {
+  text-align: center;
+  color: #444;
+  margin: 0.5em 1em;
+}
+#growShrink button {
+  padding: 0.6em 1.2em;
+  margin: 0.4em;
+  color: inherit;
+  border-radius: 50px;
+}
+#growShrink button, #growShrink a+div > div{
+  border: 2px solid #ccc;
+}
+#growShrink a:hover,
+#growShrink button:hover {
+  background: #ddd;
+  color: black;
+}
+#growShrink hr {
+  border-bottom: 2px solid currentColor;
+  position:absolute;
+  left:26%;
+  right:26%;
+}
+#growShrink svg {
+  height: 1.5em;
+  vertical-align:middle;
+  
+}

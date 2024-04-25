@@ -1,0 +1,806 @@
+.open-circuit {
+ --pad: 58% !important;
+ /* --scalar:
+ calc(100% - var(--pad)); */
+}
+/*
+
+will be added to editor's styles widget when created
+
+*/
+/*
+	END
+*/
+
+/*$anime-time: 8s;
+
+$box-size: 200px;
+$clip-distance: .05;
+$clip-size: $box-size * (1 + $clip-distance * 2);
+$path-width: 2px;
+
+$main-color: #69ca62;
+
+$codepen-logo-path: url('//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png');
+
+%full-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bb {
+  @extend %full-fill;
+  width: $box-size;
+  height: $box-size;
+  margin: auto;
+  background: $codepen-logo-path no-repeat 50% / 70% rgba(#000, .1);
+  color: $main-color;
+  box-shadow: inset 0 0 0 1px rgba($main-color, .5);
+
+  &::before,
+  &::after {
+    @extend %full-fill;
+    content: '';
+    z-index: -1;
+    margin: -1 * $clip-distance * 100%;
+    box-shadow: inset 0 0 0 $path-width; 
+    animation: clipMe $anime-time linear infinite;
+  }
+
+  &::before {
+    animation-delay: $anime-time * -.5;
+  }
+
+  // for debug
+  &:hover {
+    &::after,
+    &::before {
+      background-color: rgba(#f00, .3);
+    }
+  }
+
+}
+
+@keyframes clipMe {
+  0%, 100% {clip: rect(0px, $clip-size, $path-width, 0px); }
+  25% {clip: rect(0px, $path-width, $clip-size, 0px); }
+  50% {clip: rect($clip-size - $path-width, $clip-size, $clip-size, 0px); }
+  75% {clip: rect(0px, $clip-size, $clip-size, $clip-size - $path-width); }
+}
+
+/////
+
+html,
+body {
+  height: 100%;
+}
+*/
+.bg-inherit {
+ background: inherit;
+}
+.bb-wrapper {
+  position: relative;
+  background-color: #0f222b;
+}
+/********************************
+END
+********************************/
+/*
+
+li:focus-within .attribute-value {
+ display: inline-flex;
+ flex-direction: column;
+ align-items: start;
+}
+li:focus-within .attribute-value * {
+ display: inline;
+ width:auto;
+ white-space: pre-wrap;
+ background: blue;
+ color:white;
+}
+*/
+.hover\:\[\&\>\*\]\:shadow-4\:shadow-gray-300 > *:hover {
+	box-shadow: 0px 0px 4px 2px #d4d4d4;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-corner {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #8D8D8D;
+}
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+.controls datalist#css-files .upload .dump {
+ --tw-scale-x: 1;
+}
+.controls datalist#css-files .upload .dump pre div {
+ transform: scaleX(var(--tw-scale-x));
+}
+.noisy-gray {
+  background: linear-gradient(325deg, transparent, transparent, rgba(249, 250, 251, var(--tw-bg-opacity))), url("data:image/svg+xml,%3Csvg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='7.74' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")
+}
+.bg-squiggle {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 3' enable-background='new 0 0 6 3' width='6' height='3' fill='%23facc15'%3e%3cpolygon points='5.5%2c0 2.5%2c3 1.1%2c3 4.1%2c0'/%3e%3cpolygon points='4%2c0 6%2c2 6%2c0.6 5.4%2c0'/%3e%3cpolygon points='0%2c2 1%2c3 2.4%2c3 0%2c0.6'/%3e%3c/svg%3e")
+}
+[contenteditable=true]:empty:before {
+  content: attr(data-placeholder);
+  pointer-events: none;
+  color: lightslategray;
+  font-size: 10px;
+  font-family: Fredoka;
+  display: block; /* For Firefox */
+}
+.toggle-wrapper [type=checkbox]:checked + .tooltip:before {
+  content: 'acitvated';
+  font-family: Fredoka;
+}
+.toggle-wrapper [type=checkbox]:checked ~ .toggle:after {
+  background: currentColor;
+  transform: translate3d(calc(2em - 90%), -50%, 0px);
+  border-color: currentColor;
+}
+.toggle-wrapper .toggle::after {
+  border: 2px solid rgb(189 193 198 / 50%);
+  border-radius: 100px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 40%);
+  padding: 0.5em;
+  position: absolute;
+  top: 35%;
+  transform: translate3d(-20%, -50%, 0px);
+}
+.toggle-wrapper [type=checkbox]:checked ~ .toggle:before {
+  background-color:var(--slider-rail-checked-color);
+  opacity: 0.8;
+}
+.toggle-wrapper .toggle::before {
+  background-color: var(--slider-rail-color);
+  border-radius: 0.65em;
+  height: 0.9em;
+  width: 2em;
+}
+.toggle-wrapper .toggle:before, .toggle-wrapper .toggle:after {
+  content: '';
+  display: block;
+  margin: 0 3px;
+  transition: all 100ms cubic-bezier(0.4, 0, 1, 1);
+}
+.toggle-wrapper [type=checkbox] {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.toggle-wrapper {
+  --slider-checked-color:orange;
+  --slider-rail-checked-color:gold;
+  --slider-rail-color:rgb(189,193,198);
+  align-items: center;
+  display: inline-flex;
+  font-size: 1em;
+  line-height: 1.1em;
+  color: var(--slider-checked-color);
+  width: max-content;
+}
+.toggle-wrapper .toggle {
+  cursor: pointer;
+  margin-inline-start: 8px;
+  padding: 8px 4px;
+  position: relative;
+}
+:root {
+	--base-fractional-unit: 0.125rem;/*for -0\.5*/
+	--base-whole-number-unit: 0.25rem; /* for -1*/
+}
+.\[\&\>\*\]\:p-2 > * {
+	padding: 0.5rem;
+}
+.\[\&\>\*\]\:rounded-md > * {border-radius:.375rem}
+.hover\:\[\&\>\*\]\:border-2\:border-orange > *:hover {
+	border: 2px solid orange;
+}
+.focus\:\[\&\>\*\]\:border-2\:border-orange > *:focus {
+	border: 2px solid orange;
+}
+.editor .fill-in-space {
+ font-family: "Fredoka";
+ padding: 2px;
+}
+.colourful {
+   background: conic-gradient(
+    hsl(360, 100%, 50%),
+    hsl(315, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(225, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(135, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(45, 100%, 50%),
+    hsl(0, 100%, 50%)
+  );
+}
+.editor .fill-in-space:before {
+   content: attr(data-delimiter);
+}
+.editor {
+	--theme-color: orange;
+}
+.editor.see-through *:not(.unaffected),
+.editor.see-through *:not(.unaffected):hover {
+  background: transparent;
+}
+.editor.see-through .blurred datalist .optgroup option {
+  border-width: 0px;
+  text-align: center;
+}
+.editor.see-through *:hover > .decorate > div {
+ transform: scale(9);
+}
+html:not(.chrome) .editor.see-through datalist .decorate > div {
+  transform: scale(6) !important;
+  box-shadow: 0px 0px 18px 4px rgba(28,28,10,0.3);
+}
+.editor .dom-content li .wrap-on-line {
+	display: flex;
+	align-items: flex-start;
+    position: relative
+}
+.editor .dom-content li {
+	font-size: 12px;
+}
+/*
+.editor .dom-content ol > li:focus-within:after {
+ content: '_|sep|_';
+ height:1px;
+ width: 40%;
+ color: currentcolor;
+ font: normal 10px/10px Fredoka;
+ text-align: center;
+ position: relative;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ margin: -30px 30%;
+ background-image: linear-gradient(to right, transparent 10%, currentColor, transparent, transparent, currentColor, transparent 90%);
+}
+*/
+.editor .tag-wrapper {
+ width: auto;
+ height: 100%;
+ display: inline-block;
+}
+.editor .dom-content .wrap-on-line .tag {
+ border-radius: 5px;
+ padding: 0px 0.5em;
+ margin: 0px 4px;
+ background-color: transparent;
+}
+/* a work around for the enter key behaviour when pressed */
+.editor .dom-content li .contain-classes .tag[contenteditable]:focus {
+  height: 28px;
+}
+.editor .dom-content li .tag[contenteditable]:focus {
+  height: 22px;
+  overflow: hidden;
+}
+.editor .dom-content .tag:focus  {
+ outline: none;
+ box-shadow: 0 2px orange;
+}
+.editor .dom-content .contain-classes .text {
+  transition: 0.5s cubic-bezier(1, 0.99, 0.27, 1.55);
+  padding: 2px;
+  border: 2px solid #eee;
+  border-radius: 4px;
+}
+.editor datalist option:after {
+	content: attr(val) '  :  ' attr(data-details) '';
+	position: relative;
+	white-space: pre;
+}
+.editor datalist option:hover ~ .customize {
+ border: 2px solid orange;
+}
+.editor datalist option ~ .customize:hover {
+ z-index: 3;
+}
+.editor .tags-parent,
+.editor .classes-text-parent {
+	left: 100px;
+	--offset:44px;
+	top: 0px;
+	bottom: auto !important;/* equivalent to bottom: calc(100% - 154px) */
+	transform: translate(10px, var(--offset));
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s, transform 0.05s ease, visibility 0s;
+}
+.editor .tags-parent.is-dragging > *,
+.editor .classes-text-parent.is-dragging > * {
+	background-color: navajowhite;
+}
+.editor .tags-parent.is-pointer-up,
+.editor .classes-text-parent.is-pointer-up {
+  transition: none !important;
+}
+.editor .tags-parent.show-on-focus,
+.editor .classes-text-parent.show-on-focus {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0px, var(--offset));
+}
+.editor datalist#tags option:before {
+	content: '';
+    position: relative;
+    margin: auto;
+    border: 5px solid transparent;
+    border-left-color: currentColor;
+	transform: translate(var(--arrow-x), var(--arrow-y)) rotate(var(--arrow-degree));
+}
+.editor datalist option {
+ border-bottom-width: 1px;
+ display: inline-flex;
+ align-items: flex-start;
+ position: unset;
+ word-break: keep-all;
+ white-space: pre;
+}
+.editor datalist#css .optgroup {
+  max-height: 22px;
+  overflow: hidden;/*can be rendered pretty ineffective if the element has position:static*/
+  transition: 0.15s ease-in;
+}
+.editor datalist#css .optgroup.loading .bars-3 {
+	opacity: 1;
+}
+ .bars-3 {
+    /*width: 45px;
+	height: 45px;*/
+    aspect-ratio: 1;
+    background: linear-gradient(#0000 calc(1*100%/6),currentColor 0 calc(3*100%/6),#0000 0) left bottom, linear-gradient(#0000 calc(2*100%/6),currentColor 0 calc(4*100%/6),#0000 0) center bottom, linear-gradient(#0000 calc(3*100%/6),currentColor 0 calc(5*100%/6),#0000 0) right bottom;
+    background-size: 20% 600%;
+    background-repeat: no-repeat;
+    animation: b3 0.5s infinite linear;
+    transition: 0.2 ease;
+ }
+.editor datalist#css .optgroup .bars-3 {
+	opacity: 0;
+}
+@keyframes b3 {
+  100% {
+    background-position: left top,center top,right top;
+  }
+}
+.editor datalist#css .optgroup.expand {
+  max-height: 74px;
+	/*no position:relative so as to imitate blur effect on soft backgrounds. Possible due the browser
+	rendering hover state for this element children on a layer above the parent's with
+	a scaled, absolute, box shadowed sibling of this element between them
+	*/
+  text-align: center;
+}
+.editor datalist#css .optgroup option {
+  border:none;
+  width: auto;
+}
+.script-editor *:hover,
+html.chrome .editor datalist#css .optgroup option:hover {
+  background: linear-gradient(to left, transparent,gray, orange);
+  color: navajowhite;
+}
+.editor datalist#css .optgroup option:hover {
+  background-color: lightgray;
+}
+.editor datalist .optgroup:hover > .tooltip {
+  visibility: hidden;
+  opacity: 1;
+}
+.editor [contenteditable][class *='attribute'] {
+ font-family:monospace;
+}
+.editor datalist .optgroup > div {
+	display: flex;
+	width: auto;
+}
+html.chrome .editor datalist .decorate div {
+	backdrop-filter: blur(2px);
+}
+.editor datalist option:hover {
+  background: linear-gradient(to left, transparent,gray, white);
+  color: #aaa;
+  border-radius: 5px;
+}
+
+.editor datalist option.hide {
+	display: none;
+	position: absolute;
+}
+.editor ol li::marker {font-family: 'Fredoka';font-size: 14px;/* border-right: 4px solid black; */}
+
+.wireframe .horizontal {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAICAYAAAA4GpVBAAAAAXNSR0IArs4c6QAAABRJREFUGFdj+P///38GdOLgdnQxAHSiH1tWgHpMAAAAAElFTkSuQmCC);
+    background-position: center;
+}
+
+.wireframe .vertical {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAABCAYAAADjAO9DAAAAAXNSR0IArs4c6QAAABdJREFUGFdj/H/5zH8GWUUGBn4hBmwAAHfIA/7YmrZ3AAAAAElFTkSuQmCC);
+}
+.tooltip.builder ol.edit-code-opts > li > button:hover {
+ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.tooltip.builder.is-pointer-up {/*is-pointer-up is scoped to tooltip.builder because its specificity is higher this way*/
+  transition: all 0s;
+}
+.tooltip {
+   --delay: 0s;
+    font-family: inherit;
+    transition: opacity 0.2s, transform 0.2s ease, visibility 0s;
+	--arrow-x: 0%;
+	--arrow-y: 0%;
+    --arrow-color: currentcolor;
+	--arrow-degree: 0deg;
+}
+.tooltip.hide {
+	opacity: 0;
+	visibility: hidden;
+}
+.tooltip:not(.vanish-hover) {
+  visibility: hidden;
+  opacity: 0;
+}
+.tooltip.no-hover {
+ --x: 0px;
+ --y: 0%;
+ --pad-x: 0px;
+ --pad-y: 0px;
+ --offset: calc(var(
+ --pad-x) + var(--x)), calc(var(--pad-y) + var(--y)), 0px;
+ transform: translate3d(var(--offset)) !important;
+}
+.tooltip.to-top {
+	--arrow-x: 0%;
+	--arrow-degree: 0deg;
+    bottom: calc(100% + 5px);
+	left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip.to-bottom {
+	--arrow-x: 0%;
+	--arrow-degree: 0deg;
+	top: calc(100% + 5px);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.tooltip.to-right {
+ --arrow-y: 50%;
+ --arrow-degree: 0deg;
+ left: calc(100% + 10px);
+ top: 50%;
+ transform: translateY(-50%);
+}
+.tooltip.to-left {
+ --arrow-y: 50%;
+ --arrow-degree: 0deg;
+ top: 50%;
+ right:calc(10px + 100%);
+ transform: translateY(-50%);
+}
+.tooltip:before {
+	content: attr(data-details);
+}
+.tooltip:after {
+	content: '';
+	--arrow-size:inherit;
+	position: absolute;
+	border: var(--arrow-size) solid transparent;
+	transform: translate(var(--arrow-x), var(--arrow-y)) rotate(var(--arrow-degree));
+}
+.tooltip.no-arrow:after {
+  content:unset;
+}
+.tooltip.to-top:after {
+	border-top-color: var(--arrow-color);
+	top: 100%;
+	left: 45%;
+}
+.tooltip.to-left:after {
+    bottom: 50%;
+    border-left-color: var(--arrow-color);
+    left: 100%;
+}
+.tooltip.to-bottom:after {
+	border-bottom-color: var(--arrow-color);
+	bottom: 100%;
+	left: 45%;
+}
+.tooltip.to-right:after {
+	bottom: 50%;
+    border-right-color: var(--arrow-color);
+    right: 100%;
+}
+
+*:hover > .tooltip:not(.no-hover),
+*:focus > .tooltip:not(.no-focus),
+*:focus-within > .tooltip:not(.no-focus),
+.tooltip:not(.no-hover):hover,
+.tooltip:not(.no-focus-within):focus-within,
+.tooltip-parent:hover > .tooltip,
+.tooltip-parent:focus > .tooltip,
+.tooltip-parent:focus-within > .tooltip,
+.tooltip.show {
+ visibility: visible;
+ opacity: 1;
+ z-index: 3;
+}
+/*
+
+IMPORTANT
+
+For a tooltip that is not shown, an explicit styling of its child
+with visibility: visible; triggers a hover event that then makes tooltip visible
+
+*/
+
+
+
+/*--------------recent-------------------*/
+
+.tooltip:not(.show).no-hover.no-focus .tooltip, .tooltip:not(.show).no-hover.no-focus .tooltip.md\:show, .tooltip:not(.show).no-hover.no-focus .tooltip.sm\:show, .tooltip:not(.show).no-hover.no-focus .tooltip.lg\:show, .tooltip:not(.show).no-hover.no-focus .tooltip.xl\:show {
+	pointer-events: none;
+}
+@media (min-width: 500px) {
+.tooltip.base\:show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+  --x: 0%;
+}
+ .base\:relative {
+    position: relative;
+ }
+}
+@media (min-width: 640px) {
+ .tooltip.sm\:show,
+ .tooltip.slide.sm\:show {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+.tooltip.sm\:show.no-hover.no-focus .tooltip.show,
+ .tooltip.sm\:show.no-hover, .tooltip.sm\:show.no-focus  {
+
+	 pointer-events: auto;
+
+}
+
+ } @media (min-width: 768px)  {
+
+	 .tooltip.md\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+
+ .tooltip.md\:show.no-hover, .tooltip.md\:show.no-focus  {
+
+	 pointer-events: auto;
+
+}
+
+ } @media (min-width: 1024px)  {
+
+	 .tooltip.lg\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+
+ .tooltip.lg\:show.no-hover, .tooltip.lg\:show.no-focus,
+ .tooltip.lg\:show.no-hover.no-focus .tooltip.no-hover.no-focus.show {
+
+	 pointer-events: auto;
+
+}
+
+ } @media (min-width: 1280px)  {
+
+	 .tooltip.xl\:show  {
+
+	 visibility: visible;
+
+	 opacity: 1;
+
+	 z-index: 3;
+
+	 --x: 0%;
+
+}
+
+ .tooltip.xl\:show.no-hover, .tooltip.xl\:show.no-focus  {
+
+	 pointer-events: auto;
+
+}
+
+ } 
+/*--------------recent-------------------*/
+
+*:not(:hover) > .tooltip:not(.no-focus),
+.tooltip-parent:not(:hover) > .tooltip {
+  z-index: 2;
+ transition: opacity 0.1s var(--delay), transform 0.15s var(--delay) ease, visibility 0s calc(var(--delay) + 0.15s);
+}
+.tooltip-parent:focus-within > .tooltip,
+*:focus-within > .tooltip {
+  --focus-in-transition-duration:0s;
+  transition: opacity calc(var(--focus-in-transition-duration) + 0.08s), transform calc(var(--focus-in-transition-duration) + 0.09s) ease, visibility calc(var(--focus-in-no-focus-transition-duration) + 0s) 0.1s !important;
+}
+*:focus-within > .tooltip.no-focus {
+	/*
+	  a very good preset
+	  --focus-within-no-focus-transition: opacity 0.5s ease, transform 0.3s 0.05s ease-out, visibility 0s 0.12s;
+	*/
+	--focus-within-no-focus-transition: none;
+	transition: var(--focus-within-no-focus-transition) !important;
+}
+
+
+/*slide should be used with the no-hover class */
+.tooltip.slide {
+ --x: 20%;
+ /*the values below were as the result of a long-winded, sweaty tweaking, use them as increment for custom durations ^_~ */
+ transition: opacity 0.5s ease, transform 0.3s 0.17s ease-out, visibility 0s 0.12s;
+}
+.tooltip.-slide-y {
+	--y: -20%;
+	transition: opacity 0.5s ease, transform 0.3s 0.17s ease-out, visibility 0s 0.12s;
+}
+.tooltip.-slide-y.show,
+.tooltip.slide.show {
+  --x: 0%;
+  --y: 0%;
+  z-index: 1;
+  transition: opacity 0.5s, transform 0.3s 0.12s ease, visibility 0s 0.06s;
+}
+
+*:focus-within > .tooltip:not(.no-hover),
+.tooltip:focus-within {
+	transition-duration: 0.1s;
+	transition-delay: 0s;
+}
+*:not(:focus-within) > .tooltip.no-hover:not(.no-focus):not(.show) {
+	transition: var(--focus-out-no-hover-transition);
+}
+
+*:hover > .tooltip.to-top,
+*:focus > .tooltip.to-top,
+*:focus > .tooltip.no-hover,
+.tooltip-parent:hover > .tooltip.to-top,
+.tooltip-parent:focus > .tooltip.to-top {
+ transform: translate(-50%, -4px);
+}
+*:hover > .tooltip.to-bottom,
+*:focus > .tooltip.to-bottom,
+.tooltip-parent:hover > .tooltip.to-bottom,
+.tooltip-parent:focus > .tooltip.to-bottom {
+ transform: translate(-50%, 4px);
+}
+*:hover > .tooltip.to-left,
+*:focus > .tooltip.to-left,
+.tooltip-parent:hover > .tooltip.to-left,
+.tooltip-parent:focus > .tooltip.to-left {
+ transform: translate(-4px, -50%);
+}
+*:hover > .tooltip.to-right,
+*:focus > .tooltip.to-right,
+.tooltip-parent:hover > .tooltip.to-right,
+.tooltip-parent:focus > .tooltip.to-right {
+ transform: translate(4px, -50%);
+}
+.tooltip-parent:hover > .tooltip,
+*:hover > .tooltip {
+  z-index: 2;
+}
+.sep {
+	position: relative;
+	--gutter: 4px;
+	--height: 2px;
+	--width: 2px;
+	--pad: 0px;
+	--bg-color: inherit;
+	background-color: var(--bg-color)
+}
+.h-inherit {
+  height: inherit;
+}
+.w-inherit {
+  width: inherit;
+}
+.sep.hor {
+	--width: inherit;
+	width: var(--width);
+	height: var(--height);
+	margin: var(--gutter) var(--pad);
+}
+.sep.ver {
+	--height: inherit;
+	height: var(--height);
+	width: var(--width);
+	margin: var(--pad) var(--gutter);
+}
+@media (min-width: 640px) {
+  .sm\:ver.sep {
+    --width: var(--height);
+	--sm-height: inherit;
+	height: var(--sm-height);
+	margin: var(--pad) var(--gutter);
+  }
+  .sm\:hor.sep {
+	--height: var(--width);
+    --sm-width: inherit;
+	width: var(--sm-width);
+	margin: var(--gutter) var(--pad);
+  }
+}
+.bulge-center {
+	background: linear-gradient(to right, transparent, currentColor, transparent);
+}
+.bulge-left {
+ background: linear-gradient(to right, currentColor, transparent, transparent);
+}
+.bulge-right {
+ background: linear-gradient(to right, transparent, transparent, currentColor);
+}
+.edit-element:before {
+  content: "\f304"; 
+}
+.edit-element {
+ visibility: hidden;
+ z-index: 10;
+ transition: border 300s;
+ position: absolute;
+ color: #282828;
+ background-color:white;
+ border-radius: 0.25rem;
+ padding: 0.2rem;
+ -moz-osx-font-smoothing: grayscale;
+ -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+*:hover > .edit-element,
+*:focus > .edit-element,
+*:focus-within > .edit-element {
+	visibility: visible;
+}

@@ -1,0 +1,414 @@
+.text-editor  .line {
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  color: rgb(147, 197, 253);
+  font-size: 12px;/*for 12px both  firefox and 
+    chrome calculate the width of :before as an average of 6 and 6.469 = 6.2345
+    multiply this value by the length of the longest line number to get the max width value
+  */
+  tab-size: 10;
+}
+.text-editor {
+  --largest-line-number-width: auto;
+}
+.text-editor .line:first-of-type,
+.text-editor .close-brace + .line {
+    display: inline-block;
+    width: auto;
+    padding: 0px 4px 0px 1px;
+    font-weight: bold;
+    color: rgb(110, 231, 183)
+}
+.text-editor .line:first-of-type:before,
+.text-editor .close-brace + .line:before {
+  margin-right: 4px;  
+}
+.text-editor .close-brace:before {
+  margin-right: 4px !important;
+}
+.text-editor .close-brace,
+.text-editor .open-brace {
+  color: rgb(252, 211, 77);
+  font-weight: bolder;
+  position: relative;
+  border-radius: 4px;
+}
+.text-editor .open-brace {
+  padding-left: 6px;
+}
+
+.text-editor .close-brace:hover,
+.text-editor .open-brace:hover,
+.text-editor .line:hover {
+  background-color: rgb(75,85,99)
+}
+.text-editor .line:hover:before {
+  background-color: rgb(31, 41, 55);
+  top: 1px;
+}
+.text-editor .line:before {
+  content: "" attr(line-no) "";
+  left: 0px;
+  width: var(--largest-line-number-width);
+  display: inline-flex;
+  justify-content: flex-end;
+  font-weight: normal;
+  position: relative;
+  box-shadow: 0 0 4px gray;
+  padding: 0px 2px;
+  margin-right: 10px;
+  color: lightgray;
+  transition: top 0.5s;
+  font-family: cursive;
+}
+/*END OF TEXT-EDITOR STYLEs*/
+.sm\:flex {
+    display: flex;
+}
+.hover\:animation-pause:hover, .focus\:animation-pause:focus {
+    animation-play-state: paused;
+}
+
+.hover\:animation-none:hover, .focus\:animation-none:focus {
+    animation: none;
+}
+
+.grainy {
+    background: radial-gradient(circle at 10% 50%, rgba(187,0,255,0.1), rgba(0,0,0,0.1)), linear-gradient(330deg, rgba(255,0,228,0.4), rgba(255,0,181,0.1)), url("data:image/svg+xml,%3Csvg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='7.74' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: none;
+    filter: contrast(150%) brightness(400%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+}
+
+iframe, .grid img, .grid pre {
+    max-width: 100%;
+    overflow: auto;
+}
+
+/* Make sure it's the same as the HAML */
+/* In seconds */
+/* In percent */
+.contain {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    overflow: hidden;
+    perspective: 400px;
+}
+
+.contain::after {
+    content: "";
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    background: #cccfd1;
+    opacity: 0.7;
+}
+
+.mountain {
+    background-color: #433C43;
+    width: 16%;
+    height: 16%;
+    position: absolute;
+    top: 42%;
+}
+
+.mountain:nth-of-type(even) {
+    right: 0;
+}
+
+.mountain::before {
+    content: "";
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    left: -1%;
+    top: -1%;
+    background: #cccfd1;
+    animation: opacity 6s linear infinite;
+    animation-delay: inherit;
+}
+
+.mountain:nth-of-type(1) {
+    animation: mountain2 6s -0.3529411765s linear infinite;
+}
+
+.mountain:nth-of-type(2) {
+    animation: mountain3 6s -0.7058823529s linear infinite;
+}
+
+.mountain:nth-of-type(3) {
+    animation: mountain4 6s -1.0588235294s linear infinite;
+}
+
+.mountain:nth-of-type(4) {
+    animation: mountain5 6s -1.4117647059s linear infinite;
+}
+
+.mountain:nth-of-type(5) {
+    animation: mountain6 6s -1.7647058824s linear infinite;
+}
+
+.mountain:nth-of-type(6) {
+    animation: mountain1 6s -2.1176470588s linear infinite;
+}
+
+.mountain:nth-of-type(7) {
+    animation: mountain2 6s -2.4705882353s linear infinite;
+}
+
+.mountain:nth-of-type(8) {
+    animation: mountain3 6s -2.8235294118s linear infinite;
+}
+
+.mountain:nth-of-type(9) {
+    animation: mountain4 6s -3.1764705882s linear infinite;
+}
+
+.mountain:nth-of-type(10) {
+    animation: mountain5 6s -3.5294117647s linear infinite;
+}
+
+.mountain:nth-of-type(11) {
+    animation: mountain6 6s -3.8823529412s linear infinite;
+}
+
+.mountain:nth-of-type(12) {
+    animation: mountain1 6s -4.2352941176s linear infinite;
+}
+
+.mountain:nth-of-type(13) {
+    animation: mountain2 6s -4.5882352941s linear infinite;
+}
+
+.mountain:nth-of-type(14) {
+    animation: mountain3 6s -4.9411764706s linear infinite;
+}
+
+.mountain:nth-of-type(15) {
+    animation: mountain4 6s -5.2941176471s linear infinite;
+}
+
+.mountain:nth-of-type(16) {
+    animation: mountain5 6s -5.6470588235s linear infinite;
+}
+
+.mountain:nth-of-type(17) {
+    animation: mountain6 6s -6s linear infinite;
+}
+
+.mountain:nth-of-type(18) {
+    animation: mountain1 6s -6.3529411765s linear infinite;
+}
+
+.mountain:nth-of-type(19) {
+    animation: mountain2 6s -6.7058823529s linear infinite;
+}
+
+@keyframes mountain1 {
+    0% {
+        transform: rotate(45deg) translate3d(-130%, 130%, -300px) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(45deg) translate3d(100%, -100%, 0) scale(1);
+    }
+}
+
+@keyframes mountain2 {
+    0% {
+        transform: rotate(45deg) translate3d(120%, -120%, -300px) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(45deg) translate3d(-100%, 100%, 0) scale(1);
+    }
+}
+
+@keyframes mountain3 {
+    0% {
+        transform: rotate(45deg) translate3d(-110%, 110%, -300px) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(45deg) translate3d(100%, -100%, 0) scale(1);
+    }
+}
+
+@keyframes mountain4 {
+    0% {
+        transform: rotate(45deg) translate3d(110%, -110%, -300px) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(45deg) translate3d(-100%, 100%, 0) scale(1);
+    }
+}
+
+@keyframes mountain5 {
+    0% {
+        transform: rotate(45deg) translate3d(-150%, 150%, -300px) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(45deg) translate3d(100%, -100%, 0) scale(1);
+    }
+}
+
+@keyframes mountain6 {
+    0% {
+        transform: rotate(45deg) translate3d(150%, -150%, -300px) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(45deg) translate3d(-100%, 100%, 0) scale(1);
+    }
+}
+
+@keyframes opacity {
+    85%, 100% {
+        opacity: 0;
+    }
+}
+
+/*
+FROM Google's performant expand collapse menu
+*/
+.expando {
+    position: relative;
+}
+
+.expando__inner {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.expando__btn {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    pointer-events: auto;
+    cursor: pointer;
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0, 0, 0.31, 1), opacity 0.5s cubic-bezier(0, 0, 0.31, 1);
+}
+.expando__content {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.3s cubic-bezier(0, 0, 0.31, 1), opacity 0.4s cubic-bezier(0, 0, 0.31, 1);
+}
+.tools-and-more .tooltip .expando__content {
+    transition: transform 0.3s cubic-bezier(0, 0, 0.31, 1), opacity 0.8s cubic-bezier(0, 0, 0.31, 1);
+}
+.expando__close {
+    position: absolute;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.tools-and-more:focus-within .tooltip .expando__inner,
+.item--expanded {
+    animation-name: expandAnimation;
+    animation-duration: 0.55s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.tools-and-more:focus-within .tooltip .expando__inner-inverter {
+    /*animation-delay: 0.01s;*/
+}
+
+.tools-and-more:focus-within .tooltip .expando__inner-inverter, .item__contents--expanded {
+    animation-name: expandContentsAnimation;
+    animation-duration: 0.55s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.tools-and-more.collapse .tooltip .expando__inner,
+.tools-and-more:not(:focus-within) .tooltip .expando__inner, .item--collapsed {
+    animation-name: collapseAnimation;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.tools-and-more.collapse .tooltip .expando__inner-inverter,
+.tools-and-more:not(:focus-within) .tooltip .expando__inner-inverter, .item__contents--collapsed {
+    animation-name: collapseContentsAnimation;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.item__contents--expanded .expando__content, .tools-and-more:focus-within .tooltip .expando__inner-inverter .expando__content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.tools-and-more.collapse .tooltip .expando__content {
+    opacity: 0 !important;
+    transform: translateY(-20px);
+}
+.item__contents--expanded .expando__btn {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+.bring-up {
+    opacity: 1;
+    z-index: 1;
+}
+/*
+`<i tabindex='0' class='text-xs border-2 border-transparent focus:border-gray-400 float-left h-full m-1.5 fa fa-anchor p-2 rounded relative bg-gray-100 text-black'>
+					<div class='bg-white rounded tooltip absolute to-bottom shadow font-fredoka'>
+					  <ul class='space-y-0.5 list-inside list-disc'>
+						<div class='tooltip absolute to-right bg-yellow-100 shadow rounded p-1'>
+						  <p class='p-0.5 text-xs hover:bg-yellow-200 whitespace-pre'>move to</p>
+						  <p class='p-0.5 text-xs hover:bg-yellow-200 whitespace-pre'>clone to</p>  
+						</div>
+						<li class='p-0.5 text-xs hover:bg-yellow-50 whitespace-pre'>clone to</li>
+					  </ul>
+					</div>
+					<div class='text-yellow-600 rounded p-0.5 shadow bg-yellow-50 tooltip to-top absolute'>
+						<div class='space-x-1 font-sans items-center shadow flex shadow bg-yellow-100 rounded p-0.5' tabindex=0>
+						 <div class='flex flex-col hover:[&>*]:border-2:border-orange'><i role="button" class='fa fa-chevron-up'></i><i role="button" class='fa fa-chevron-down'></i></div><hr class='sep ver m-0 py-3 px-0.5 rounded bg-yellow-400'/><span spellcheck='false' class='relative p-1.5 border-yellow-200 border-2 outline-none focus:border-yellow-300 inline-block text-center' contenteditable='true' data-placeholder='position'></span>
+						</div>
+					</div>
+					<div role='button' class='text-yellow-600 rounded p-0.5 shadow bg-yellow-100 tooltip to-right whitespace-pre absolute' onclick='this.parentNode.parentNode.remove()'><i class='fa fa-trash text-yellow-500 shadow p-1'></i> delete</div>
+				  </i>
+				  <div class='wrap-on-line space-x-1'>
+					<div class="decorate rounded-inherit top-0 left-0 absolute overflow-hidden h-full w-full">
+						<div style='--tw-bg-opacity: 1' class="duration-700 origin-bottom-right -right-2 top-3/4 p-3.5 shadow bg-gray-50 rounded-full transform scale-150 absolute"></div>
+						<div style='--tw-bg-opacity: 1' class="duration-700 origin-top-left -left-7 bottom-3/4 p-3.5 shadow bg-gray-50 rounded-full transform scale-150 absolute"></div>
+					</div>
+					<span class='h-6 flex flex-col'>
+					  <span data-placeholder='tagName' class='tag' spellcheck="false" contenteditable="true" spellcheck="false">${current.tagName.toLowerCase()}</span>
+					  <div role='button' class='absolute tooltip to-bottom flex flex-col -mt-2 bg-yellow-50 shadow text-yellow-600 rounded-md p-1.5 whitespace-pre'>(•_•): click here to see/unsee element</div>
+					</span>
+					<p class='shadow px-1 border-yellow-100 border-2 bg-yellow-50 rounded'>class:</p>
+					<div class='contain-classes relative shadow-inner'>
+					  &nbsp;<span contenteditable class='text' spellcheck=false>${current.classList[0]||''}</span>${[...new S(slice(current.classList, 1))].map(e=>`<span contenteditable spellcheck=false class=text>${e}</span>`).join('')}
+					</div>
+					<div class='shadow px-1 border-yellow-100 border-2 bg-yellow-50 rounded'>style:
+					  <div class='tooltip p-0.5 rounded-lg absolute to-left bg-gray-50'>
+						<ul class='list-none p-0.5 text-center text-xs hover:[&>*]:border-2:border-orange text-yellow-500 shadow' role='button'>
+						  <li class='rounded px-1.5 hover:bg-white'>style</li>
+						  <li class='rounded px-1.5 hover:bg-white'>onload</li>
+						  <li class='rounded px-1.5 hover:bg-white'>beforeunload</li>
+						  <li class='rounded px-1.5 hover:bg-white'>onerror</li>
+						</ul>
+					  </div>
+					</div>
+					<div class='relative contain-classes text-xs shadow-inner'>
+					  &nbsp;<span contenteditable class='text' spellcheck=false>${cssText[0]||''}</span>${[...new S(slice(cssText, 1))].map(e=>`<span contenteditable spellcheck=false class=text>${e}</span>`).join('')}
+					</div>
+				  </div>`
+*/
