@@ -10,9 +10,9 @@ mDize =obj=>prot_F.call.bind(obj),O=Object,prot_O = prot(O),_toString = mDize(pr
   slice = mDize(prot_A.slice),
   cloneNode = mDize(d.cloneNode),
   H = HTMLElement,prot_H=prot(H),
-  gC = w.getComputedStyle, S = Set, M = Math, N = Number, R = RegExp, _qsa=domstr=>slice(d.querySelectorAll(domstr)),
-  _qs=domstr=>d.querySelector(domstr), html = d.documentElement, getStyle=(el, prop)=>gC(el)[prop],
-  promisify=cb=>new Promise(resolve=>setTimeout(_=>resolve(cb()))), map = mDize([].map);
+  gC = w.getComputedStyle, S = Set, M = Math, N = Number, R = RegExp, qsa=domstr=>slice(d.querySelectorAll(domstr)),
+  qs=domstr=>d.querySelector(domstr), html = d.documentElement, getStyle=(el, prop)=>gC(el)[prop],
+  promisify=cb=>new Promise(resolve=>setTimeout(_=>resolve(cb()))), map = mDize([].map), forEach=mDize([].forEach);
 
   function Is(entity, type) {
       let a = entity==void 0?_toString(entity).replace(/\[object |\]/g ,''):entity.constructor.name
