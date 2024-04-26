@@ -1,5 +1,4 @@
-let readAsync = require('../utils/read-async'),
-    fs        = require('fs');
+let fs = require('fs');
 
 module.exports = {
   signed: function(req, res, result){

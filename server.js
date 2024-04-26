@@ -17,7 +17,7 @@ const express   = require('express'),
 defs.map((e, i)=>values[options[i]]=e);
 
 /** the code below is for the functionality of getting arguments passed on the command line to the test-server.js file.
- *  node test-server -p [PORT] -d [directory to listen in] -a [assets directory or '_' - to use the value passed to -d]
+ *  node server -p [PORT] -d [directory to listen in] -a [assets directory or '_' - to use the value passed to -d]
  */
 
 for(let i = 0, arr=[], value, len=argv.length, match=_=>(_=_.match(rgx), _&&_[0]), rgx=new RegExp('^('+options.join('|')+')'); i < len;) {
